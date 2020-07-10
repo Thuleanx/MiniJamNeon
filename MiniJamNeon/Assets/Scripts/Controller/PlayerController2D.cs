@@ -30,8 +30,11 @@ public class PlayerController2D : MonoBehaviour
 
 	#endregion
 
+	#region Imprecisions
+
 	[SerializeField] float inputBufferTimeSeconds;
 	[SerializeField] float coyoteTimeSeconds;
+	#endregion
 
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
@@ -68,7 +71,7 @@ public class PlayerController2D : MonoBehaviour
 
 		// Jump
 		// Potential bug with releasing the jump button possibly cancelling upward momentum. Fix not needed rn
-		if (input.jump)
+		if (input.jumpDown)
 			timers.StartTimer("jumpBuffer");	
 
 		if (timers.Active("jumpBuffer") && !timers.Expire("jumpBuffer") && 
@@ -77,6 +80,11 @@ public class PlayerController2D : MonoBehaviour
 			velocity.y = jumpVelocityMax;	
 			timers.SetActive("jumpBuffer", false);
 			timers.SetActive("coyoteBuffer", false);
+
+			// if jump button released before touching the ground
+			if (!input.jump)
+				velocity.y = Mathf.Min(velocity.y, jumpVelocityMin);
+
 		} else if (input.jumpRelease)
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
