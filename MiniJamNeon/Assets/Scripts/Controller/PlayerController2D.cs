@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(RaycastCollider2D), typeof(InputManager))]
+[RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
 public class PlayerController2D : MonoBehaviour
 {
 	#region Components
 	RaycastCollider2D raycastCollider;
 	InputManager input;
+	Timers timers;
 	#endregion
 
 	#region Rigid body
@@ -29,14 +30,21 @@ public class PlayerController2D : MonoBehaviour
 
 	#endregion
 
+	[SerializeField] float inputBufferTimeSeconds;
+	[SerializeField] float coyoteTimeSeconds;
+
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
-
+		timers = GetComponent<Timers>();
 	}
 
 	void Start() {
 		CalculatePhysicsConstants();
+
+		// Init all timers
+		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
+		timers.RegisterTimer("coyoteBuffer", coyoteTimeSeconds);
 	}
 
 	void CalculatePhysicsConstants() {
@@ -49,20 +57,28 @@ public class PlayerController2D : MonoBehaviour
 	void Update() {
 		input.RegisterInput();
 
-		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot) {
+		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot)
 			velocity.y = 0;
-		}
+
+		if (raycastCollider.collisionInfo.AnyBot)
+			timers.StartTimer("coyoteBuffer");
 
 		velocity.x = input.axisInput.x * moveSpeed;
 		velocity.y -= gravity * Time.deltaTime;
 
 		// Jump
 		// Potential bug with releasing the jump button possibly cancelling upward momentum. Fix not needed rn
-		if (input.jumpDown)
-			velocity.y = jumpVelocityMax;
-		else if (input.jumpRelease) {
-			velocity.y = Mathf.Min(velocity.y, jumpVelocityMin);
-		}
+		if (input.jump)
+			timers.StartTimer("jumpBuffer");	
+
+		if (timers.Active("jumpBuffer") && !timers.Expire("jumpBuffer") && 
+			timers.Active("coyoteBuffer") && !timers.Expire("coyoteBuffer")) {
+
+			velocity.y = jumpVelocityMax;	
+			timers.SetActive("jumpBuffer", false);
+			timers.SetActive("coyoteBuffer", false);
+		} else if (input.jumpRelease)
+			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
 		raycastCollider.Move(velocity * Time.deltaTime);
 	}	

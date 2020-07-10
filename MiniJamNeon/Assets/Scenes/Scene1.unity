@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 1823783589}
   - component: {fileID: 1823783588}
   - component: {fileID: 1823783587}
+  - component: {fileID: 1823783590}
   m_Layer: 31
   m_Name: Character
   m_TagString: Untagged
@@ -400,7 +401,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!23 &1823783584
 MeshRenderer:
@@ -478,6 +479,9 @@ MonoBehaviour:
   maxJumpHeight: 4
   minJumpHeight: 1
   timeToJumpApexSeconds: 0.5
+  moveSpeed: 3
+  inputBufferTimeSeconds: 0.2
+  coyoteTimeSeconds: 0.2
 --- !u!114 &1823783588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +497,7 @@ MonoBehaviour:
   axisInput: {x: 0, y: 0}
   jumpDown: 0
   jumpRelease: 0
+  jump: 0
 --- !u!114 &1823783589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,7 +513,19 @@ MonoBehaviour:
   body: {fileID: 0}
   collisionMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1073741824
   drawGizmos: 1
-  horizontalRayCount: 4
-  verticalRayCount: 4
+  horizontalRayCount: 8
+  verticalRayCount: 8
+--- !u!114 &1823783590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823783581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1d85ed648347d5b2e17789a4bc17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

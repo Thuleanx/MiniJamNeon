@@ -76,6 +76,7 @@ public class RaycastCollider2D : MonoBehaviour
 
 		public void Init(RaycastCollider2D raycastCollider) {
 			parentRaycast = raycastCollider;
+			Reset();
 		}
 		public void Reset() {
 			collideMaskBot = collideMaskLeft = collideMaskTop = collideMaskRight = 0;
