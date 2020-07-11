@@ -34,6 +34,7 @@ public class PlayerController2D : MonoBehaviour
 
 	[SerializeField] float inputBufferTimeSeconds;
 	[SerializeField] float coyoteTimeSeconds;
+	[SerializeField] float platformFallThroughSeconds;
 	#endregion
 
 	void Awake() {
@@ -48,6 +49,7 @@ public class PlayerController2D : MonoBehaviour
 		// Init all timers
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
 		timers.RegisterTimer("coyoteBuffer", coyoteTimeSeconds);
+		// timers.RegisterTimer("platformFallThrough", platformFallThroughSeconds);
 	}
 
 	void CalculatePhysicsConstants() {
@@ -60,10 +62,10 @@ public class PlayerController2D : MonoBehaviour
 	void Update() {
 		input.RegisterInput();
 
-		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot)
+		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
 			velocity.y = 0;
 
-		if (raycastCollider.collisionInfo.AnyBot)
+		if (raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
 			timers.StartTimer("coyoteBuffer");
 
 		velocity.x = input.axisInput.x * moveSpeed;
@@ -88,6 +90,6 @@ public class PlayerController2D : MonoBehaviour
 		} else if (input.jumpRelease)
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
-		raycastCollider.Move(velocity * Time.deltaTime);
+		raycastCollider.Move(velocity * Time.deltaTime, input.axisInput.y < 0);
 	}	
 }

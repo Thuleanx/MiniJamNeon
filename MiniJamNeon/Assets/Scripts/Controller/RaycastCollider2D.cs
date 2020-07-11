@@ -13,6 +13,7 @@ public class RaycastCollider2D : MonoBehaviour
 
 	#region Unity constants
 	[SerializeField] LayerMask collisionMask;
+	[SerializeField] LayerMask platformMask;
 	[SerializeField] bool drawGizmos;
 	#endregion
 
@@ -84,6 +85,7 @@ public class RaycastCollider2D : MonoBehaviour
 	}
 
 	[HideInInspector] public CollisionInfo collisionInfo;
+	[HideInInspector] public CollisionInfo platformCollisionInfo;
 	#endregion 
 
 	void Awake() {
@@ -97,16 +99,17 @@ public class RaycastCollider2D : MonoBehaviour
 
 	}
 
-	public void Move(Vector2 velocity) {
+	public void Move(Vector2 velocity, bool platformFallThrough = false) {
 		UpdateRayCastOrigins();
 		collisionInfo.Reset();
+		platformCollisionInfo.Reset();
 
-		Raycast(ref velocity);		
+		Raycast(ref velocity, platformFallThrough);		
 		if (!Mathf.Approximately(velocity.sqrMagnitude, 0))
 			transform.Translate(velocity);
 	}
 
-	void Raycast(ref Vector2 velocity) {
+	void Raycast(ref Vector2 velocity, bool platformFallThrough) {
 		for (int dim = 0; dim < 2; dim++) {
 			// Useful variables
 			float dir = Mathf.Sign(velocity[dim]);
@@ -139,7 +142,28 @@ public class RaycastCollider2D : MonoBehaviour
 						collisionInfo.collideMaskTop |= (dim == 1 && dir > 0 ? 1 : 0) << ray;		
 						collisionInfo.collideMaskLeft |= (dim == 0 && dir < 0 ? 1 : 0) << ray;		
 						collisionInfo.collideMaskRight |= (dim == 0 && dir > 0 ? 1 : 0) << ray;		
-					} 
+					} else if (!platformFallThrough) {
+						hit = Physics2D.Raycast(rayStart, dirV * dir, rayLength, platformMask);
+
+						if (hit)
+						{
+							// platform raycast
+							if (dir < 0 && dim == 1)
+							{
+								if (platformFallThrough && hit.distance > skinWidth) {
+									
+								}
+
+								velocity[dim] = (hit.distance - skinWidth) * dir;
+								rayLength = Mathf.Max(2 * skinWidth, hit.distance);
+							}
+
+							platformCollisionInfo.collideMaskBot |= (dim == 1 && dir < 0 ? 1 : 0) << ray;
+							platformCollisionInfo.collideMaskTop |= (dim == 1 && dir > 0 ? 1 : 0) << ray;
+							platformCollisionInfo.collideMaskLeft |= (dim == 0 && dir < 0 ? 1 : 0) << ray;
+							platformCollisionInfo.collideMaskRight |= (dim == 0 && dir > 0 ? 1 : 0) << ray;
+						}
+					}
 				}
 			}
 		}
