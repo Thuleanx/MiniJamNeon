@@ -34,7 +34,7 @@ public class PlayerController2D : MonoBehaviour
 
 	[SerializeField] float inputBufferTimeSeconds;
 	[SerializeField] float coyoteTimeSeconds;
-	[SerializeField] float platformFallThroughSeconds;
+	float platformFallThroughSeconds;
 	#endregion
 
 	void Awake() {
@@ -49,7 +49,7 @@ public class PlayerController2D : MonoBehaviour
 		// Init all timers
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
 		timers.RegisterTimer("coyoteBuffer", coyoteTimeSeconds);
-		// timers.RegisterTimer("platformFallThrough", platformFallThroughSeconds);
+		timers.RegisterTimer("platformFallThrough", platformFallThroughSeconds);
 	}
 
 	void CalculatePhysicsConstants() {
@@ -57,6 +57,8 @@ public class PlayerController2D : MonoBehaviour
 
 		jumpVelocityMax = gravity * timeToJumpApexSeconds;
 		jumpVelocityMin = Mathf.Sqrt(minJumpHeight * gravity);
+
+		platformFallThroughSeconds =  Mathf.Sqrt(1f / gravity);
 	}
 
 	void Update() {
@@ -76,6 +78,9 @@ public class PlayerController2D : MonoBehaviour
 		if (input.jumpDown)
 			timers.StartTimer("jumpBuffer");	
 
+		if (input.axisInput.y < 0)
+			timers.StartTimer("platformFallThrough");
+
 		if (timers.Active("jumpBuffer") && !timers.Expire("jumpBuffer") && 
 			timers.Active("coyoteBuffer") && !timers.Expire("coyoteBuffer")) {
 
@@ -90,6 +95,6 @@ public class PlayerController2D : MonoBehaviour
 		} else if (input.jumpRelease)
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
-		raycastCollider.Move(velocity * Time.deltaTime, input.axisInput.y < 0);
+		raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
 	}	
 }
