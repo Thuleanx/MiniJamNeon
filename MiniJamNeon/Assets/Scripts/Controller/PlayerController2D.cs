@@ -54,7 +54,7 @@ public class PlayerController2D : MonoBehaviour
 	}
 
 	void CalculatePhysicsConstants() {
-		gravity = maxJumpHeight / (timeToJumpApexSeconds * timeToJumpApexSeconds);	
+		gravity = 2 * maxJumpHeight / (timeToJumpApexSeconds * timeToJumpApexSeconds);	
 
 		jumpVelocityMax = gravity * timeToJumpApexSeconds;
 		jumpVelocityMin = Mathf.Sqrt(minJumpHeight * gravity);
@@ -96,7 +96,6 @@ public class PlayerController2D : MonoBehaviour
 		} else if (input.jumpRelease)
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
-		raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
 
 		// Dash
 		if (input.dash) {
@@ -104,6 +103,8 @@ public class PlayerController2D : MonoBehaviour
 				raycastCollider.Move(new Vector2(-dashDistance, 0), timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
 			else if (velocity.x > 0)
 				raycastCollider.Move(new Vector2(dashDistance, 0), timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
+		} else {
+			raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
 		}
 	}	
 }
