@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
 	[HideInInspector] public Vector2 axisInput;
-	[HideInInspector] public bool jumpDown, jumpRelease, jump;
+	[HideInInspector] public bool jumpDown, jumpRelease, jump, dash;
 
 	public void RegisterInput() {
 		axisInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -13,6 +13,7 @@ public class InputManager : MonoBehaviour
 		jumpDown = Input.GetButtonDown("Jump");
 		jump = Input.GetButton("Jump");
 		jumpRelease = Input.GetButtonUp("Jump");
+		dash = Input.GetButtonDown("Dash");
 	}
 }
 

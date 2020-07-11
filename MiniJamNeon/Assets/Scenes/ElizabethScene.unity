@@ -507,7 +507,7 @@ Transform:
   m_LocalScale: {x: 5.2024784, y: 0.17875, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1823783581
 GameObject:
@@ -640,7 +640,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1823783587
 MonoBehaviour:
@@ -658,9 +658,9 @@ MonoBehaviour:
   minJumpHeight: 1
   timeToJumpApexSeconds: 0.5
   moveSpeed: 3
+  dashDistance: 3
   inputBufferTimeSeconds: 0.2
   coyoteTimeSeconds: 0.2
-  platformFallThroughSeconds: 0
 --- !u!114 &1823783588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,6 +677,7 @@ MonoBehaviour:
   jumpDown: 0
   jumpRelease: 0
   jump: 0
+  dash: 0
 --- !u!114 &1823783589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -853,5 +854,5 @@ Transform:
   m_LocalScale: {x: 5.2024784, y: 0.65, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

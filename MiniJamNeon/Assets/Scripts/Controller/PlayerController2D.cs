@@ -22,6 +22,7 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] float timeToJumpApexSeconds;
 
 	[SerializeField] float moveSpeed;
+	[SerializeField] float dashDistance;
 
 	float gravity;
 
@@ -96,5 +97,13 @@ public class PlayerController2D : MonoBehaviour
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
 		raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
+
+		// Dash
+		if (input.dash) {
+			if (velocity.x < 0)
+				raycastCollider.Move(new Vector2(-dashDistance, 0), timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
+			else if (velocity.x > 0)
+				raycastCollider.Move(new Vector2(dashDistance, 0), timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
+		}
 	}	
 }
