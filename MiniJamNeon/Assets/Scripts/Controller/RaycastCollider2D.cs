@@ -136,7 +136,6 @@ public class RaycastCollider2D : MonoBehaviour
 						velocity[dim] = Mathf.Max(0, Mathf.Min(Mathf.Abs(velocity[dim]), (hit.distance - skinWidth))) * dir;
 						rayLength = Mathf.Max(2*skinWidth, hit.distance);
 
-
 						// update collisionInfo
 						collisionInfo.collideMaskBot |= (dim == 1 && dir < 0 ? 1 : 0) << ray;		
 						collisionInfo.collideMaskTop |= (dim == 1 && dir > 0 ? 1 : 0) << ray;		
@@ -150,12 +149,10 @@ public class RaycastCollider2D : MonoBehaviour
 							// platform raycast
 							if (dir < 0 && dim == 1)
 							{
-								if (platformFallThrough && hit.distance > skinWidth) {
-									
-								}
-
 								velocity[dim] = (hit.distance - skinWidth) * dir;
+								// velocity[dim] = Mathf.Max(0, Mathf.Min(Mathf.Abs(velocity[dim]), (hit.distance - skinWidth))) * dir;
 								rayLength = Mathf.Max(2 * skinWidth, hit.distance);
+
 							}
 
 							platformCollisionInfo.collideMaskBot |= (dim == 1 && dir < 0 ? 1 : 0) << ray;
