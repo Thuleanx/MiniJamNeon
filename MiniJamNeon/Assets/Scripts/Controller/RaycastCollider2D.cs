@@ -99,22 +99,28 @@ public class RaycastCollider2D : MonoBehaviour
 
 	}
 
-	public void Move(Vector2 velocity, bool platformFallThrough = false) {
+	// faceDir -> -1 if left, 1 if right 
+	public void Move(Vector2 velocity, bool platformFallThrough = false, float faceDir = 0) {
 		UpdateRayCastOrigins();
 		collisionInfo.Reset();
 		platformCollisionInfo.Reset();
 
-		Raycast(ref velocity, platformFallThrough);		
+		Raycast(ref velocity, platformFallThrough, faceDir);		
 		// this line is only for ease of writing camera code
 		// if (!Mathf.Approximately(velocity.sqrMagnitude, 0))
 		transform.Translate(velocity);
 	}
 
-	void Raycast(ref Vector2 velocity, bool platformFallThrough) {
+	void Raycast(ref Vector2 velocity, bool platformFallThrough, float faceDir) {
 		for (int dim = 0; dim < 2; dim++) {
 			// Useful variables
 			float dir = Mathf.Sign(velocity[dim]);
 			float rayLength = Mathf.Abs(velocity[dim]) + skinWidth;
+
+			if (faceDir != 0 && dim == 0) {
+				dir = faceDir;
+				rayLength = 2 * skinWidth;
+			}	
 
 			float spacing = dim == 0 ? horizontalRaySpacing : verticalRaySpacing;
 			Vector2 dirV = (dim == 0 ? Vector2.right : Vector2.up);
@@ -150,8 +156,8 @@ public class RaycastCollider2D : MonoBehaviour
 							// platform raycast
 							if (dir < 0 && dim == 1)
 							{
-								velocity[dim] = (hit.distance - skinWidth) * dir;
-								// velocity[dim] = Mathf.Max(0, Mathf.Min(Mathf.Abs(velocity[dim]), (hit.distance - skinWidth))) * dir;
+								// velocity[dim] = (hit.distance - skinWidth) * dir;
+								velocity[dim] = Mathf.Max(0, Mathf.Min(Mathf.Abs(velocity[dim]), (hit.distance - skinWidth))) * dir;
 								rayLength = Mathf.Max(2 * skinWidth, hit.distance);
 							}
 
