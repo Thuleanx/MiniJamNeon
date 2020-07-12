@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFlyingRanged : MonoBehaviour
+public class RangedAttack : MonoBehaviour
 {
     public Transform target;
 
@@ -13,6 +13,7 @@ public class EnemyFlyingRanged : MonoBehaviour
     public float range = 8f;
 
     public GameObject bulletPrefab;
+    public float bulletSpeed = 12f;
 
     private void Start()
     {
@@ -29,7 +30,7 @@ public class EnemyFlyingRanged : MonoBehaviour
         if (target == null)
         {
             //TODO: Insert a player search here
-            Debug.LogError("why this here");
+            Debug.LogError("Target can't be null");
             return;
         }
         // distance greater than range
@@ -39,8 +40,8 @@ public class EnemyFlyingRanged : MonoBehaviour
             return;
         }
         shootBullet();
-        //RaycastHit2D hit = Physics2D.Raycast(transform.position, target.position, range, whatToHit);
-        //Debug.DrawLine(transform.position, target.position);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range);
+        Debug.DrawLine(transform.position, target.transform.position);
         //// if raycast hits player
         //if (hit.collider != null)
         //{
@@ -61,6 +62,6 @@ public class EnemyFlyingRanged : MonoBehaviour
         GameObject bulletObj = Instantiate(bulletPrefab, new Vector3(transform.position.x, transform.position.y, 0.1f), Quaternion.identity);
         Bullet bullet = (Bullet)bulletObj.GetComponent<Bullet>();
         bullet.setDirection(target.transform.position);
-        bullet.setSpeed(GameFlow.Instance.bulletSpeed);
+        bullet.setSpeed(bulletSpeed);
     }
 }
