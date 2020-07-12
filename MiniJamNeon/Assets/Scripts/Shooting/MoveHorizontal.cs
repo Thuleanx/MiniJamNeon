@@ -7,6 +7,7 @@ using UnityEngine;
 public class MoveHorizontal : MonoBehaviour
 {
 	Rigidbody2D body;
+	ExplodeOnHit onhitExplode;
 
 	[SerializeField] float speed;
 	bool stop;
@@ -15,10 +16,15 @@ public class MoveHorizontal : MonoBehaviour
 
 	void Awake() {
 		body = GetComponent<Rigidbody2D>();
+		onhitExplode = GetComponent<ExplodeOnHit>();
 	}
 
 	void OnEnable() {
 		stop = false;
+	}
+
+	public void Stop() {
+		stop = true;
 	}
 
 	void Update()
@@ -28,5 +34,6 @@ public class MoveHorizontal : MonoBehaviour
 		} else {
 			body.velocity = Vector2.zero;
 		}
+
 	}
 }
