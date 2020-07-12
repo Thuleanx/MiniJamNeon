@@ -5,31 +5,27 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class CharacterAnimationController : MonoBehaviour
 {
-	public enum AnimState {
-		Idle = 0,
-		Run = 1,
-		Fall = 2,
-		Jump = 3,
-		Attack = 4,
-		Hurt = 5
-	}	
-
 	#region Components
 	Animator anim;
 	#endregion
 
 	AnimState currentState;
+	public AnimState State { get { return currentState; } }
+
+	void Awake() {
+		anim = GetComponent<Animator>();
+	}
 
 	void Start() {
 		Reset();
 	}	
 
-	void ChangeState(AnimState state) {
+	public void SetState(AnimState state) {
 		currentState = state;
 		anim.SetInteger("State", (int) state);
 	}
 
-	void Reset() {
-		ChangeState(AnimState.Idle);
+	public void Reset() {
+		SetState(AnimState.Idle);
 	}
 }

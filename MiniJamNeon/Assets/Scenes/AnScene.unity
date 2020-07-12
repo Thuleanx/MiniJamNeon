@@ -53019,6 +53019,7 @@ GameObject:
   - component: {fileID: 1943556853}
   - component: {fileID: 1943556860}
   - component: {fileID: 1943556861}
+  - component: {fileID: 1943556862}
   m_Layer: 31
   m_Name: Character
   m_TagString: Untagged
@@ -53043,8 +53044,10 @@ MonoBehaviour:
   timeToJumpApexSeconds: 0.4
   moveSpeed: 5
   dashDistance: 4
+  wallSlideSpeed: 2
   inputBufferTimeSeconds: 0.1
   coyoteTimeSeconds: 0.1
+  dashCooldownSeconds: 0
 --- !u!114 &1943556854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53222,3 +53225,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1943556862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943556852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabc6071c90814cccbb299247d975836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

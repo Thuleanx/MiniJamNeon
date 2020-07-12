@@ -28,7 +28,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: industrial_v2_374
+  m_Name: WalkingRobot
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
