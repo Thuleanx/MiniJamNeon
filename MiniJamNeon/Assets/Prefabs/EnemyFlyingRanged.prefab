@@ -174,7 +174,7 @@ MonoBehaviour:
   speed: 600
   fMode: 0
   pathIsEnded: 0
-  nextWaypointDistance: 1
+  nextWaypointDistance: 5
   vision: 15
   whatToHit:
     serializedVersion: 2
