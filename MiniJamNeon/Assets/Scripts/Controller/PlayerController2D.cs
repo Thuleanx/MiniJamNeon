@@ -23,6 +23,7 @@ public class PlayerController2D : MonoBehaviour
 
 	[SerializeField] float moveSpeed;
 	[SerializeField] float dashDistance;
+	[SerializeField] float wallSlideSpeed;
 
 	float gravity;
 
@@ -35,6 +36,7 @@ public class PlayerController2D : MonoBehaviour
 
 	[SerializeField] float inputBufferTimeSeconds;
 	[SerializeField] float coyoteTimeSeconds;
+	[SerializeField] float dashCooldownSeconds;
 	float platformFallThroughSeconds;
 	#endregion
 
@@ -51,6 +53,7 @@ public class PlayerController2D : MonoBehaviour
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
 		timers.RegisterTimer("coyoteBuffer", coyoteTimeSeconds);
 		timers.RegisterTimer("platformFallThrough", platformFallThroughSeconds);
+		timers.RegisterTimer("dashBuffer", dashCooldownSeconds);
 	}
 
 	void CalculatePhysicsConstants() {
@@ -65,6 +68,14 @@ public class PlayerController2D : MonoBehaviour
 	void Update() {
 		input.RegisterInput();
 
+		// hit a wall while in the air
+		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
+			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot) {
+			velocity.y = -wallSlideSpeed;
+			Move(velocity * Time.deltaTime);
+			return;
+		}
+
 		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
 			velocity.y = 0;
 
@@ -77,13 +88,13 @@ public class PlayerController2D : MonoBehaviour
 		// Jump
 		// Potential bug with releasing the jump button possibly cancelling upward momentum. Fix not needed rn
 		if (input.jumpDown)
-			timers.StartTimer("jumpBuffer");	
+			timers.StartTimer("jumpBuffer");
 
 		if (input.axisInput.y < 0)
 			timers.StartTimer("platformFallThrough");
 
-		if (timers.Active("jumpBuffer") && !timers.Expire("jumpBuffer") && 
-			timers.Active("coyoteBuffer") && !timers.Expire("coyoteBuffer")) {
+		if (timers.Active("jumpBuffer") && !timers.Expired("jumpBuffer") && 
+			timers.Active("coyoteBuffer") && !timers.Expired("coyoteBuffer")) {
 
 			velocity.y = jumpVelocityMax;	
 			timers.SetActive("jumpBuffer", false);
@@ -96,14 +107,22 @@ public class PlayerController2D : MonoBehaviour
 		} else if (input.jumpRelease)
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
 
-		raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
-
+		Vector2 deltaPosition = velocity * Time.deltaTime;
+		
 		// Dash
-		if (input.dash) {
+		if (input.dash && (!timers.Active("dashBuffer") || timers.Expired("dashBuffer")) && velocity.x != 0) {
+			timers.StartTimer("dashBuffer");
 			if (velocity.x < 0)
-				raycastCollider.Move(new Vector2(-dashDistance, 0), timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
+				deltaPosition += new Vector2(-dashDistance, 0);
 			else if (velocity.x > 0)
-				raycastCollider.Move(new Vector2(dashDistance, 0), timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
+				deltaPosition += new Vector2(dashDistance, 0);
 		}
-	}	
+
+		Move(deltaPosition);
+	}
+
+	// only call this once per frame
+	void Move(Vector2 deltaPosition) {
+		raycastCollider.Move(deltaPosition, timers.Active("platformFallThrough") && !timers.Expired("platformFallThrough"));
+	}
 }

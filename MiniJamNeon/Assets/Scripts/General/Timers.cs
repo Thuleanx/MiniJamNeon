@@ -28,7 +28,7 @@ public class Timers : MonoBehaviour
 		timerActive[name] = active;
 	}
 
-	public bool Expire(string name) {
+	public bool Expired(string name) {
 		return Time.time >= timeToExpire[name];
 	}
 }
