@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1078688790331798330}
   - component: {fileID: 1078688790331798277}
   - component: {fileID: 1078688790331798276}
-  m_Layer: 23
+  m_Layer: 22
   m_Name: WalkingRobot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ MonoBehaviour:
   minPatrolDuration: 3
   maxPatrolDuration: 7
   movementSpeed: 3
-  willCharge: 1
+  isRanged: 0
   Target: {fileID: 0}
 --- !u!1 &1078688790664032493
 GameObject:
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 1078688790664032482}
   - component: {fileID: 1078688790664032483}
   - component: {fileID: 1078688790664032480}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

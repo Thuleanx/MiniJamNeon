@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2285357549619618326}
   - component: {fileID: 2285357549619618323}
   - component: {fileID: 2285357549619618322}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: EnemyFlyingMelee
   m_TagString: Untagged
   m_Icon: {fileID: 0}

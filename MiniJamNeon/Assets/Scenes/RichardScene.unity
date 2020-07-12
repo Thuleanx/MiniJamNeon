@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DarkMage
       objectReference: {fileID: 0}
+    - target: {fileID: 8785930395610025504, guid: 8da568c56189448d0a30e520279f8e04,
+        type: 3}
+      propertyPath: m_Layer
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 8785930395610025505, guid: 8da568c56189448d0a30e520279f8e04,
         type: 3}
       propertyPath: target
@@ -1245,6 +1250,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WalkingRobot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078688790331798279, guid: cdc1a6a4fa65f4c9199229e216825bc3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1078688790331798329, guid: cdc1a6a4fa65f4c9199229e216825bc3,
         type: 3}
