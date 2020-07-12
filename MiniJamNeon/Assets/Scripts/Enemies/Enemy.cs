@@ -12,6 +12,14 @@ public class Enemy : MonoBehaviour
 
     public EnemyStats stats = new EnemyStats();
 
+    //private Collider2D collider;
+
+    private void Start()
+    {
+        //collider = GetComponent<Collider2D>();
+        //Physics2D.IgnoreLayerCollision()
+    }
+
     public void DamageEnemy (int damage)
     {
         stats.Health -= damage;
@@ -23,4 +31,14 @@ public class Enemy : MonoBehaviour
             Debug.Log("I died");
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //if (collision.gameObject.tag == "Player")
+        //{
+        //    Physics2D.IgnoreCollision(collider, collision.gameObject.collider);
+        //}
+    }
+
+
 }
