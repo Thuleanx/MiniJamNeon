@@ -12,6 +12,7 @@ public class Shooting : MonoBehaviour
     internal float curCooldown = 0;
     public GameObject[] bulletObjects;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class Shooting : MonoBehaviour
                     bulletObjects[i] = Instantiate(bulletPrefab, new Vector3(transform.position.x, transform.position.y, 0.1f), Quaternion.identity);
                     GameObject bulletObj = bulletObjects[i];
                     Bullet bullet = (Bullet) bulletObj.GetComponent<Bullet>();
+
                     Vector3 direction = Quaternion.Euler(0, 0, (i - numBullets / 2) * 10) * (mousePosition - gameObject.transform.position);
                     bullet.setDirection(direction);
                     bullet.setSpeed(GameFlow.Instance.bulletSpeed);
