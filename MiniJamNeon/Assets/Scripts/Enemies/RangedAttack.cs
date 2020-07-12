@@ -17,6 +17,8 @@ public class RangedAttack : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 12f;
 
+    public LayerMask whatToHit;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -42,21 +44,22 @@ public class RangedAttack : MonoBehaviour
         }
 
         // flip dude
-        if (target.transform.position.x < transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
+        //if (target.transform.position.x < transform.position.x)
+        //{
+        //    spriteRenderer.flipX = true;
+        //}
+        //else
+        //{
+        //    spriteRenderer.flipX = false;
+        //}
 
         shootBullet();
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range, whatToHit);
         Debug.DrawLine(transform.position, target.transform.position);
         //// if raycast hits player
         //if (hit.collider != null)
         //{
+        //    Debug.DrawLine(transform.position, target.transform.position, Color.cyan);
         //    shootBullet();
         //}
 

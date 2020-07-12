@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Edge
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Enemy
   - Projectile
   - HurbtoxHostile
   - HurtboxFriendly
