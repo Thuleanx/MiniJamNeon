@@ -6,6 +6,8 @@ public class RangedAttack : MonoBehaviour
 {
     public Transform target;
 
+    private SpriteRenderer spriteRenderer;
+
     public float shootRate = 1f;
 
     // number tiles away that ai can shoot from
@@ -17,6 +19,7 @@ public class RangedAttack : MonoBehaviour
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // if range is not zero, then start shooting
         if (range != 0)
         {
@@ -26,7 +29,6 @@ public class RangedAttack : MonoBehaviour
 
     private void ShootIfPossible()
     {
-        Debug.Log("start shoot");
         if (target == null)
         {
             //TODO: Insert a player search here
@@ -36,9 +38,19 @@ public class RangedAttack : MonoBehaviour
         // distance greater than range
         if (Vector2.Distance(target.transform.position, transform.position) > range)
         {
-            Debug.Log("outside range");
             return;
         }
+
+        // flip dude
+        if (target.transform.position.x < transform.position.x)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
+
         shootBullet();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range);
         Debug.DrawLine(transform.position, target.transform.position);
@@ -61,7 +73,7 @@ public class RangedAttack : MonoBehaviour
         }
         GameObject bulletObj = Instantiate(bulletPrefab, new Vector3(transform.position.x, transform.position.y, 0.1f), Quaternion.identity);
         Bullet bullet = (Bullet)bulletObj.GetComponent<Bullet>();
-        bullet.setDirection(target.transform.position);
+        bullet.setDirection(target.transform.position - transform.position);
         bullet.setSpeed(bulletSpeed);
     }
 }
