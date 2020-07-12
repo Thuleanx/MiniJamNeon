@@ -186,11 +186,11 @@ public class PlayerController2D : MonoBehaviour
 			AnimState state = anim.State;
 
 			if (state != AnimState.Dash && state != AnimState.Hit) {
-				if (!raycastCollider.collisionInfo.AnyBot && velocity.y < 0)
+				if (!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot && velocity.y < 0)
 				{
 					anim.SetState(AnimState.Fall);
 				}
-				else if (!raycastCollider.collisionInfo.AnyBot)
+				else if (!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot)
 				{
 					anim.SetState(AnimState.Jump);
 				}
