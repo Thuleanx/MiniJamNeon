@@ -190,7 +190,7 @@ public class PlayerController2D : MonoBehaviour
 				{
 					anim.SetState(AnimState.Fall);
 				}
-				else if (!raycastCollider.collisionInfo.AnyBot)
+				else if (!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot)
 				{
 					anim.SetState(AnimState.Jump);
 				}
