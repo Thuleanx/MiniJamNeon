@@ -77,7 +77,7 @@ public class EnemyStats : MonoBehaviour
 
     void Update() {
         // Enemy Stat Boost
-        if(timers.Expire("upgrade")) {
+        if (timers.Expired("upgrade")) {
            statCount[currUpgrade]++;
            currUpgrade = (currUpgrade + 1) % 3;
            timers.StartTimer("upgrade");
