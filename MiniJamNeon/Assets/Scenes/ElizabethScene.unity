@@ -853,6 +853,7 @@ MonoBehaviour:
   timeToJumpApexSeconds: 0.5
   moveSpeed: 3
   dashDistance: 3
+  wallSlideSpeed: 2
   inputBufferTimeSeconds: 0.2
   coyoteTimeSeconds: 0.2
   dashCooldownSeconds: 5
@@ -873,6 +874,9 @@ MonoBehaviour:
   jumpRelease: 0
   jump: 0
   dash: 0
+  health: 0
+  defense: 0
+  damage: 0
 --- !u!114 &1823783589
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
+[RequireComponent(typeof(PlayerStats))]
 public class PlayerController2D : MonoBehaviour
 {
 	#region Components
 	RaycastCollider2D raycastCollider;
 	InputManager input;
 	Timers timers;
+	PlayerStats stats;
 	#endregion
 
 	#region Rigid body
@@ -40,14 +42,18 @@ public class PlayerController2D : MonoBehaviour
 	float platformFallThroughSeconds;
 	#endregion
 
+	int currMoney;
+
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
 		timers = GetComponent<Timers>();
+    	stats = GetComponent<PlayerStats>();
 	}
 
 	void Start() {
 		CalculatePhysicsConstants();
+    	currMoney = 0;
 
 		// Init all timers
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
@@ -57,7 +63,7 @@ public class PlayerController2D : MonoBehaviour
 	}
 
 	void CalculatePhysicsConstants() {
-		gravity = maxJumpHeight / (timeToJumpApexSeconds * timeToJumpApexSeconds);	
+		gravity = 2 * maxJumpHeight / (timeToJumpApexSeconds * timeToJumpApexSeconds);	
 
 		jumpVelocityMax = gravity * timeToJumpApexSeconds;
 		jumpVelocityMin = Mathf.Sqrt(minJumpHeight * gravity);
@@ -68,6 +74,7 @@ public class PlayerController2D : MonoBehaviour
 	void Update() {
 		input.RegisterInput();
 
+		#region Movement
 		// hit a wall while in the air
 		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
 			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot) {
@@ -106,9 +113,9 @@ public class PlayerController2D : MonoBehaviour
 
 		} else if (input.jumpRelease)
 			velocity.y = Mathf.Min(velocity.y,jumpVelocityMin);
-
-		Vector2 deltaPosition = velocity * Time.deltaTime;
 		
+		Vector2 deltaPosition = velocity * Time.deltaTime;
+
 		// Dash
 		if (input.dash && (!timers.Active("dashBuffer") || timers.Expired("dashBuffer")) && velocity.x != 0) {
 			timers.StartTimer("dashBuffer");
@@ -119,6 +126,29 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 		Move(deltaPosition);
+		#endregion
+
+		// Shop
+		if (input.health && stats.getHealthUpgradeCost() <= currMoney) {
+			currMoney -= stats.getHealthUpgradeCost();
+			stats.incrementHealth();
+		} else if (input.health) {
+			// Not enough money
+		}
+
+		if (input.defense && stats.getDefenseUpgradeCost() <= currMoney) {
+			currMoney -= stats.getDefenseUpgradeCost();
+			stats.incrementDefense();
+		} else if (input.defense) {
+			// Not enough money
+		}
+
+		if (input.damage && stats.getDamageUpgradeCost() <= currMoney) {
+			currMoney -= stats.getDamageUpgradeCost();
+			stats.incrementDamage();
+		} else if (input.damage) {
+			// Not enough money
+		}
 	}
 
 	// only call this once per frame
