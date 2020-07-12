@@ -29,10 +29,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - HurbtoxHostile
+  - HurtboxFriendly
+  - HitboxHostile
+  - HitboxFriendly
   - Background
   - Platform
   - Obstacle
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1248850999
+    locked: 0
+  - name: Player
+    uniqueID: 1267280187
     locked: 0

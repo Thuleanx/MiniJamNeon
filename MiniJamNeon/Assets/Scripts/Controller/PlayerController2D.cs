@@ -11,6 +11,9 @@ public class PlayerController2D : MonoBehaviour
 	InputManager input;
 	Timers timers;
 	PlayerStats stats;
+	CharacterAnimationController anim;
+	SpriteRenderer sprite;
+
 	#endregion
 
 	#region Rigid body
@@ -44,11 +47,17 @@ public class PlayerController2D : MonoBehaviour
 
 	int currMoney;
 
+
+	// face direction to animate the sprite
+	int faceDir;
+
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
 		timers = GetComponent<Timers>();
     	stats = GetComponent<PlayerStats>();
+		sprite = GetComponent<SpriteRenderer>();
+		anim = GetComponent<CharacterAnimationController>();
 	}
 
 	void Start() {
@@ -128,10 +137,14 @@ public class PlayerController2D : MonoBehaviour
 				deltaPosition += new Vector2(-dashDistance, 0);
 			else if (velocity.x > 0)
 				deltaPosition += new Vector2(dashDistance, 0);
+			anim?.SetState(AnimState.Dash);
 		}
+
+		UpdateAnimStates();
 
 		Move(deltaPosition);
 		#endregion
+
 
 		// Shop
 		if (input.health && stats.getHealthUpgradeCost() <= currMoney) {
@@ -159,5 +172,37 @@ public class PlayerController2D : MonoBehaviour
 	// only call this once per frame
 	void Move(Vector2 deltaPosition) {
 		raycastCollider.Move(deltaPosition, timers.Active("platformFallThrough") && !timers.Expired("platformFallThrough"));
+	}
+
+	void UpdateAnimStates() {
+		if (input.axisInput.x != 0) {
+			faceDir = (int) Mathf.Sign(input.axisInput.x);
+
+			if (sprite != null)
+				sprite.flipX = faceDir == -1;
+		}
+
+		if (anim != null) {
+			AnimState state = anim.State;
+
+			if (state != AnimState.Dash && state != AnimState.Hit) {
+				if (!raycastCollider.collisionInfo.AnyBot && velocity.y < 0)
+				{
+					anim.SetState(AnimState.Fall);
+				}
+				else if (!raycastCollider.collisionInfo.AnyBot)
+				{
+					anim.SetState(AnimState.Jump);
+				}
+				else if (velocity.x != 0)
+				{
+					anim.SetState(AnimState.Run);
+				}
+				else
+				{
+					anim.SetState(AnimState.Idle);
+				}
+			}
+		}
 	}
 }
