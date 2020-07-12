@@ -2,14 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stats : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
-    public const int HEALTH = 0;
-    public const int DEFENSE = 1;
-    public const int DAMAGE = 2;
-    public const int DEFENSE_SCALE = 10;
+    private const int HEALTH = 0;
+    private const int DEFENSE = 1;
+    private const int DAMAGE = 2;
+    private const int DEFENSE_SCALE = 10;
 
-    int[] statCount = new int[3];
+    private int[] statCount = new int[3];
+
+    private const int PLAYER_HEALTH = 100;
+    private const int PLAYER_DEFENSE = 0;
+    private const int PLAYER_DAMAGE = 10;
+
+    void Awake() {
+         setHealth(PLAYER_HEALTH);
+         setDefense(PLAYER_DEFENSE);
+         setDamage(PLAYER_DAMAGE);
+    }
 
     public float getScaledDamage(float damage) {
         return damage * ((float) DEFENSE_SCALE / (DEFENSE_SCALE + statCount[DEFENSE]));
@@ -49,5 +59,9 @@ public class Stats : MonoBehaviour
 
     public int getDamage() {
         return statCount[DAMAGE];
+    }
+
+    void Update() {
+
     }
 }

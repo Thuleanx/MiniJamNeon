@@ -9,7 +9,7 @@ public class PlayerController2D : MonoBehaviour
 	RaycastCollider2D raycastCollider;
 	InputManager input;
 	Timers timers;
-  Stats stats;
+  PlayerStats stats;
 	#endregion
 
 	#region Rigid body
@@ -32,13 +32,6 @@ public class PlayerController2D : MonoBehaviour
 
 	#endregion
 
-  #region Game Constants
-  int INIT_HEALTH = 100;
-  int INIT_DEFENSE = 0;
-  int INIT_DAMAGE = 10;
-
-  #endregion
-
 	#region Imprecisions
 
 	[SerializeField] float inputBufferTimeSeconds;
@@ -50,10 +43,7 @@ public class PlayerController2D : MonoBehaviour
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
 		timers = GetComponent<Timers>();
-    stats = GetComponent<Stats>();
-    stats.setHealth(INIT_HEALTH);
-    stats.setDefense(INIT_DEFENSE);
-    stats.setDamage(INIT_DAMAGE);
+    stats = GetComponent<PlayerStats>();
 	}
 
 	void Start() {
