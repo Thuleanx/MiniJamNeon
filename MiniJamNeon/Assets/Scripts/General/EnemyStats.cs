@@ -11,10 +11,14 @@ public class EnemyStats : MonoBehaviour
     private const int DEFENSE_SCALE = 10;
 
     private int[] statCount;
+    private int currHealth;
 
     private const int ENEMY_HEALTH = 50;
+    private const int HEALTH_INCREMENT = 10;
     private const int ENEMY_DEFENSE = 0;
-    private const int ENEMY_DAMAGE = 10;
+    private const int DEFENSE_INCREMENT = 1;
+    private const int ENEMY_DAMAGE = 20;
+    private const int DAMAGE_INCREMENT = 10;
 
     private float enemyUpgrade = 50.0f;
     private int currUpgrade;
@@ -23,9 +27,7 @@ public class EnemyStats : MonoBehaviour
 
     void Awake() {
          statCount = new int[3];
-         setHealth(ENEMY_HEALTH);
-         setDefense(ENEMY_DEFENSE);
-         setDamage(ENEMY_DAMAGE);
+         currHealth = ENEMY_HEALTH;
          timers = GetComponent<Timers>();
     }
 
@@ -35,23 +37,32 @@ public class EnemyStats : MonoBehaviour
          timers.StartTimer("upgrade");
     }
 
-    public float getScaledDamage(float damage) {
-        return damage * ((float) DEFENSE_SCALE / (DEFENSE_SCALE + statCount[DEFENSE]));
+    public int getScaledDamage(int damage) {
+        return (int) (damage * ((float) DEFENSE_SCALE / (DEFENSE_SCALE + statCount[DEFENSE])));
     }
 
-    public void setHealth(int health) {
-        statCount[HEALTH] = health;
+    public void hit(int damage) {
+        currHealth -= getScaledDamage(damage);
     }
 
     public void incrementHealth() {
         statCount[HEALTH]++;
+        currHealth += HEALTH_INCREMENT;
     }
 
     public int getHealth() {
-        return statCount[HEALTH];
+        return currHealth;
     }
 
-    public void setDefense(int defense) {
+    public int getMaxHealth() {
+        return ENEMY_HEALTH + (statCount[HEALTH] * HEALTH_INCREMENT);
+    }
+
+    public void setHealthStat(int health) {
+        statCount[HEALTH] = health;
+    }
+
+    public void setDefenseStat(int defense) {
         statCount[DEFENSE] = defense;
     }
 
@@ -60,10 +71,10 @@ public class EnemyStats : MonoBehaviour
     }
 
     public int getDefense() {
-        return statCount[DEFENSE];
+        return ENEMY_DEFENSE + (statCount[DEFENSE] * DEFENSE_INCREMENT);
     }
 
-    public void setDamage(int damage) {
+    public void setDamageStat(int damage) {
         statCount[DAMAGE] = damage;
     }
 
@@ -72,7 +83,7 @@ public class EnemyStats : MonoBehaviour
     }
 
     public int getDamage() {
-        return statCount[DAMAGE];
+        return ENEMY_DAMAGE + (statCount[DAMAGE] * DAMAGE_INCREMENT);
     }
 
     void Update() {

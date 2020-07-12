@@ -28,8 +28,8 @@ TagManager:
   - 
   - 
   - 
-  - 
   - Enemy
+  - Projectile
   - HurbtoxHostile
   - HurtboxFriendly
   - HitboxHostile
@@ -50,4 +50,13 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1248850999
+    locked: 0
+  - name: Player
+    uniqueID: 1267280187
+    locked: 0
+  - name: Projectile
+    uniqueID: 1726163081
+    locked: 0
+  - name: Effects
+    uniqueID: 3828982893
     locked: 0
