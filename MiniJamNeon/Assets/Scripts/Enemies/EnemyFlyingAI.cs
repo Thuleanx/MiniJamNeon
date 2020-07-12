@@ -4,7 +4,7 @@ using Pathfinding;
 
 [RequireComponent (typeof(Rigidbody2D))]
 [RequireComponent(typeof(Seeker))]
-public class EnemyFlyingMelee : MonoBehaviour
+public class EnemyFlyingAI : MonoBehaviour
 {
     public Transform target;
 
@@ -12,7 +12,7 @@ public class EnemyFlyingMelee : MonoBehaviour
 
     private Seeker seeker;
     private Rigidbody2D rb;
-    private SpriteRenderer renderer;
+    private SpriteRenderer spriteRenderer;
 
     public Path path;
 
@@ -24,6 +24,13 @@ public class EnemyFlyingMelee : MonoBehaviour
 
     public float nextWaypointDistance = 3;
 
+    // number tiles away that ai can see you from
+    public float vision = 15f;
+    // number tiles away that ai can shoot from
+    public float range = 8f;
+
+    public GameObject bulletPrefab;
+
     // The waypoint we are currently moving towards
     private int currentWaypoint = 0;
 
@@ -31,7 +38,7 @@ public class EnemyFlyingMelee : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        renderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         if (target == null)
         {
             Debug.LogError("No player found? Panic");
@@ -75,16 +82,14 @@ public class EnemyFlyingMelee : MonoBehaviour
         {
             return;
         }
-
-        //TODO: Always look at player
         
         if (target.transform.position.x < transform.position.x)
         {
-            renderer.flipX = true;
+            spriteRenderer.flipX = true;
         }
         else
         {
-            renderer.flipX = false;
+            spriteRenderer.flipX = false;
         }
 
         if (path == null)
@@ -116,6 +121,14 @@ public class EnemyFlyingMelee : MonoBehaviour
         {
             currentWaypoint++;
             return;
+        }
+    }
+
+    private void shoot()
+    {
+        if (bulletPrefab == null)
+        {
+            Debug.LogError("Enemy has no bullet!");
         }
     }
 
