@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
+[RequireComponent(typeof(PlayerStats))]
 public class PlayerController2D : MonoBehaviour
 {
 	#region Components
 	RaycastCollider2D raycastCollider;
 	InputManager input;
 	Timers timers;
-  Stats stats;
+  PlayerStats stats;
 	#endregion
 
 	#region Rigid body
@@ -32,13 +33,6 @@ public class PlayerController2D : MonoBehaviour
 
 	#endregion
 
-  #region Game Constants
-  int INIT_HEALTH = 100;
-  int INIT_DEFENSE = 0;
-  int INIT_DAMAGE = 10;
-
-  #endregion
-
 	#region Imprecisions
 
 	[SerializeField] float inputBufferTimeSeconds;
@@ -46,18 +40,18 @@ public class PlayerController2D : MonoBehaviour
 	float platformFallThroughSeconds;
 	#endregion
 
+  int currMoney;
+
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
 		timers = GetComponent<Timers>();
-    stats = GetComponent<Stats>();
-    stats.setHealth(INIT_HEALTH);
-    stats.setDefense(INIT_DEFENSE);
-    stats.setDamage(INIT_DAMAGE);
+    stats = GetComponent<PlayerStats>();
 	}
 
 	void Start() {
 		CalculatePhysicsConstants();
+    currMoney = 0;
 
 		// Init all timers
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
@@ -118,5 +112,27 @@ public class PlayerController2D : MonoBehaviour
 		} else {
 			raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
 		}
+
+    // Shop
+    if(input.health && stats.getHealthUpgradeCost() <= currMoney) {
+        currMoney -= stats.getHealthUpgradeCost();
+        stats.incrementHealth();
+    } else if(input.health) {
+        // Not enough money
+    }
+
+    if(input.defense && stats.getDefenseUpgradeCost() <= currMoney) {
+        currMoney -= stats.getDefenseUpgradeCost();
+        stats.incrementDefense();
+    } else if(input.defense) {
+        // Not enough money
+    }
+
+    if(input.damage && stats.getDamageUpgradeCost() <= currMoney) {
+        currMoney -= stats.getDamageUpgradeCost();
+        stats.incrementDamage();
+    } else if(input.damage) {
+        // Not enough money
+    }
 	}	
 }
