@@ -10,26 +10,16 @@ public class Hurtbox : MonoBehaviour
 	public Collider2D Bounds {
 		get { return box; }
 	}
-	PlayerStats status;
-
-	[HideInInspector] public Vector2 knockBack;
-	[SerializeField] float hurtboxDecayRate = 1f;
+	PlayerStats statusP;
+    EnemyStats  statusE; 
 
 	void Awake() {
 		box = GetComponent<BoxCollider2D>();
-		status = GetComponentInParent<PlayerStats>();
+		statusP = GetComponentInParent<PlayerStats>();
+        statusE = GetComponentInParent<EnemyStats>();
 	}
 
 	public void RegisterHit(int damage) {
-	}
 
-	void Update() {
-		knockBack = new Vector2(
-			Mathf.Lerp(knockBack.x, 0, hurtboxDecayRate),
-			Mathf.Lerp(knockBack.y, 0, hurtboxDecayRate)
-		);
-
-		if (knockBack.sqrMagnitude < 0.001f)
-			knockBack = Vector2.zero;
 	}
 }
