@@ -4,11 +4,12 @@ using Pathfinding;
 
 [RequireComponent (typeof(Rigidbody2D))]
 [RequireComponent(typeof(Seeker))]
-public class EnemyFlyingAI : MonoBehaviour
+public class FlyingMovement : MonoBehaviour
 {
     public Transform target;
 
     public float updateRate = 2f;
+    
 
     private Seeker seeker;
     private Rigidbody2D rb;
@@ -26,10 +27,10 @@ public class EnemyFlyingAI : MonoBehaviour
 
     // number tiles away that ai can see you from
     public float vision = 15f;
-    // number tiles away that ai can shoot from
-    public float range = 8f;
+  
 
-    public GameObject bulletPrefab;
+    
+    public LayerMask whatToHit;
 
     // The waypoint we are currently moving towards
     private int currentWaypoint = 0;
@@ -47,28 +48,41 @@ public class EnemyFlyingAI : MonoBehaviour
 
         seeker.StartPath(transform.position, target.position, OnPathComplete);
 
-        StartCoroutine(UpdatePath());
+        InvokeRepeating("UpdatePath", 0, 1f / updateRate);
+
+        
         
     }
 
-    IEnumerator UpdatePath()
+    void UpdatePath()
     {
         if (target == null)
         {
             //TODO: Insert a player search here
             Debug.LogError("why this here");
-            yield break;
+            return;
         }
 
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        if (Vector2.Distance(target.transform.position, transform.position) > vision)
+        {
+            return;
+        }
 
-        yield return new WaitForSeconds(1f / updateRate);
-        StartCoroutine(UpdatePath());
+        //RaycastHit2D hit = Physics2D.Raycast(transform.position, target.position, range, whatToHit);
+        //Debug.DrawLine(transform.position, target.position);
+        //// if raycast hits player
+        //if (hit.collider != null)
+        //{
+        //    Debug.Log("I see you");
+        //    return;
+        //}
+
+        seeker.StartPath(transform.position, target.position, OnPathComplete);
     }
 
     public void OnPathComplete(Path p)
     {
-        Debug.Log("We got a path. Did it have an error " + p.error);
+        //Debug.Log("We got a path. Did it have an error " + p.error);
         if (!p.error)
         {
             path = p;
@@ -124,12 +138,8 @@ public class EnemyFlyingAI : MonoBehaviour
         }
     }
 
-    private void shoot()
-    {
-        if (bulletPrefab == null)
-        {
-            Debug.LogError("Enemy has no bullet!");
-        }
-    }
+    
+
+    
 
 }
