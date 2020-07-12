@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
+[RequireComponent(typeof(PlayerStats))]
 public class PlayerController2D : MonoBehaviour
 {
 	#region Components
@@ -39,6 +40,8 @@ public class PlayerController2D : MonoBehaviour
 	float platformFallThroughSeconds;
 	#endregion
 
+  int currMoney;
+
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
@@ -48,6 +51,7 @@ public class PlayerController2D : MonoBehaviour
 
 	void Start() {
 		CalculatePhysicsConstants();
+    currMoney = 0;
 
 		// Init all timers
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);
@@ -108,5 +112,27 @@ public class PlayerController2D : MonoBehaviour
 		} else {
 			raycastCollider.Move(velocity * Time.deltaTime, timers.Active("platformFallThrough") && !timers.Expire("platformFallThrough"));
 		}
+
+    // Shop
+    if(input.health && stats.getHealthUpgradeCost() <= currMoney) {
+        currMoney -= stats.getHealthUpgradeCost();
+        stats.incrementHealth();
+    } else if(input.health) {
+        // Not enough money
+    }
+
+    if(input.defense && stats.getDefenseUpgradeCost() <= currMoney) {
+        currMoney -= stats.getDefenseUpgradeCost();
+        stats.incrementDefense();
+    } else if(input.defense) {
+        // Not enough money
+    }
+
+    if(input.damage && stats.getDamageUpgradeCost() <= currMoney) {
+        currMoney -= stats.getDamageUpgradeCost();
+        stats.incrementDamage();
+    } else if(input.damage) {
+        // Not enough money
+    }
 	}	
 }

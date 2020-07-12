@@ -10,7 +10,7 @@ public class EnemyStats : MonoBehaviour
     private const int DAMAGE = 2;
     private const int DEFENSE_SCALE = 10;
 
-    private int[] statCount = new int[3];
+    private int[] statCount;
 
     private const int ENEMY_HEALTH = 50;
     private const int ENEMY_DEFENSE = 0;
@@ -22,6 +22,7 @@ public class EnemyStats : MonoBehaviour
     Timers timers;
 
     void Awake() {
+         statCount = new int[3];
          setHealth(ENEMY_HEALTH);
          setDefense(ENEMY_DEFENSE);
          setDamage(ENEMY_DAMAGE);
