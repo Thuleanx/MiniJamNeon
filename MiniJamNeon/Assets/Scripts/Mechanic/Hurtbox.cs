@@ -16,10 +16,22 @@ public class Hurtbox : MonoBehaviour
 	void Awake() {
 		box = GetComponent<BoxCollider2D>();
 		statusP = GetComponentInParent<PlayerStats>();
-        statusE = GetComponentInParent<EnemyStats>();
+    statusE = GetComponentInParent<EnemyStats>();
 	}
 
 	public void RegisterHit(int damage) {
-
+     if(statusP != null) {
+        statusP.hit(damage);
+        if(statusP.getHealth() <= 0) {
+          // Kill ??
+        }
+     } else if(statusE != null) {
+       statusE.hit(damage);
+       if(statusE.getHealth() <= 0) {
+          // Kill ?? 
+       }
+     } else {
+       // Something is wrong
+     }
 	}
 }

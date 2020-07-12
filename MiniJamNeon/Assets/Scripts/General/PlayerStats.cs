@@ -8,44 +8,56 @@ public class PlayerStats : MonoBehaviour
     private const int DEFENSE = 1;
     private const int DAMAGE = 2;
     private const int DEFENSE_SCALE = 10;
+
     private int[] statCount;
+    private int currHealth;
 
     private const int PLAYER_HEALTH = 100;
+    private const int HEALTH_INCREMENT = 20;
     private const int PLAYER_DEFENSE = 0;
+    private const int DEFENSE_INCREMENT = 1;
     private const int PLAYER_DAMAGE = 10;
-
+    private const int DAMAGE_INCREMENT = 5;
+    
     void Awake() {
          statCount = new int[3];
-         setHealth(PLAYER_HEALTH);
-         setDefense(PLAYER_DEFENSE);
-         setDamage(PLAYER_DAMAGE);
+         currHealth = PLAYER_HEALTH;
     }
 
     private int getStatUpgradeCost(int index) {
         return 100 * (1 + statCount[index]);
     }
 
-    public float getScaledDamage(float damage) {
-        return damage * ((float) DEFENSE_SCALE / (DEFENSE_SCALE + statCount[DEFENSE]));
+    public int getScaledDamage(int damage) {
+        return (int) (damage * ((float) DEFENSE_SCALE / (DEFENSE_SCALE + statCount[DEFENSE])));
     }
 
-    public void setHealth(int health) {
-        statCount[HEALTH] = health;
+    public void hit(int damage) {
+         currHealth -= getScaledDamage(damage);        
     }
 
     public void incrementHealth() {
         statCount[HEALTH]++;
+        currHealth += HEALTH_INCREMENT;
     }
 
     public int getHealth() {
-        return statCount[HEALTH];
+        return currHealth;
+    }
+
+    public int getMaxHealth() {
+        return PLAYER_HEALTH + (statCount[HEALTH] * HEALTH_INCREMENT);
     }
 
     public int getHealthUpgradeCost() {
         return getStatUpgradeCost(HEALTH);
     }
 
-    public void setDefense(int defense) {
+    public void setHealthStat(int health) {
+        statCount[HEALTH] = health;
+    }
+
+    public void setDefenseStat(int defense) {
         statCount[DEFENSE] = defense;
     }
 
@@ -54,23 +66,23 @@ public class PlayerStats : MonoBehaviour
     }
 
     public int getDefense() {
-        return statCount[DEFENSE];
+        return PLAYER_DEFENSE + (statCount[DEFENSE] * DEFENSE_INCREMENT);
     }
 
     public int getDefenseUpgradeCost() {
         return getStatUpgradeCost(DEFENSE);
     }
 
-    public void setDamage(int damage) {
-        statCount[DAMAGE] = damage;
-    }
-
     public void incrementDamage() {
        statCount[DAMAGE]++; 
     }
 
+    public void setDamageStat(int damage) {
+       statCount[DAMAGE] = damage;
+    }
+
     public int getDamage() {
-        return statCount[DAMAGE];
+        return PLAYER_DAMAGE + (statCount[DAMAGE] * DAMAGE_INCREMENT);
     }
 
     public int getDamageUpgradeCost() {
