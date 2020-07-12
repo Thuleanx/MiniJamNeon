@@ -6,7 +6,7 @@ using Pathfinding;
 [RequireComponent(typeof(Seeker))]
 public class FlyingMovement : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
 
     public float updateRate = 2f;
     
@@ -37,6 +37,7 @@ public class FlyingMovement : MonoBehaviour
 
     void Start()
     {
+        target = GameObject.FindWithTag("Player").transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
