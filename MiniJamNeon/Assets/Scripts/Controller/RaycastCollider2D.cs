@@ -105,8 +105,9 @@ public class RaycastCollider2D : MonoBehaviour
 		platformCollisionInfo.Reset();
 
 		Raycast(ref velocity, platformFallThrough);		
-		if (!Mathf.Approximately(velocity.sqrMagnitude, 0))
-			transform.Translate(velocity);
+		// this line is only for ease of writing camera code
+		// if (!Mathf.Approximately(velocity.sqrMagnitude, 0))
+		transform.Translate(velocity);
 	}
 
 	void Raycast(ref Vector2 velocity, bool platformFallThrough) {
