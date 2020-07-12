@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
+[RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers), typeof(Stats)]
 public class PlayerController2D : MonoBehaviour
 {
 	#region Components
 	RaycastCollider2D raycastCollider;
 	InputManager input;
 	Timers timers;
+  Stats stats;
 	#endregion
 
 	#region Rigid body
@@ -31,6 +32,12 @@ public class PlayerController2D : MonoBehaviour
 
 	#endregion
 
+  #region Game Constants
+  public int INITIAL_HEALTH = 100;
+  public int INITIAL_DEFENSE = 0;
+  public int INITIAL_DAMAGE = 10;
+  #endregion
+
 	#region Imprecisions
 
 	[SerializeField] float inputBufferTimeSeconds;
@@ -42,6 +49,10 @@ public class PlayerController2D : MonoBehaviour
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
 		timers = GetComponent<Timers>();
+    stats = GetComponent<Stats>();
+    stats.setHealth(INITIAL_HEALTH);
+    stats.setDefense(INITIAL_DEFENSE);
+    stats.setDamage(INITIAL_DAMAGE);
 	}
 
 	void Start() {
