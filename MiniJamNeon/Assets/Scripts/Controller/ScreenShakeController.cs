@@ -20,9 +20,9 @@ public class ScreenShakeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K)) {
-            StartShake(0.5f, 0.2f);
-        }
+        // if(Input.GetKeyDown(KeyCode.K)) {
+        //     StartShake(0.5f, 0.2f);
+        // }
     }
 
     private void LateUpdate()

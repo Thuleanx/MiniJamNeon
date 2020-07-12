@@ -7,6 +7,7 @@ public class ExplodeOnHit : MonoBehaviour
 {
 	Animator anim;
 	MoveHorizontal mover;
+	ScreenShakeController shakeController;
 
 	void Awake() {
 		anim = GetComponent<Animator>();
@@ -20,6 +21,7 @@ public class ExplodeOnHit : MonoBehaviour
 	public void Explode() {
 		anim.SetInteger("State", 1);
 		mover?.Stop();
+
 	}
 
     private void OnTriggerEnter2D(Collider2D collision) {
