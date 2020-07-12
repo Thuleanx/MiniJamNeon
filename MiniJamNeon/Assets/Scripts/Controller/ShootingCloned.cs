@@ -7,6 +7,10 @@ public class ShootingCloned : MonoBehaviour
 {
 	internal float curCooldown = 0;
 
+	#region Components
+	GunAnimationController anim;
+	#endregion
+
 	#region Bullet Info
 
 	[SerializeField] float fireRatePerSecond;
@@ -14,8 +18,12 @@ public class ShootingCloned : MonoBehaviour
 
 	[SerializeField] GameObject source;
 	[SerializeField] string bulletTag;
+
 	#endregion
 
+	void Awake() {
+		anim = GetComponentInChildren<GunAnimationController>();
+	}
 
 	// Start is called before the first frame update
 	void Start()
@@ -46,6 +54,8 @@ public class ShootingCloned : MonoBehaviour
 				SpriteRenderer renderer = obj.GetComponent<SpriteRenderer>();
 				if (renderer != null)
 					renderer.flipY = targetRotation.x < 0;
+
+				anim?.SetState(GunStates.Shoot);	
 			}
 		}
 	}
