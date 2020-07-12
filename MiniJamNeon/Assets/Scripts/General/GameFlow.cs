@@ -33,10 +33,7 @@ public class GameFlow : MonoBehaviour
 	{
         // game start logic
 
-        // This is to ignore collisions between enemy-enemy, and enemy-player
-        // Up for discussion on how this is to interact with hitbox and hurtbox
-        Physics2D.IgnoreLayerCollision(23, 23, true);
-        Physics2D.IgnoreLayerCollision(23, 31, true);
+        
         
 	}
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2783350029418561087}
   - component: {fileID: 2783350029418561086}
   - component: {fileID: 2783350029418561085}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 2783350029623328231}
   - component: {fileID: 2783350029623328216}
   - component: {fileID: 2783350029623328217}
-  m_Layer: 23
+  m_Layer: 22
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}

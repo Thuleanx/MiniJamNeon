@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9141490956479609809}
   - component: {fileID: 9141490956479609808}
   - component: {fileID: 9141490956479609811}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 9141490956812171273}
   - component: {fileID: 9141490956812171318}
   - component: {fileID: 9141490956812171319}
-  m_Layer: 23
+  m_Layer: 22
   m_Name: RobotDog
   m_TagString: Untagged
   m_Icon: {fileID: 0}

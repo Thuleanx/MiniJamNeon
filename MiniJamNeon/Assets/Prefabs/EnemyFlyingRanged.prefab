@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5708042828783613557}
   - component: {fileID: 5708042828783613558}
   - component: {fileID: 5708042828783613566}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: EnemyFlyingRanged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,3 +227,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7667353194472809882, guid: 9617bf21a70f740c59a522c000341f32,
     type: 3}
   bulletSpeed: 12
+  whatToHit:
+    serializedVersion: 2
+    m_Bits: 0

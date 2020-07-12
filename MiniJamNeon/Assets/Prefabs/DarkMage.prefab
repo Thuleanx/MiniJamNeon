@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1082606749}
   - component: {fileID: 1082606751}
   - component: {fileID: 1082606750}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 8785930395610025505}
   - component: {fileID: 472191856}
   - component: {fileID: 472191855}
-  m_Layer: 23
+  m_Layer: 22
   m_Name: DarkMage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,6 +238,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7667353194472809882, guid: 9617bf21a70f740c59a522c000341f32,
     type: 3}
   bulletSpeed: 12
+  whatToHit:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!95 &472191856
 Animator:
   serializedVersion: 3
@@ -274,5 +277,5 @@ MonoBehaviour:
   minPatrolDuration: 3
   maxPatrolDuration: 7
   movementSpeed: 1
-  willCharge: 0
+  isRanged: 0
   Target: {fileID: 0}
