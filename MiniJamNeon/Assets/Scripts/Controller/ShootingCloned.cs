@@ -18,6 +18,7 @@ public class ShootingCloned : MonoBehaviour
 
 	[SerializeField] GameObject source;
 	[SerializeField] string bulletTag;
+	[SerializeField] string flairTag;
 
 	#endregion
 
@@ -54,6 +55,15 @@ public class ShootingCloned : MonoBehaviour
 				SpriteRenderer renderer = obj.GetComponent<SpriteRenderer>();
 				if (renderer != null)
 					renderer.flipY = targetRotation.x < 0;
+
+				if (flairTag.Length > 0) {
+					GameObject flair = ObjectPoolA.Instance.Instantiate(
+						flairTag,
+						source.transform.position,
+						Quaternion.Euler(0f, 0f, Mathf.Rad2Deg * Mathf.Atan2(targetRotation.y, targetRotation.x))
+					);
+					flair.transform.parent = source.transform;
+				}
 
 				anim?.SetState(GunStates.Shoot);	
 			}

@@ -189,6 +189,10 @@ MonoBehaviour:
     prefab: {fileID: 3183993588405476701, guid: cc3ed4ed2b4854272918b49090c53e6f,
       type: 3}
     defaultCount: 10
+  - tag: GunFlair
+    prefab: {fileID: 4605968573323343696, guid: 05fb6a6a9600b4101b5a48742cf47a60,
+      type: 3}
+    defaultCount: 10
 --- !u!1 &177477835
 GameObject:
   m_ObjectHideFlags: 0
@@ -53006,6 +53010,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 559416931025188785, guid: 4d785a03a16a24d77aafe3b398d1d9c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49
+      objectReference: {fileID: 0}
     - target: {fileID: 559416931631030866, guid: 4d785a03a16a24d77aafe3b398d1d9c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -53065,6 +53074,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 4177031113641905120, guid: 4d785a03a16a24d77aafe3b398d1d9c7,
+        type: 3}
+      propertyPath: flairTag
+      value: GunFlair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d785a03a16a24d77aafe3b398d1d9c7, type: 3}
