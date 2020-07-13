@@ -6,6 +6,7 @@ using UnityEngine;
 public class Hitbox : MonoBehaviour
 {
 	BoxCollider2D box;	
+	CharacterAnimationController anim;
 
 	[SerializeField] LayerMask hurtboxMask;
 
@@ -16,9 +17,10 @@ public class Hitbox : MonoBehaviour
 		box = GetComponent<BoxCollider2D>();
 	}
 
-  void setDamage(int d) {
-    damage = d;
-  }
+	public void setDamage(int d)
+	{
+		damage = d;
+	}
 
 	public List<Hurtbox> GetOverlappingHurtbox() {
 		List<Hurtbox> results = new List<Hurtbox>();		
@@ -35,16 +37,18 @@ public class Hitbox : MonoBehaviour
 			results.Add(receiver[i].GetComponent<Hurtbox>());
 		}
 
-    
+	
 		return results;
 	}
 
   void Update() {
-      List<Hurtbox> hurtboxes = GetOverlappingHurtbox();
-      if(hurtboxes.Count > 0) {
-         for(int i = 0; i < hurtboxes.Count; i++) {
-             hurtboxes[i].RegisterHit(damage);
-         }
-      }
+	  List<Hurtbox> hurtboxes = GetOverlappingHurtbox();
+	  if(hurtboxes.Count > 0) {
+		 
+		 for(int i = 0; i < hurtboxes.Count; i++) {
+			 hurtboxes[i].RegisterHit(damage);
+		 }
+		 GetComponentInParent<ExplodeOnHit>()?.Explode();
+	  }
   }
 }

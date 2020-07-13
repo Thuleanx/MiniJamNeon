@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 5708042828783613566}
   - component: {fileID: 8067853237513611880}
   - component: {fileID: 3339309251172499688}
+  - component: {fileID: 7754941454916049199}
+  - component: {fileID: 6133269113283456275}
   m_Layer: 19
   m_Name: EnemyFlyingRanged
   m_TagString: Untagged
@@ -211,9 +213,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootRate: 1
   range: 8
-  bulletPrefab: {fileID: 7667353194472809882, guid: 9617bf21a70f740c59a522c000341f32,
-    type: 3}
   bulletSpeed: 12
+  bulletTag: GreenBullet
   whatToHit:
     serializedVersion: 2
     m_Bits: 0
@@ -247,6 +248,44 @@ MonoBehaviour:
   defenseIncrement: 1
   enemyDamage: 20
   damageIncrement: 10
+--- !u!61 &7754941454916049199
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708042828783613559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &6133269113283456275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708042828783613559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9c54754fa99448bac4e464f10b2f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1263702847374982571
 PrefabInstance:
   m_ObjectHideFlags: 0

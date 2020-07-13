@@ -48,7 +48,6 @@ public class WalkingEnemy : MonoBehaviour
         if (Random.Range(0f,1f) > .5)
         {
             ChangeDirection();
-            Debug.Log("ayyy flipped");
         }
     }
 
@@ -97,7 +96,7 @@ public class WalkingEnemy : MonoBehaviour
     public void ChangeDirection()
     {
         facingRight = !facingRight;
-        Debug.Log("facingRight: " + facingRight);
+        //Debug.Log("facingRight: " + facingRight);
         transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
         //spriteRenderer.flipX = !facingRight;
     }
