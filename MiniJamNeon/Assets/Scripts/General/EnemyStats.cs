@@ -21,7 +21,7 @@ public class EnemyStats : MonoBehaviour
     [SerializeField] int enemyDamage = 20;
     [SerializeField] int damageIncrement = 10;
 
-    private float enemyUpgrade = 50.0f;
+    private float enemyUpgrade = 20.0f;
 
 
     void Awake() {
@@ -35,6 +35,7 @@ public class EnemyStats : MonoBehaviour
 
     public void hit(int damage) {
         currHealth -= getScaledDamage(damage);
+        AudioManager.Instance?.Play("enemyhit");
     }
 
     public void incrementHealth() {

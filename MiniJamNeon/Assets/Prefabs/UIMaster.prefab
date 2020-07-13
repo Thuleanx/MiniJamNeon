@@ -145,3 +145,39 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: lvl
+    clip: {fileID: 8300000, guid: a8b77978b2c5240f887b00628b541804, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: lose
+    clip: {fileID: 8300000, guid: a8510b02aa4674b1d88f9a08c818b14c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: victory
+    clip: {fileID: 8300000, guid: 7523b1c3ac7d144688d503e3a1f083cb, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: enemyhit
+    clip: {fileID: 8300000, guid: 82faf4a1c9e024cceb0652b984352481, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: currency
+    clip: {fileID: 8300000, guid: 8671987fe100645e7b8cd80727a88866, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: currency
+    clip: {fileID: 8300000, guid: 8671987fe100645e7b8cd80727a88866, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
