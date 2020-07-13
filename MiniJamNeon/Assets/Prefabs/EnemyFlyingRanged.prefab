@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5708042828783613557}
   - component: {fileID: 5708042828783613558}
   - component: {fileID: 5708042828783613566}
-  m_Layer: 22
+  m_Layer: 19
   m_Name: EnemyFlyingRanged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbad394711cf1473291737fbda233e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   updateRate: 1
   speed: 600
   fMode: 0
@@ -221,7 +220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c8a9388c98a4c9d91055ad4268d815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   shootRate: 1
   range: 8
   bulletPrefab: {fileID: 7667353194472809882, guid: 9617bf21a70f740c59a522c000341f32,
