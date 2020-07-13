@@ -71515,6 +71515,11 @@ PrefabInstance:
       propertyPath: objective
       value: 
       objectReference: {fileID: 1502749405}
+    - target: {fileID: 559416931631030876, guid: 4d785a03a16a24d77aafe3b398d1d9c7,
+        type: 3}
+      propertyPath: wallJumpCooldownSeconds
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 559416931631030877, guid: 4d785a03a16a24d77aafe3b398d1d9c7,
         type: 3}
       propertyPath: m_Name

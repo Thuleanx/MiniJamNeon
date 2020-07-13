@@ -47,6 +47,7 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] float inputBufferTimeSeconds;
 	[SerializeField] float coyoteTimeSeconds;
 	[SerializeField] float dashCooldownSeconds;
+	[SerializeField] float wallJumpCooldownSeconds;
 	float platformFallThroughSeconds;
 	#endregion
 
@@ -54,7 +55,7 @@ public class PlayerController2D : MonoBehaviour
 
 	// face direction to animate the sprite
 	int faceDir;
-	Time lastTimeTouchWall;
+	float lastTimeTouchWall;
 
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
@@ -63,6 +64,7 @@ public class PlayerController2D : MonoBehaviour
     	stats = GetComponent<PlayerStats>();
 		sprite = GetComponent<SpriteRenderer>();
 		anim = GetComponent<CharacterAnimationController>();
+		lastTimeTouchWall = -1;
 	}
 
 	void Start() {
@@ -91,6 +93,9 @@ public class PlayerController2D : MonoBehaviour
 			Debug.Log("win!");
 			SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
 		}
+
+		if (TouchingWall())
+			lastTimeTouchWall = Time.time;
 
 		input.RegisterInput();
 
@@ -143,16 +148,12 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 		// wall jump
-		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
-			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
-			input.jumpDown) {
+		if (Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
 			velocity.y = jumpVelocityMax;
 		}
 
 		// wall slide: touching a wall while in the air, also didn't change direction or jump
-		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
-			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
-			oldVelocityX * velocity.x >= 0 && !input.jumpDown) {
+		if (TouchingWall() && oldVelocityX * velocity.x >= 0 && !input.jumpDown) {
 			velocity.x = oldVelocityX;
 			velocity.y = -wallSlideSpeed;
 			Move(velocity * Time.deltaTime);
@@ -225,6 +226,12 @@ public class PlayerController2D : MonoBehaviour
 				}
 			}
 		}
+	}
+
+	// specifically, touching the wall while in the air
+	bool TouchingWall() {
+		return (raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
+			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot;
 	}
 
 	bool Win() {
