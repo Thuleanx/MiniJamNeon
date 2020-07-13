@@ -9,6 +9,7 @@ public class ShootingCloned : MonoBehaviour
 
 	#region Components
 	GunAnimationController anim;
+	PlayerStats stat;
 	#endregion
 
 	#region Bullet Info
@@ -24,6 +25,7 @@ public class ShootingCloned : MonoBehaviour
 
 	void Awake() {
 		anim = GetComponentInChildren<GunAnimationController>();
+		stat = GetComponentInParent<PlayerStats>();
 	}
 
 	// Start is called before the first frame update
@@ -51,6 +53,10 @@ public class ShootingCloned : MonoBehaviour
 					source.transform.position,
 					Quaternion.Euler(0f, 0f, Mathf.Rad2Deg * Mathf.Atan2(targetRotation.y, targetRotation.x))
 				);
+
+				Hitbox box = obj.GetComponentInChildren<Hitbox>();
+				if (stat != null)
+					box?.setDamage(stat.getDamage());
 
 				SpriteRenderer renderer = obj.GetComponent<SpriteRenderer>();
 				if (renderer != null)

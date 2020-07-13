@@ -98,8 +98,12 @@ public class PlayerController2D : MonoBehaviour
 		if (raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
 			timers.StartTimer("coyoteBuffer");
 
+
 		velocity.x = input.axisInput.x * moveSpeed;
 		velocity.y -= gravity * Time.deltaTime;
+
+		if (raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot || raycastCollider.collisionInfo.AnyTop)
+			velocity.y = 0;
 
 		// Jump
 		// Potential bug with releasing the jump button possibly cancelling upward momentum. Fix not needed rn
@@ -160,27 +164,27 @@ public class PlayerController2D : MonoBehaviour
 		Move(deltaPosition);
 		#endregion
 
-		// Shop
-		if (input.health && stats.getHealthUpgradeCost() <= currMoney) {
-			currMoney -= stats.getHealthUpgradeCost();
-			stats.incrementHealth();
-		} else if (input.health) {
-			// Not enough money
-		}
+		// // Shop
+		// if (input.health && stats.getHealthUpgradeCost() <= currMoney) {
+		// 	currMoney -= stats.getHealthUpgradeCost();
+		// 	stats.incrementHealth();
+		// } else if (input.health) {
+		// 	// Not enough money
+		// }
 
-		if (input.defense && stats.getDefenseUpgradeCost() <= currMoney) {
-			currMoney -= stats.getDefenseUpgradeCost();
-			stats.incrementDefense();
-		} else if (input.defense) {
-			// Not enough money
-		}
+		// if (input.defense && stats.getDefenseUpgradeCost() <= currMoney) {
+		// 	currMoney -= stats.getDefenseUpgradeCost();
+		// 	stats.incrementDefense();
+		// } else if (input.defense) {
+		// 	// Not enough money
+		// }
 
-		if (input.damage && stats.getDamageUpgradeCost() <= currMoney) {
-			currMoney -= stats.getDamageUpgradeCost();
-			stats.incrementDamage();
-		} else if (input.damage) {
-			// Not enough money
-		}
+		// if (input.damage && stats.getDamageUpgradeCost() <= currMoney) {
+		// 	currMoney -= stats.getDamageUpgradeCost();
+		// 	stats.incrementDamage();
+		// } else if (input.damage) {
+		// 	// Not enough money
+		// }
 	}
 
 	// only call this once per frame
