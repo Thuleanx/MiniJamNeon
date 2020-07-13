@@ -28,7 +28,7 @@ public class Hurtbox : MonoBehaviour
      if(statusP != null) {
         statusP.hit(damage);
         anim?.SetState(AnimState.Hit); 
-
+          AudioManager.Instance.Play("playerhit");
         if(statusP.getHealth() <= 0) {
             // Game Over, Player has died
             AudioManager.Instance.Play("lose");

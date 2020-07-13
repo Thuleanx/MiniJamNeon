@@ -107,6 +107,7 @@ public class RangedAttack : MonoBehaviour
 
 		Hitbox hitbox = GetComponentInChildren<Hitbox>();		
 		hitbox?.setDamage(stat.getDamage());
+		print(stat.getDamage());
 		AudioManager.Instance?.Play("Lazer");
 
 		// GameObject bulletObj = Instantiate(bulletPrefab, new Vector3(transform.position.x, transform.position.y, 0.1f), Quaternion.identity);
