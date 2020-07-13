@@ -35,6 +35,7 @@ public class Hurtbox : MonoBehaviour
        statusE.hit(damage);
        if(statusE.getHealth() <= 0) {
            Destroy(this.transform.parent.gameObject);
+           CurrencyController.Instance.GainCurrency(200);
        }
      } else {
        // Something is wrong
