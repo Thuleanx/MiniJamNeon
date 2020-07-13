@@ -38,7 +38,7 @@ public class PlayerStats : MonoBehaviour
 
 	public void incrementHealth() {
 		statCount[HEALTH]++;
-		currHealth += HEALTH_INCREMENT;
+		currHealth = getMaxHealth();
 	}
 
 	public int getHealth() {
