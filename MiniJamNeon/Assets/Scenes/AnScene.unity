@@ -71438,6 +71438,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3563971212484056916, guid: 84e78a953ed7145afab040ee45cee0af,
+        type: 3}
+      propertyPath: pools.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563971212484056916, guid: 84e78a953ed7145afab040ee45cee0af,
+        type: 3}
+      propertyPath: pools.Array.data[2].tag
+      value: GreenBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563971212484056916, guid: 84e78a953ed7145afab040ee45cee0af,
+        type: 3}
+      propertyPath: pools.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 2306502278302406091, guid: ac1729f56f3b1478fa11c47b8be952cb,
+        type: 3}
+    - target: {fileID: 3563971212484056916, guid: 84e78a953ed7145afab040ee45cee0af,
+        type: 3}
+      propertyPath: pools.Array.data[2].defaultCount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3563971212484056917, guid: 84e78a953ed7145afab040ee45cee0af,
         type: 3}
       propertyPath: m_LocalPosition.x

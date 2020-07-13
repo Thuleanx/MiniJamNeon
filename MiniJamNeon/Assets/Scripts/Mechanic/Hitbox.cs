@@ -16,9 +16,10 @@ public class Hitbox : MonoBehaviour
 		box = GetComponent<BoxCollider2D>();
 	}
 
-  void setDamage(int d) {
-    damage = d;
-  }
+	public void setDamage(int d)
+	{
+		damage = d;
+	}
 
 	public List<Hurtbox> GetOverlappingHurtbox() {
 		List<Hurtbox> results = new List<Hurtbox>();		
@@ -45,6 +46,7 @@ public class Hitbox : MonoBehaviour
          for(int i = 0; i < hurtboxes.Count; i++) {
              hurtboxes[i].RegisterHit(damage);
          }
+		 GetComponentInParent<ExplodeOnHit>()?.Explode();
       }
   }
 }
