@@ -86,9 +86,10 @@ public class PlayerController2D : MonoBehaviour
 		#region Movement
 
 		float oldVelocityX = velocity.x;
+
+		print(raycastCollider.collisionInfo.AnyBot);
 		
-		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
-			velocity.y = 0;
+
 
 		if (raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
 			timers.StartTimer("coyoteBuffer");
@@ -96,15 +97,24 @@ public class PlayerController2D : MonoBehaviour
 		velocity.x = input.axisInput.x * moveSpeed;
 		velocity.y -= gravity * Time.deltaTime;
 
-		// wall slide: touching a wall while in the air, also didn't change direction
-		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
-			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
-			oldVelocityX * velocity.x >= 0) {
-			velocity.x = oldVelocityX;
-			velocity.y = -wallSlideSpeed;
-			Move(velocity * Time.deltaTime);
-			return;
+		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot) {
+			velocity.y = 0;
 		}
+
+
+		// wall slide: touching a wall while in the air, also didn't change direction
+
+		if (((raycastCollider.collisionInfo.AnyLeft && faceDir < 0) || (raycastCollider.collisionInfo.AnyRight && faceDir > 0)) && (!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot)) 
+			velocity.y = Mathf.Clamp(velocity.y, -wallSlideSpeed, Mathf.Infinity);
+	
+		// if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
+		// 	!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
+		// 	oldVelocityX * velocity.x >= 0) {
+		// 	velocity.x = oldVelocityX;
+		// 	velocity.y = -wallSlideSpeed;
+		// 	Move(velocity * Time.deltaTime);
+		// 	return;
+		// }
 
 		// Jump
 		// Potential bug with releasing the jump button possibly cancelling upward momentum. Fix not needed rn

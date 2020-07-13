@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 559416930766643277}
   - component: {fileID: 559416930766643274}
   - component: {fileID: 1061408998}
+  - component: {fileID: 1061408995}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -218,6 +219,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1061408995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559416930766643275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4988a2a4e9b905d01a0947663f4e1f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559416931631030877
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +251,7 @@ GameObject:
   - component: {fileID: 559416931631030871}
   - component: {fileID: 559416931631030870}
   - component: {fileID: 559416931631031209}
+  - component: {fileID: 1943556853}
   m_Layer: 31
   m_Name: Gunny
   m_TagString: Player
@@ -494,6 +508,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lefthand: {fileID: 559416932067157941}
   righthand: {fileID: 559416932048389803}
+--- !u!114 &1943556853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559416931631030877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abacbd2f408363777a09766c1bbe08c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559416932048389803
 GameObject:
   m_ObjectHideFlags: 0

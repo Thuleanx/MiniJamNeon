@@ -40,7 +40,9 @@ public class CurrencyController : MonoBehaviour
 		else
 			amountRequired = stat.getHealthUpgradeCost();
 
+
 		if (currency >= amountRequired) {
+			print("HELLOOOOO");
 			currency -= amountRequired;
 			if (option == "Damage")
 				stat.incrementDamage();
