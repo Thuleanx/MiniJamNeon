@@ -10,6 +10,7 @@ public class Hurtbox : MonoBehaviour
 	public Collider2D Bounds {
 		get { return box; }
 	}
+  CharacterAnimationController anim;
 
 	PlayerStats statusP;
   EnemyStats statusE; 
@@ -18,11 +19,15 @@ public class Hurtbox : MonoBehaviour
 		box = GetComponent<BoxCollider2D>();
 		statusP = GetComponentInParent<PlayerStats>();
     statusE = GetComponentInParent<EnemyStats>();
+    anim = GetComponentInParent<CharacterAnimationController>();
 	}
 
 	public void RegisterHit(int damage) {
+    if (canBeHit()) {
      if(statusP != null) {
         statusP.hit(damage);
+        anim?.SetState(AnimState.Hit); 
+
         if(statusP.getHealth() <= 0) {
             // Game Over, Player has died
         }
@@ -35,5 +40,9 @@ public class Hurtbox : MonoBehaviour
        // Something is wrong
        print("oof");
      }
+    }
 	}
+  public bool canBeHit() {
+    return anim != null && anim.State != AnimState.Hit; 
+  }
 }

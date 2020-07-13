@@ -136,7 +136,7 @@ public class RaycastCollider2D : MonoBehaviour
 				{
 
 					Vector2 rayStart = dim == 0 ? rayCastOrigins.corners[dir == -1 ? 0 : 1, 0] : rayCastOrigins.corners[0, dir == -1 ? 0 : 1];
-					rayStart += dirVPerp * (spacing * ray + velocity[dim ^ 1]);
+					rayStart += dirVPerp * (spacing * ray + (dim == 1 ? velocity[dim ^ 1] : 0));
 
 					RaycastHit2D hit = Physics2D.Raycast(rayStart, dirV * dir, rayLength, collisionMask);
 
