@@ -47,7 +47,7 @@ public class FlyingMovement : MonoBehaviour
             return;
         }
 
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        //seeker.StartPath(transform.position, target.position, OnPathComplete);
 
         InvokeRepeating("UpdatePath", 0, 1f / updateRate);
 
@@ -63,7 +63,7 @@ public class FlyingMovement : MonoBehaviour
             Debug.LogError("why this here");
             return;
         }
-
+        //Debug.Log(Vector2.Distance(target.transform.position, transform.position));
         if (Vector2.Distance(target.transform.position, transform.position) > vision)
         {
             return;
