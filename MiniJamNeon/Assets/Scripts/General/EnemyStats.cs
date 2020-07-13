@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(TimeController))]
 public class EnemyStats : MonoBehaviour
@@ -21,16 +22,11 @@ public class EnemyStats : MonoBehaviour
     [SerializeField] int damageIncrement = 10;
 
     private float enemyUpgrade = 50.0f;
-    private int currUpgrade;
 
 
     void Awake() {
          statCount = new int[3];
          currHealth = enemyHealth;
-    }
-
-    void Start() {
-         currUpgrade = 0;
     }
 
     public int getScaledDamage(int damage) {
@@ -84,7 +80,7 @@ public class EnemyStats : MonoBehaviour
 
     void Update() {
        for(int i = 0; i < 3; i++) {
-           statCount[i] = (int) ((TimeController.clock.timeElapsedSeconds - i * enemyUpgrade) / enemyUpgrade);
+           statCount[i] = Math.Max(0, (int) ((TimeController.clock.timeElapsedSeconds - i * enemyUpgrade) / (3 * enemyUpgrade)));
        }
     }
 }
