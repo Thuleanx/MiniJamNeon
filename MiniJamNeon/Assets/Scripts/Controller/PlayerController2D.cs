@@ -23,6 +23,7 @@ public class PlayerController2D : MonoBehaviour
 	#endregion
 
 	[SerializeField] GameObject objective;
+	[SerializeField] GameObject wallJumpPickup;
 
 	#region Physics Constants
 
@@ -56,6 +57,7 @@ public class PlayerController2D : MonoBehaviour
 	// face direction to animate the sprite
 	int faceDir;
 	float lastTimeTouchWall;
+	bool wallJumpAbility;
 
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
@@ -65,6 +67,7 @@ public class PlayerController2D : MonoBehaviour
 		sprite = GetComponent<SpriteRenderer>();
 		anim = GetComponent<CharacterAnimationController>();
 		lastTimeTouchWall = -1;
+		wallJumpAbility = false;
 	}
 
 	void Start() {
@@ -92,6 +95,11 @@ public class PlayerController2D : MonoBehaviour
 		if (Win()) {
 			Debug.Log("win!");
 			SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
+		}
+
+		if (!wallJumpAbility && CloseToObject(wallJumpPickup)) {
+			wallJumpAbility = true;
+			Destroy(wallJumpPickup);
 		}
 
 		if (TouchingWall())
@@ -148,7 +156,7 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 		// wall jump
-		if (Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
+		if (wallJumpAbility && Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
 			velocity.y = jumpVelocityMax;
 		}
 
@@ -234,11 +242,15 @@ public class PlayerController2D : MonoBehaviour
 			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot;
 	}
 
-	bool Win() {
+	bool CloseToObject(GameObject other) {
 		float x1 = this.transform.position.x;
 		float y1 = this.transform.position.y;
-		float x2 = objective.transform.position.x;
-		float y2 = objective.transform.position.y;
+		float x2 = other.transform.position.x;
+		float y2 = other.transform.position.y;
 		return Math.Abs(x1 - x2) <= 1 && Math.Abs(y1 - y2) <= 1;
+	}
+
+	bool Win() {
+		return CloseToObject(objective);
 	}
 }
