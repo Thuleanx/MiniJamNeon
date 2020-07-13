@@ -44,7 +44,12 @@ public class WalkingEnemy : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
+
+        if (Random.Range(0f,1f) > .5)
+        {
+            ChangeDirection();
+            Debug.Log("ayyy flipped");
+        }
     }
 
     // Update is called once per frame

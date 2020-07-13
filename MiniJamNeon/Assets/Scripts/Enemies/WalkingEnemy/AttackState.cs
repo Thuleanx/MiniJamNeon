@@ -13,7 +13,6 @@ public class AttackState : IEnemyState
 
     public void Execute()
     {
-        Debug.Log("attacking!");
         if (enemy.Target != null)
         {
             if (enemy.isRanged)
@@ -24,7 +23,6 @@ public class AttackState : IEnemyState
             {
                 enemy.Move();
             }
-            
             
             
         }
