@@ -121,6 +121,10 @@ public class RaycastCollider2D : MonoBehaviour
 				dir = faceDir;
 				rayLength = 2 * skinWidth;
 			}	
+			if (dim == 1 && rayLength <= skinWidth) {
+				dir = -1;	
+				rayLength = 2 * skinWidth;
+			}
 
 			float spacing = dim == 0 ? horizontalRaySpacing : verticalRaySpacing;
 			Vector2 dirV = (dim == 0 ? Vector2.right : Vector2.up);

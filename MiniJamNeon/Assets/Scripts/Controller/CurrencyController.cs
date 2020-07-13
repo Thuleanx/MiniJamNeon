@@ -22,6 +22,7 @@ public class CurrencyController : MonoBehaviour
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		stat = player.GetComponent<PlayerStats>();
 		anim = player.GetComponent<CharacterAnimationController>();
+		print("AHA" + (stat == null));
 		money = GetComponent<Money>();
 		Instance = this;
 	}
@@ -40,7 +41,9 @@ public class CurrencyController : MonoBehaviour
 		else
 			amountRequired = stat.getHealthUpgradeCost();
 
+
 		if (currency >= amountRequired) {
+			print("HELLOOOOO");
 			currency -= amountRequired;
 			if (option == "Damage")
 				stat.incrementDamage();
