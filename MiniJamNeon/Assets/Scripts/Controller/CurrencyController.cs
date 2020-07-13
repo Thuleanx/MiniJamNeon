@@ -23,7 +23,7 @@ public class CurrencyController : MonoBehaviour
 		stat = player.GetComponent<PlayerStats>();
 		anim = player.GetComponent<CharacterAnimationController>();
 		money = GetComponent<Money>();
-		if (Instance != null)
+		if (Instance == null)
 			Instance = this;
 	}
 
