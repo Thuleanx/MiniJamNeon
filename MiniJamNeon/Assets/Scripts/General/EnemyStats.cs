@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Timers))]
+[RequireComponent(typeof(TimeController))]
 public class EnemyStats : MonoBehaviour
 {
     private const int HEALTH = 0;
@@ -23,18 +23,14 @@ public class EnemyStats : MonoBehaviour
     private float enemyUpgrade = 50.0f;
     private int currUpgrade;
 
-    Timers timers;
 
     void Awake() {
          statCount = new int[3];
          currHealth = enemyHealth;
-         timers = GetComponent<Timers>();
     }
 
     void Start() {
          currUpgrade = 0;
-         timers.RegisterTimer("upgrade", enemyUpgrade);
-         timers.StartTimer("upgrade");
     }
 
     public int getScaledDamage(int damage) {
@@ -87,11 +83,8 @@ public class EnemyStats : MonoBehaviour
     }
 
     void Update() {
-        // Enemy Stat Boost
-        if (timers.Expired("upgrade")) {
-           statCount[currUpgrade]++;
-           currUpgrade = (currUpgrade + 1) % 3;
-           timers.StartTimer("upgrade");
-        }
+       for(int i = 0; i < 3; i++) {
+           statCount[i] = (int) ((TimeController.clock.timeElapsedSeconds - i * enemyUpgrade) / enemyUpgrade);
+       }
     }
 }

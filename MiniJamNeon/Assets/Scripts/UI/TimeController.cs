@@ -7,8 +7,10 @@ using UnityEngine.UI;
 public class TimeController : MonoBehaviour
 {
 	[SerializeField] Text textbox;
-	float timeElapsedSeconds;
+	public float timeElapsedSeconds;
 	bool pause;
+
+  public static TimeController clock = null;
 
 	public void Pause() {
 		pause = true;
@@ -16,6 +18,11 @@ public class TimeController : MonoBehaviour
 
 	void Start() {
 		timeElapsedSeconds = 0;
+
+    if(clock == null) {
+        clock = this;
+        DontDestroyOnLoad(this);
+    }
 	}
 
 	void Update() {
