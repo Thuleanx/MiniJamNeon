@@ -29,6 +29,7 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] float moveSpeed;
 	[SerializeField] float dashDistance;
 	[SerializeField] float wallSlideSpeed;
+	[SerializeField] float terminalVelocity = 10;
 
 	float gravity;
 
@@ -149,6 +150,9 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 		UpdateAnimStates();
+
+		// terminal velocity
+		velocity.y = Mathf.Clamp(velocity.y, -terminalVelocity, Mathf.Infinity);
 
 		Move(deltaPosition);
 		#endregion
