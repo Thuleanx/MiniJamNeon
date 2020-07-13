@@ -15,10 +15,9 @@ public class Money : MonoBehaviour
 
 	void Start() {
 		targetAmount = currentAmount = 0;
-		targetAmount = 1000;
 	}
 
-	void SetAmount(int amount) {
+	public void SetAmount(int amount) {
 		targetAmount = amount;
 	}
 
