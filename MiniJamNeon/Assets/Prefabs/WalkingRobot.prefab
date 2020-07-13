@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1078688790331798330}
   - component: {fileID: 1078688790331798277}
   - component: {fileID: 1078688790331798276}
+  - component: {fileID: 4246880732676326090}
+  - component: {fileID: 2321490011476733846}
   m_Layer: 22
   m_Name: WalkingRobot
   m_TagString: Untagged
@@ -172,6 +174,36 @@ MonoBehaviour:
   movementSpeed: 3
   isRanged: 0
   Target: {fileID: 0}
+--- !u!114 &4246880732676326090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078688790331798279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1d85ed648347d5b2e17789a4bc17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2321490011476733846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078688790331798279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10
 --- !u!1 &1078688790664032493
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 2285357549619618325}
   - component: {fileID: 2285357549619618326}
   - component: {fileID: 2285357549619618323}
-  - component: {fileID: 2285357549619618322}
+  - component: {fileID: -526353983007129351}
+  - component: {fileID: -6573246571380136988}
   m_Layer: 19
   m_Name: EnemyFlyingMelee
   m_TagString: Untagged
@@ -193,7 +194,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &2285357549619618322
+--- !u!114 &-526353983007129351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,8 +203,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2285357549619618330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55fcb597997b24f27aa3110564810591, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a1d85ed648347d5b2e17789a4bc17e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stats:
-    Health: 100
+--- !u!114 &-6573246571380136988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2285357549619618330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10
