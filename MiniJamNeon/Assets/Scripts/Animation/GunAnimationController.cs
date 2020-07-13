@@ -12,11 +12,8 @@ public class GunAnimationController : MonoBehaviour
 	GunStates currentState;
 	public GunStates State { get { return currentState; } }
 
-	void Awake() {
-		anim = GetComponent<Animator>();
-	}
-
 	void Start() {
+		anim = GetComponent<Animator>();
 		Reset();
 	}	
 

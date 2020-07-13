@@ -63,7 +63,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 0}
-  healthBar: {fileID: 7397248443886882741}
   smoothTimeSeconds: 1
 --- !u!114 &7397248443886882743
 MonoBehaviour:
@@ -123,7 +122,7 @@ MonoBehaviour:
   sounds:
   - name: Background
     clip: {fileID: 8300000, guid: 8b4553a1a9abc98de9ff6edf368ca214, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -175,9 +174,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: currency
-    clip: {fileID: 8300000, guid: 8671987fe100645e7b8cd80727a88866, type: 3}
-    volume: 0.5
-    pitch: 1
+  - name: playerHit
+    clip: {fileID: 8300000, guid: 77ff6ee5dc2b64593a53d6dd296df501, type: 3}
+    volume: 1
+    pitch: 2
     loop: 0
     source: {fileID: 0}

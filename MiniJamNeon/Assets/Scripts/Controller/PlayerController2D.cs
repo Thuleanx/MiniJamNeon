@@ -60,19 +60,20 @@ public class PlayerController2D : MonoBehaviour
 	bool wallJumpAbility;
 
 	void Awake() {
+		lastTimeTouchWall = -1;
+		wallJumpAbility = false;
+
+		CalculatePhysicsConstants();
+    	currMoney = 0;
+	}
+
+	void Start() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
 		input = GetComponent<InputManager>();
 		timers = GetComponent<Timers>();
     	stats = GetComponent<PlayerStats>();
 		sprite = GetComponent<SpriteRenderer>();
 		anim = GetComponent<CharacterAnimationController>();
-		lastTimeTouchWall = -1;
-		wallJumpAbility = false;
-	}
-
-	void Start() {
-		CalculatePhysicsConstants();
-    	currMoney = 0;
 
 		// Init all timers
 		timers.RegisterTimer("jumpBuffer", inputBufferTimeSeconds);

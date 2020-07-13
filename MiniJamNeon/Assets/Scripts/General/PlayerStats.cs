@@ -90,6 +90,6 @@ public class PlayerStats : MonoBehaviour
 	}
 
 	void Update() {
-		HealthBar.Instance.SetHealth(((float) getHealth()) / getMaxHealth());	 
+		HealthBar.Instance?.SetHealth(((float) getHealth()) / getMaxHealth());	 
 	}
 }

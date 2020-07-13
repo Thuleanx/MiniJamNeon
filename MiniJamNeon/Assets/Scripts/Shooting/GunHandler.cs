@@ -10,7 +10,7 @@ public class GunHandler : MonoBehaviour
 
 	ShootingCloned gun;
 
-	void Awake() {
+	void Start() {
 		gun = GetComponentInChildren<ShootingCloned>();
 	}
 

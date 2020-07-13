@@ -13,7 +13,7 @@ public class Hitbox : MonoBehaviour
 	static int maxHitboxResults = 10;
   public int damage;
 
-	void Awake() {
+	void Start() {
 		box = GetComponent<BoxCollider2D>();
 	}
 

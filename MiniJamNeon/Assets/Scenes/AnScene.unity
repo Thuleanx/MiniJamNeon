@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -22044,26 +22044,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1358234939}
-    - target: {fileID: 4477072554449242297, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TryUpdgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072554449242297, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.24528301
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072554449242297, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.13536845
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072554449242297, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.13536845
-      objectReference: {fileID: 0}
     - target: {fileID: 4477072555043997832, guid: 474eb1eae1bed428bb7412eae7f5c475,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -22079,51 +22059,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1358234939}
-    - target: {fileID: 4477072555087796046, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TryUpdgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072555087796046, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.1981132
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072555087796046, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.08503916
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072555087796046, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.08503916
-      objectReference: {fileID: 0}
     - target: {fileID: 4477072555304548537, guid: 474eb1eae1bed428bb7412eae7f5c475,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1358234939}
-    - target: {fileID: 4477072555304548537, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TryUpdgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072555304548537, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.r
-      value: 0.084905684
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072555304548537, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.g
-      value: 0.049261317
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477072555304548537, guid: 474eb1eae1bed428bb7412eae7f5c475,
-        type: 3}
-      propertyPath: m_Colors.m_PressedColor.b
-      value: 0.049261317
-      objectReference: {fileID: 0}
     - target: {fileID: 4477072555593931531, guid: 474eb1eae1bed428bb7412eae7f5c475,
         type: 3}
       propertyPath: m_Name

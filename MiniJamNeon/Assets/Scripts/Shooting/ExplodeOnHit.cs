@@ -8,19 +8,23 @@ public class ExplodeOnHit : MonoBehaviour
 	Animator anim;
 	MoveHorizontal mover;
 	ScreenShakeController shakeController;
+	Hitbox hitbox;
 
-	void Awake() {
+	void Start() {
 		anim = GetComponent<Animator>();
+		hitbox = GetComponentInChildren<Hitbox>();
 		mover = GetComponent<MoveHorizontal>();
 	}
 
 	void OnEnable() {
-		anim.SetInteger("State", 0);
+		anim?.SetInteger("State", 0);
+		hitbox?.gameObject.SetActive(true);
 	}
 
 	public void Explode() {
 		anim.SetInteger("State", 1);
 		mover?.Stop();
+		hitbox?.gameObject.SetActive(false);
 
 		ScreenShakeController.instance.StartShake(1f, .005f);
 	}

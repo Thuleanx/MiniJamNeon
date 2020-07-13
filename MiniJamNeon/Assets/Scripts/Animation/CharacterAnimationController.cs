@@ -12,11 +12,8 @@ public class CharacterAnimationController : MonoBehaviour
 	AnimState currentState;
 	public AnimState State { get { return currentState; } }
 
-	void Awake() {
-		anim = GetComponent<Animator>();
-	}
-
 	void Start() {
+		anim = GetComponent<Animator>();
 		Reset();
 	}	
 

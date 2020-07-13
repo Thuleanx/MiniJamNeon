@@ -24,13 +24,13 @@ public class ShootingCloned : MonoBehaviour
 	#endregion
 
 	void Awake() {
-		anim = GetComponentInChildren<GunAnimationController>();
-		stat = GetComponentInParent<PlayerStats>();
 	}
 
 	// Start is called before the first frame update
 	void Start()
 	{
+		anim = GetComponentInChildren<GunAnimationController>();
+		stat = GetComponentInParent<PlayerStats>();
 		cooldownTime = 1f / fireRatePerSecond;
 	}
 

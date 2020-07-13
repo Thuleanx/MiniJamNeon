@@ -14,7 +14,6 @@ public class HealthBar : MonoBehaviour
 	}
 
 	void Start() {
-		SetHealth(1f);
 	}
 
 	// from 0 to 1

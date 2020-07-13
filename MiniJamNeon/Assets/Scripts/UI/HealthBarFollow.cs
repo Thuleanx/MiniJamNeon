@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class HealthBarFollow : MonoBehaviour
 {
 	[SerializeField] Slider slider;	
-	[SerializeField] HealthBar healthBar;
+	HealthBar healthBar;
 	[SerializeField] float smoothTimeSeconds = 1f;
 	float currentSmoothDampTemp = 0;
 
 	void Start() {
+		healthBar = HealthBar.Instance;
 	}
 
 	void Update() {

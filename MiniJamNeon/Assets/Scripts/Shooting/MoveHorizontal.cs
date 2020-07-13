@@ -14,7 +14,7 @@ public class MoveHorizontal : MonoBehaviour
 
 	public float Speed { get { return speed; } set { speed = value; } }
 
-	void Awake() {
+	void Start() {
 		body = GetComponent<Rigidbody2D>();
 		onhitExplode = GetComponent<ExplodeOnHit>();
 	}

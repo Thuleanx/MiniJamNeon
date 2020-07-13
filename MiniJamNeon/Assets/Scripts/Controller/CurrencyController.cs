@@ -18,7 +18,7 @@ public class CurrencyController : MonoBehaviour
 	[SerializeField] GameObject HealthUpgrade;
 	Money money;
 
-	void Awake() {
+	void Start() {
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		stat = player.GetComponent<PlayerStats>();
 		anim = player.GetComponent<CharacterAnimationController>();

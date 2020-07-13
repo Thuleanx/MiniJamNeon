@@ -16,7 +16,7 @@ public class Hurtbox : MonoBehaviour
 	PlayerStats statusP;
   EnemyStats statusE; 
 
-	void Awake() {
+	void Start() {
 		box = GetComponent<BoxCollider2D>();
 		statusP = GetComponentInParent<PlayerStats>();
     statusE = GetComponentInParent<EnemyStats>();
@@ -28,7 +28,7 @@ public class Hurtbox : MonoBehaviour
      if(statusP != null) {
         statusP.hit(damage);
         anim?.SetState(AnimState.Hit); 
-          AudioManager.Instance.Play("playerhit");
+          AudioManager.Instance.Play("playerHit");
         if(statusP.getHealth() <= 0) {
             // Game Over, Player has died
             AudioManager.Instance.Play("lose");

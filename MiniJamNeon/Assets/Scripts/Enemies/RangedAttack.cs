@@ -39,14 +39,11 @@ public class RangedAttack : MonoBehaviour
 		}
 	}
 
-	void Awake() {
-		stat = GetComponentInParent<EnemyStats>();
-	}
-
 	private void Start()
 	{
 		target = GameObject.FindWithTag("Player").transform;
 		spriteRenderer = GetComponent<SpriteRenderer>();
+		stat = GetComponentInParent<EnemyStats>();
 		// if range is not zero, then start shooting
 		
 	}
@@ -105,9 +102,8 @@ public class RangedAttack : MonoBehaviour
 			Quaternion.Euler(0f, 0f, Mathf.Rad2Deg * Mathf.Atan2(dir.y, dir.x))
 		);
 
-		Hitbox hitbox = GetComponentInChildren<Hitbox>();		
-		hitbox?.setDamage(stat.getDamage());
-		print(stat.getDamage());
+		Hitbox hitbox = obj.GetComponentInChildren<Hitbox>();		
+		hitbox.setDamage(stat.getDamage());
 		AudioManager.Instance?.Play("Lazer");
 
 		// GameObject bulletObj = Instantiate(bulletPrefab, new Vector3(transform.position.x, transform.position.y, 0.1f), Quaternion.identity);
