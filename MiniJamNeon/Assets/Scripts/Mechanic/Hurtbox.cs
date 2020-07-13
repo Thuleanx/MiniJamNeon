@@ -43,6 +43,6 @@ public class Hurtbox : MonoBehaviour
     }
 	}
   public bool canBeHit() {
-    return anim != null && anim.State != AnimState.Hit; 
+    return anim == null || anim.State != AnimState.Hit; 
   }
 }
