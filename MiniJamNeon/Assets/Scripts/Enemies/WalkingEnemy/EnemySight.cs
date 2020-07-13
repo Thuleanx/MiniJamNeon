@@ -14,7 +14,7 @@ public class EnemySight : MonoBehaviour
         {
             Debug.LogError("no walking enemy found on parent!");
         }
-        Debug.Log("found parent: " + enemy);
+        //Debug.Log("found parent: " + enemy);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

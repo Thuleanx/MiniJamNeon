@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9141490956479609809}
-  - component: {fileID: 9141490956479609808}
+  - component: {fileID: 7152313764172384041}
   - component: {fileID: 9141490956479609811}
   m_Layer: 21
   m_Name: Sight
@@ -32,8 +32,8 @@ Transform:
   m_Father: {fileID: 9141490956812171274}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &9141490956479609808
-BoxCollider2D:
+--- !u!58 &7152313764172384041
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -45,19 +45,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 20, y: 0.25}
-  m_EdgeRadius: 0
+  m_Radius: 10
 --- !u!114 &9141490956479609811
 MonoBehaviour:
   m_ObjectHideFlags: 0

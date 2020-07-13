@@ -168,9 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbad394711cf1473291737fbda233e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   updateRate: 2
-  speed: 600
+  speed: 1000
   fMode: 0
   pathIsEnded: 0
   nextWaypointDistance: 1

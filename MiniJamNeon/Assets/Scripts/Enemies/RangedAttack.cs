@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RangedAttack : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
 
     private SpriteRenderer spriteRenderer;
 
@@ -21,6 +21,7 @@ public class RangedAttack : MonoBehaviour
 
     private void Start()
     {
+        target = GameObject.FindWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         // if range is not zero, then start shooting
         if (range != 0)

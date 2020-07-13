@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -22020,28 +22020,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25f60e7c6d40945cd8612a22e177da06, type: 3}
---- !u!1 &457495909 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1082606748, guid: 8da568c56189448d0a30e520279f8e04,
-    type: 3}
-  m_PrefabInstance: {fileID: 8785930395442046486}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &457495912
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457495909}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 8
 --- !u!1001 &473993974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54119,6 +54097,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10
 --- !u!114 &1965142015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54276,10 +54260,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 472191855, guid: 8da568c56189448d0a30e520279f8e04, type: 3}
-      propertyPath: isRanged
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8785930395610025504, guid: 8da568c56189448d0a30e520279f8e04,
         type: 3}
       propertyPath: m_Name
@@ -54290,11 +54270,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1943556859}
-    - target: {fileID: 8785930395610025505, guid: 8da568c56189448d0a30e520279f8e04,
-        type: 3}
-      propertyPath: whatToHit.m_Bits
-      value: 2147483648
-      objectReference: {fileID: 0}
     - target: {fileID: 8785930395610025515, guid: 8da568c56189448d0a30e520279f8e04,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54350,6 +54325,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1082606751, guid: 8da568c56189448d0a30e520279f8e04, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8da568c56189448d0a30e520279f8e04, type: 3}

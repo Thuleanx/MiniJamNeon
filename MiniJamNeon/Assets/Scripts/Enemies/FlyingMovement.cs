@@ -6,7 +6,7 @@ using Pathfinding;
 [RequireComponent(typeof(Seeker))]
 public class FlyingMovement : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
 
     public float updateRate = 2f;
     
@@ -37,6 +37,7 @@ public class FlyingMovement : MonoBehaviour
 
     void Start()
     {
+        target = GameObject.FindWithTag("Player").transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -46,7 +47,7 @@ public class FlyingMovement : MonoBehaviour
             return;
         }
 
-        seeker.StartPath(transform.position, target.position, OnPathComplete);
+        //seeker.StartPath(transform.position, target.position, OnPathComplete);
 
         InvokeRepeating("UpdatePath", 0, 1f / updateRate);
 
@@ -62,7 +63,7 @@ public class FlyingMovement : MonoBehaviour
             Debug.LogError("why this here");
             return;
         }
-
+        //Debug.Log(Vector2.Distance(target.transform.position, transform.position));
         if (Vector2.Distance(target.transform.position, transform.position) > vision)
         {
             return;
