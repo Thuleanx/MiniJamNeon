@@ -72,10 +72,11 @@ GameObject:
   - component: {fileID: 8785930395610025514}
   - component: {fileID: 8785930395610025516}
   - component: {fileID: 8785930395610025519}
-  - component: {fileID: 8785930395610025518}
   - component: {fileID: 8785930395610025505}
   - component: {fileID: 472191856}
   - component: {fileID: 472191855}
+  - component: {fileID: 965558574959157996}
+  - component: {fileID: 6104858440148691486}
   m_Layer: 22
   m_Name: DarkMage
   m_TagString: Untagged
@@ -196,20 +197,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8785930395610025518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8785930395610025504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55fcb597997b24f27aa3110564810591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats:
-    Health: 100
 --- !u!114 &8785930395610025505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c8a9388c98a4c9d91055ad4268d815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   shootRate: 1
   range: 8
   bulletPrefab: {fileID: 7667353194472809882, guid: 9617bf21a70f740c59a522c000341f32,
@@ -269,3 +255,33 @@ MonoBehaviour:
   movementSpeed: 1
   isRanged: 1
   Target: {fileID: 0}
+--- !u!114 &965558574959157996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785930395610025504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1d85ed648347d5b2e17789a4bc17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6104858440148691486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785930395610025504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10
