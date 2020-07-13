@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7397248443886882743}
   - component: {fileID: 7397248443886882742}
   - component: {fileID: 7397248443886882745}
+  - component: {fileID: 1101983799}
   m_Layer: 0
   m_Name: UIMaster
   m_TagString: Untagged
@@ -77,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textbox: {fileID: 0}
+  timeElapsedSeconds: 0
 --- !u!114 &7397248443886882742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,3 +108,40 @@ MonoBehaviour:
   DamageUpgrade: {fileID: 0}
   ArmourUpgrade: {fileID: 0}
   HealthUpgrade: {fileID: 0}
+--- !u!114 &1101983799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7397248443886882739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acabb783a296411498090d416da1e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Background
+    clip: {fileID: 8300000, guid: 8b4553a1a9abc98de9ff6edf368ca214, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Gunshot
+    clip: {fileID: 8300000, guid: a15908e346e81139e8c5a12e7380c148, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Lazer
+    clip: {fileID: 8300000, guid: 40636b31dabc8f68faf28cbbf956d75a, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Reload
+    clip: {fileID: 8300000, guid: a64ca01fbb8ff7cc5a4ffa603cd41d11, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
