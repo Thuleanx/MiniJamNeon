@@ -21,23 +21,44 @@ public class WalkingEnemy : MonoBehaviour
     [HideInInspector]
     public GameObject Target;
 
+    private bool activated = false;
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!activated && collision.tag == "Activation")
+        {
+            activated = true;
+            ChangeState(new IdleState());
+        }
+
+        if (activated)
+        {
+            currentState.OnTriggerEnter(collision);
+        }
+        
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        ChangeState(new IdleState());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentState.Execute();
-        if (Target != null)
+        if (activated)
         {
-            LookAtTarget();
+            currentState.Execute();
+            if (Target != null)
+            {
+                LookAtTarget();
+            }
         }
+        
         
     }
 
@@ -76,10 +97,7 @@ public class WalkingEnemy : MonoBehaviour
         //spriteRenderer.flipX = !facingRight;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        currentState.OnTriggerEnter(collision);
-    }
+    
 
     private void LookAtTarget()
     {

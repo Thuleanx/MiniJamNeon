@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Edge
+  - Activation
   layers:
   - Default
   - TransparentFX
@@ -24,8 +25,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Activation
+  - FlyingEnemy
   - Edge
   - Sight
   - Enemy

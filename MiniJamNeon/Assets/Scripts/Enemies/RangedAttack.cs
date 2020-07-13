@@ -19,15 +19,26 @@ public class RangedAttack : MonoBehaviour
 
     public LayerMask whatToHit;
 
+    private bool activated = false;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!activated && other.tag == "Activation")
+        {
+            activated = true;
+            if (range != 0)
+            {
+                InvokeRepeating("ShootIfPossible", 1, 1f / shootRate);
+            }
+        }
+    }
+
     private void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         // if range is not zero, then start shooting
-        if (range != 0)
-        {
-            InvokeRepeating("ShootIfPossible", 1, 1f / shootRate);
-        }
+        
     }
 
     private void ShootIfPossible()
