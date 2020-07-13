@@ -96,16 +96,6 @@ public class PlayerController2D : MonoBehaviour
 		velocity.x = input.axisInput.x * moveSpeed;
 		velocity.y -= gravity * Time.deltaTime;
 
-		// wall slide: touching a wall while in the air, also didn't change direction
-		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
-			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
-			oldVelocityX * velocity.x >= 0) {
-			velocity.x = oldVelocityX;
-			velocity.y = -wallSlideSpeed;
-			Move(velocity * Time.deltaTime);
-			return;
-		}
-
 		// Jump
 		// Potential bug with releasing the jump button possibly cancelling upward momentum. Fix not needed rn
 		if (input.jumpDown)
@@ -140,11 +130,27 @@ public class PlayerController2D : MonoBehaviour
 			anim?.SetState(AnimState.Dash);
 		}
 
+		// wall jump
+		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
+			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
+			input.jumpDown) {
+			velocity.y = jumpVelocityMax;
+		}
+
+		// wall slide: touching a wall while in the air, also didn't change direction or jump
+		if ((raycastCollider.collisionInfo.AnyLeft || raycastCollider.collisionInfo.AnyRight) && 
+			!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot &&
+			oldVelocityX * velocity.x >= 0 && !input.jumpDown) {
+			velocity.x = oldVelocityX;
+			velocity.y = -wallSlideSpeed;
+			Move(velocity * Time.deltaTime);
+			return;
+		}
+
 		UpdateAnimStates();
 
 		Move(deltaPosition);
 		#endregion
-
 
 		// Shop
 		if (input.health && stats.getHealthUpgradeCost() <= currMoney) {
