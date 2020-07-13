@@ -29,10 +29,11 @@ public class Hurtbox : MonoBehaviour
      } else if(statusE != null) {
        statusE.hit(damage);
        if(statusE.getHealth() <= 0) {
-           Destroy(this.transform.parent);
+           Destroy(this.transform.parent.gameObject);
        }
      } else {
        // Something is wrong
+       print("oof");
      }
 	}
 }
