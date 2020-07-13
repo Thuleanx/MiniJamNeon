@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
 [RequireComponent(typeof(PlayerStats))]
@@ -87,6 +88,7 @@ public class PlayerController2D : MonoBehaviour
 		// check for win condition
 		if (Win()) {
 			Debug.Log("win!");
+			SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
 		}
 
 		input.RegisterInput();
