@@ -65,6 +65,8 @@ public class ShootingCloned : MonoBehaviour
 					flair.transform.parent = source.transform;
 				}
 
+				ScreenShakeController.instance.StartShake(.1f, .05f);
+
 				anim?.SetState(GunStates.Shoot);	
 			}
 		}
