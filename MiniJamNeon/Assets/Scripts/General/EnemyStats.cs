@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-[RequireComponent(typeof(Timers))]
+[RequireComponent(typeof(TimeController))]
 public class EnemyStats : MonoBehaviour
 {
     private const int HEALTH = 0;
@@ -13,28 +14,19 @@ public class EnemyStats : MonoBehaviour
     private int[] statCount;
     private int currHealth;
 
-    private const int ENEMY_HEALTH = 50;
-    private const int HEALTH_INCREMENT = 10;
-    private const int ENEMY_DEFENSE = 0;
-    private const int DEFENSE_INCREMENT = 1;
-    private const int ENEMY_DAMAGE = 20;
-    private const int DAMAGE_INCREMENT = 10;
+    [SerializeField] int enemyHealth = 50;
+    [SerializeField] int healthIncrement = 10;
+    [SerializeField] int enemyDefense = 0;
+    [SerializeField] int defenseIncrement = 1;
+    [SerializeField] int enemyDamage = 20;
+    [SerializeField] int damageIncrement = 10;
 
     private float enemyUpgrade = 50.0f;
-    private int currUpgrade;
 
-    Timers timers;
 
     void Awake() {
          statCount = new int[3];
-         currHealth = ENEMY_HEALTH;
-         timers = GetComponent<Timers>();
-    }
-
-    void Start() {
-         currUpgrade = 0;
-         timers.RegisterTimer("upgrade", enemyUpgrade);
-         timers.StartTimer("upgrade");
+         currHealth = enemyHealth;
     }
 
     public int getScaledDamage(int damage) {
@@ -47,7 +39,7 @@ public class EnemyStats : MonoBehaviour
 
     public void incrementHealth() {
         statCount[HEALTH]++;
-        currHealth += HEALTH_INCREMENT;
+        currHealth += healthIncrement;
     }
 
     public int getHealth() {
@@ -55,7 +47,7 @@ public class EnemyStats : MonoBehaviour
     }
 
     public int getMaxHealth() {
-        return ENEMY_HEALTH + (statCount[HEALTH] * HEALTH_INCREMENT);
+        return enemyHealth + (statCount[HEALTH] * healthIncrement);
     }
 
     public void setHealthStat(int health) {
@@ -71,7 +63,7 @@ public class EnemyStats : MonoBehaviour
     }
 
     public int getDefense() {
-        return ENEMY_DEFENSE + (statCount[DEFENSE] * DEFENSE_INCREMENT);
+        return enemyDefense + (statCount[DEFENSE] * defenseIncrement);
     }
 
     public void setDamageStat(int damage) {
@@ -83,15 +75,12 @@ public class EnemyStats : MonoBehaviour
     }
 
     public int getDamage() {
-        return ENEMY_DAMAGE + (statCount[DAMAGE] * DAMAGE_INCREMENT);
+        return enemyDamage + (statCount[DAMAGE] * damageIncrement);
     }
 
     void Update() {
-        // Enemy Stat Boost
-        if (timers.Expired("upgrade")) {
-           statCount[currUpgrade]++;
-           currUpgrade = (currUpgrade + 1) % 3;
-           timers.StartTimer("upgrade");
-        }
+       for(int i = 0; i < 3; i++) {
+           statCount[i] = Math.Max(0, (int) ((TimeController.clock.timeElapsedSeconds - i * enemyUpgrade) / (3 * enemyUpgrade)));
+       }
     }
 }

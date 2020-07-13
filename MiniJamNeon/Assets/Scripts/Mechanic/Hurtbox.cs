@@ -10,8 +10,9 @@ public class Hurtbox : MonoBehaviour
 	public Collider2D Bounds {
 		get { return box; }
 	}
+
 	PlayerStats statusP;
-    EnemyStats  statusE; 
+  EnemyStats statusE; 
 
 	void Awake() {
 		box = GetComponent<BoxCollider2D>();
@@ -23,12 +24,12 @@ public class Hurtbox : MonoBehaviour
      if(statusP != null) {
         statusP.hit(damage);
         if(statusP.getHealth() <= 0) {
-          // Kill ??
+            // Game Over, Player has died
         }
      } else if(statusE != null) {
        statusE.hit(damage);
        if(statusE.getHealth() <= 0) {
-          // Kill ?? 
+           Destroy(this.transform.parent);
        }
      } else {
        // Something is wrong

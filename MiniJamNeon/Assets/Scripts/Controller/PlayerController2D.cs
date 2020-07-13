@@ -29,6 +29,7 @@ public class PlayerController2D : MonoBehaviour
 	[SerializeField] float moveSpeed;
 	[SerializeField] float dashDistance;
 	[SerializeField] float wallSlideSpeed;
+	[SerializeField] float terminalVelocity = 10;
 
 	float gravity;
 
@@ -86,9 +87,6 @@ public class PlayerController2D : MonoBehaviour
 		#region Movement
 
 		float oldVelocityX = velocity.x;
-		
-		if (raycastCollider.collisionInfo.AnyTop || raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
-			velocity.y = 0;
 
 		if (raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)
 			timers.StartTimer("coyoteBuffer");
@@ -149,6 +147,9 @@ public class PlayerController2D : MonoBehaviour
 
 		UpdateAnimStates();
 
+		// terminal velocity
+		velocity.y = Mathf.Clamp(velocity.y, -terminalVelocity, Mathf.Infinity);
+
 		Move(deltaPosition);
 		#endregion
 
@@ -192,11 +193,11 @@ public class PlayerController2D : MonoBehaviour
 			AnimState state = anim.State;
 
 			if (state != AnimState.Dash && state != AnimState.Hit) {
-				if (!raycastCollider.collisionInfo.AnyBot && velocity.y < 0)
+				if (!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot && velocity.y < 0)
 				{
 					anim.SetState(AnimState.Fall);
 				}
-				else if (!raycastCollider.collisionInfo.AnyBot)
+				else if (!raycastCollider.collisionInfo.AnyBot && !raycastCollider.platformCollisionInfo.AnyBot)
 				{
 					anim.SetState(AnimState.Jump);
 				}

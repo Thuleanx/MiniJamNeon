@@ -7,13 +7,11 @@ public class Bullet : MonoBehaviour
     internal Vector3 direction;
     internal float speed;
     internal BoxCollider2D boxCollider;
-    Camera camera;
     private Vector3 initialpos;
 
     // Start is called before the first frame update
     void Start()
     {
-        camera = Camera.main;
         boxCollider = GetComponent<BoxCollider2D>();
         initialpos = transform.position;
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RangedAttack : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
 
     private SpriteRenderer spriteRenderer;
 
@@ -17,14 +17,28 @@ public class RangedAttack : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 12f;
 
+    public LayerMask whatToHit;
+
+    private bool activated = false;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!activated && other.tag == "Activation")
+        {
+            activated = true;
+            if (range != 0)
+            {
+                InvokeRepeating("ShootIfPossible", 1, 1f / shootRate);
+            }
+        }
+    }
+
     private void Start()
     {
+        target = GameObject.FindWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         // if range is not zero, then start shooting
-        if (range != 0)
-        {
-            InvokeRepeating("ShootIfPossible", 1, 1f / shootRate);
-        }
+        
     }
 
     private void ShootIfPossible()
@@ -42,21 +56,22 @@ public class RangedAttack : MonoBehaviour
         }
 
         // flip dude
-        if (target.transform.position.x < transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
+        //if (target.transform.position.x < transform.position.x)
+        //{
+        //    spriteRenderer.flipX = true;
+        //}
+        //else
+        //{
+        //    spriteRenderer.flipX = false;
+        //}
 
         shootBullet();
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range);
-        Debug.DrawLine(transform.position, target.transform.position);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range, whatToHit);
+        //Debug.DrawLine(transform.position, target.transform.position);
         //// if raycast hits player
         //if (hit.collider != null)
         //{
+        //    Debug.DrawLine(transform.position, target.transform.position, Color.cyan);
         //    shootBullet();
         //}
 
