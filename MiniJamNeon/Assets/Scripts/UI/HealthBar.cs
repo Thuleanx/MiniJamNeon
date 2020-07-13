@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+	public static HealthBar Instance;
 	[SerializeField] Slider slider;
 	[HideInInspector] public float health;
+
+	void Awake() {
+		Instance = this;
+	}
 
 	void Start() {
 		SetHealth(1f);

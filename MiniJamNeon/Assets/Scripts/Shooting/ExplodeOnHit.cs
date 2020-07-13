@@ -22,6 +22,7 @@ public class ExplodeOnHit : MonoBehaviour
 		anim.SetInteger("State", 1);
 		mover?.Stop();
 
+		ScreenShakeController.instance.StartShake(1f, .005f);
 	}
 
     private void OnTriggerEnter2D(Collider2D collision) {

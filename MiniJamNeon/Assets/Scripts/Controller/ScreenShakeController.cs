@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScreenShakeController : MonoBehaviour
 {
-    private static ScreenShakeController instance;
+    public static ScreenShakeController instance;
 
     private float shakeTimeRemaining, shakePower, shakeFadeTime;
     private bool shaking;
