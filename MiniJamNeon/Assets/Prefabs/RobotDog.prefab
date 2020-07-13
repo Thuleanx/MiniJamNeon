@@ -74,6 +74,9 @@ GameObject:
   - component: {fileID: 9141490956812171273}
   - component: {fileID: 9141490956812171318}
   - component: {fileID: 9141490956812171319}
+  - component: {fileID: -5490532279466494973}
+  - component: {fileID: -1039583073245948254}
+  - component: {fileID: -2599756650025897539}
   m_Layer: 22
   m_Name: RobotDog
   m_TagString: Untagged
@@ -232,3 +235,51 @@ MonoBehaviour:
   movementSpeed: 5
   isRanged: 0
   Target: {fileID: 0}
+--- !u!114 &-5490532279466494973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141490956812171316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1d85ed648347d5b2e17789a4bc17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1039583073245948254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141490956812171316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10
+--- !u!114 &-2599756650025897539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141490956812171316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10

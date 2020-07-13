@@ -67,7 +67,7 @@ public class RangedAttack : MonoBehaviour
 
         shootBullet();
         RaycastHit2D hit = Physics2D.Raycast(transform.position, target.transform.position, range, whatToHit);
-        Debug.DrawLine(transform.position, target.transform.position);
+        //Debug.DrawLine(transform.position, target.transform.position);
         //// if raycast hits player
         //if (hit.collider != null)
         //{

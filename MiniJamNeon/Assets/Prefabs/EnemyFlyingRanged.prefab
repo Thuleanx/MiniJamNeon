@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 5708042828783613555}
   - component: {fileID: 5708042828783613556}
   - component: {fileID: 5708042828783613557}
-  - component: {fileID: 5708042828783613558}
   - component: {fileID: 5708042828783613566}
+  - component: {fileID: 8067853237513611880}
+  - component: {fileID: 3339309251172499688}
   m_Layer: 19
   m_Name: EnemyFlyingRanged
   m_TagString: Untagged
@@ -194,20 +195,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
---- !u!114 &5708042828783613558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5708042828783613559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55fcb597997b24f27aa3110564810591, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stats:
-    Health: 50
 --- !u!114 &5708042828783613566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,3 +215,33 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &8067853237513611880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708042828783613559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a1d85ed648347d5b2e17789a4bc17e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3339309251172499688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5708042828783613559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be0d230557ffbb8449e1fb508108b767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 50
+  healthIncrement: 10
+  enemyDefense: 0
+  defenseIncrement: 1
+  enemyDamage: 20
+  damageIncrement: 10
