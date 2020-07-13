@@ -35,6 +35,17 @@ public class FlyingMovement : MonoBehaviour
     // The waypoint we are currently moving towards
     private int currentWaypoint = 0;
 
+    private bool activated = false;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!activated && other.tag == "Activation")
+        {
+            activated = true;
+            InvokeRepeating("UpdatePath", 0, 1f / updateRate);
+        }
+    }
+
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
@@ -49,7 +60,7 @@ public class FlyingMovement : MonoBehaviour
 
         //seeker.StartPath(transform.position, target.position, OnPathComplete);
 
-        InvokeRepeating("UpdatePath", 0, 1f / updateRate);
+        
 
         
         
@@ -93,50 +104,54 @@ public class FlyingMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (target == null)
+        if (activated)
         {
-            return;
-        }
-        
-        if (target.transform.position.x < transform.position.x)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-        }
-
-        if (path == null)
-        {
-            return;
-        }
-
-        if (currentWaypoint >= path.vectorPath.Count)
-        {
-            if (pathIsEnded)
+            if (target == null)
             {
                 return;
             }
-            Debug.Log("End of path reached");
-            pathIsEnded = true;
-            return;
+
+            if (target.transform.position.x < transform.position.x)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
+
+            if (path == null)
+            {
+                return;
+            }
+
+            if (currentWaypoint >= path.vectorPath.Count)
+            {
+                if (pathIsEnded)
+                {
+                    return;
+                }
+                Debug.Log("End of path reached");
+                pathIsEnded = true;
+                return;
+            }
+            pathIsEnded = false;
+
+            //Direction to next waypoint
+            Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+            dir *= speed * Time.fixedDeltaTime;
+
+            //Move the AI
+            rb.AddForce(dir, fMode);
+
+            float dist = Vector3.Distance(transform.position, path.vectorPath[currentWaypoint]);
+            if (dist < nextWaypointDistance)
+            {
+                currentWaypoint++;
+                return;
+            }
         }
-        pathIsEnded = false;
-
-        //Direction to next waypoint
-        Vector3 dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
-        dir *= speed * Time.fixedDeltaTime;
-
-        //Move the AI
-        rb.AddForce(dir, fMode);
-
-        float dist = Vector3.Distance(transform.position, path.vectorPath[currentWaypoint]);
-        if (dist < nextWaypointDistance)
-        {
-            currentWaypoint++;
-            return;
-        }
+        
     }
 
     
