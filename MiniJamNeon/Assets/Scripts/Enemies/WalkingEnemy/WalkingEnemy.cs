@@ -96,12 +96,9 @@ public class WalkingEnemy : MonoBehaviour
     public void ChangeDirection()
     {
         facingRight = !facingRight;
-        //Debug.Log("facingRight: " + facingRight);
         transform.localScale = new Vector3(transform.localScale.x * -1, 1, 1);
         //spriteRenderer.flipX = !facingRight;
     }
-
-    
 
     private void LookAtTarget()
     {

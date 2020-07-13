@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(RaycastCollider2D), typeof(InputManager), typeof(Timers))]
 [RequireComponent(typeof(PlayerStats))]
@@ -19,6 +21,8 @@ public class PlayerController2D : MonoBehaviour
 	#region Rigid body
 	Vector2 velocity;
 	#endregion
+
+	[SerializeField] GameObject objective;
 
 	#region Physics Constants
 
@@ -47,7 +51,6 @@ public class PlayerController2D : MonoBehaviour
 	#endregion
 
 	int currMoney;
-
 
 	// face direction to animate the sprite
 	int faceDir;
@@ -82,6 +85,12 @@ public class PlayerController2D : MonoBehaviour
 	}
 
 	void Update() {
+		// check for win condition
+		if (Win()) {
+			Debug.Log("win!");
+			SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
+		}
+
 		input.RegisterInput();
 
 		#region Movement
@@ -215,5 +224,13 @@ public class PlayerController2D : MonoBehaviour
 				}
 			}
 		}
+	}
+
+	bool Win() {
+		float x1 = this.transform.position.x;
+		float y1 = this.transform.position.y;
+		float x2 = objective.transform.position.x;
+		float y2 = objective.transform.position.y;
+		return Math.Abs(x1 - x2) <= 1 && Math.Abs(y1 - y2) <= 1;
 	}
 }
