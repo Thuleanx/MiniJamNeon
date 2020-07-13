@@ -48,6 +48,7 @@ public class Hitbox : MonoBehaviour
 		 for(int i = 0; i < hurtboxes.Count; i++) {
 			 hurtboxes[i].RegisterHit(damage);
 		 }
+
 		 GetComponentInParent<ExplodeOnHit>()?.Explode();
 	  }
   }
