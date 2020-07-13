@@ -87,8 +87,6 @@ public class PlayerController2D : MonoBehaviour
 
 		float oldVelocityX = velocity.x;
 
-		print(raycastCollider.collisionInfo.AnyBot);
-		
 
 
 		if (raycastCollider.collisionInfo.AnyBot || raycastCollider.platformCollisionInfo.AnyBot)

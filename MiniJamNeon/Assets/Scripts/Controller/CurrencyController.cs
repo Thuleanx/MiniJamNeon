@@ -22,6 +22,7 @@ public class CurrencyController : MonoBehaviour
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		stat = player.GetComponent<PlayerStats>();
 		anim = player.GetComponent<CharacterAnimationController>();
+		print("AHA" + (stat == null));
 		money = GetComponent<Money>();
 		Instance = this;
 	}
