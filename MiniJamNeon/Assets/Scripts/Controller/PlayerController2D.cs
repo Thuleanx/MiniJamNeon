@@ -54,6 +54,7 @@ public class PlayerController2D : MonoBehaviour
 
 	// face direction to animate the sprite
 	int faceDir;
+	Time lastTimeTouchWall;
 
 	void Awake() {
 		raycastCollider = GetComponent<RaycastCollider2D>();
