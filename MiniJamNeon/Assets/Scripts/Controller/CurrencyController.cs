@@ -22,13 +22,13 @@ public class CurrencyController : MonoBehaviour
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		stat = player.GetComponent<PlayerStats>();
 		anim = player.GetComponent<CharacterAnimationController>();
-		print("AHA" + (stat == null));
 		money = GetComponent<Money>();
 		Instance = this;
 	}
 
 	public void GainCurrency(int amount) {
 		currency += amount;
+		AudioManager.Instance.Play("currency");
 	}
 
 	// option either Damage, Health, or Armour
@@ -51,6 +51,8 @@ public class CurrencyController : MonoBehaviour
 				stat.incrementDefense();
 			else
 				stat.incrementHealth();
+			anim.SetState(AnimState.Shine);
+			AudioManager.Instance.Play("lvl");
 		}
 	}
 

@@ -55,7 +55,6 @@ public class AudioManager : MonoBehaviour
 	public void Play(string name) {
 		if (soundIndex.ContainsKey(name)) {
 			sounds[soundIndex[name]].source.Play();
-			print("HI");
 		}
 	}
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Hurtbox : MonoBehaviour
@@ -30,6 +31,8 @@ public class Hurtbox : MonoBehaviour
 
         if(statusP.getHealth() <= 0) {
             // Game Over, Player has died
+            AudioManager.Instance.Play("lose");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
      } else if(statusE != null) {
        statusE.hit(damage);

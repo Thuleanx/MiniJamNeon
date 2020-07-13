@@ -423,16 +423,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c613c02f5b2524eea812fa1d621d32d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objective: {fileID: 0}
   maxJumpHeight: 4
   minJumpHeight: 1
   timeToJumpApexSeconds: 0.4
-  moveSpeed: 5
+  moveSpeed: 6
   dashDistance: 4
   wallSlideSpeed: 2
   terminalVelocity: 10
   inputBufferTimeSeconds: 0.1
   coyoteTimeSeconds: 0.1
-  dashCooldownSeconds: 0
+  dashCooldownSeconds: 2
 --- !u!114 &559416931631030869
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -35,6 +35,7 @@ public class EnemyStats : MonoBehaviour
 
     public void hit(int damage) {
         currHealth -= getScaledDamage(damage);
+        AudioManager.Instance?.Play("enemyhit");
     }
 
     public void incrementHealth() {
