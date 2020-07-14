@@ -1,0 +1,5893 @@
+fileFormatVersion: 2
+guid: 810fe414769d94a79a8a9d1bdc84e8d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8013017665517602318
+    second: industrial.v3_0
+  - first:
+      213: -4265720542952218631
+    second: industrial.v3_1
+  - first:
+      213: 6248969935426341256
+    second: industrial.v3_2
+  - first:
+      213: 3993640070361454082
+    second: industrial.v3_3
+  - first:
+      213: 5260136474072798997
+    second: industrial.v3_4
+  - first:
+      213: -1840839040530849907
+    second: industrial.v3_5
+  - first:
+      213: 5043160873930736802
+    second: industrial.v3_6
+  - first:
+      213: -2091138266433339563
+    second: industrial.v3_7
+  - first:
+      213: -4162369698773303751
+    second: industrial.v3_8
+  - first:
+      213: 4129041024490279984
+    second: industrial.v3_9
+  - first:
+      213: 1705847418667036105
+    second: industrial.v3_10
+  - first:
+      213: -4181869903635273535
+    second: industrial.v3_11
+  - first:
+      213: -3668137755826892992
+    second: industrial.v3_12
+  - first:
+      213: 8252952753070741640
+    second: industrial.v3_13
+  - first:
+      213: 3820961024638965247
+    second: industrial.v3_14
+  - first:
+      213: -4428679348869491638
+    second: industrial.v3_15
+  - first:
+      213: -6215030283127899509
+    second: industrial.v3_16
+  - first:
+      213: 5466746320222660063
+    second: industrial.v3_17
+  - first:
+      213: -7027787185978037809
+    second: industrial.v3_18
+  - first:
+      213: 8784707035190439312
+    second: industrial.v3_19
+  - first:
+      213: 3492286119853058162
+    second: industrial.v3_20
+  - first:
+      213: 4114577209259189156
+    second: industrial.v3_21
+  - first:
+      213: 7844648863325398524
+    second: industrial.v3_22
+  - first:
+      213: -3271192841326566379
+    second: industrial.v3_23
+  - first:
+      213: 4073715267608539868
+    second: industrial.v3_24
+  - first:
+      213: -8543261158029274434
+    second: industrial.v3_25
+  - first:
+      213: -3794891279265669271
+    second: industrial.v3_26
+  - first:
+      213: -8660830351269444264
+    second: industrial.v3_27
+  - first:
+      213: 5733311083388718256
+    second: industrial.v3_28
+  - first:
+      213: 3688527819012343672
+    second: industrial.v3_29
+  - first:
+      213: 2598787330940532768
+    second: industrial.v3_30
+  - first:
+      213: -6245453223938927573
+    second: industrial.v3_31
+  - first:
+      213: -2800661074664708277
+    second: industrial.v3_32
+  - first:
+      213: 3487910982045745497
+    second: industrial.v3_33
+  - first:
+      213: -2815947111450371003
+    second: industrial.v3_34
+  - first:
+      213: 5094442027487202363
+    second: industrial.v3_35
+  - first:
+      213: 411965846899410419
+    second: industrial.v3_36
+  - first:
+      213: -2209646935928415706
+    second: industrial.v3_37
+  - first:
+      213: 6535509387787584530
+    second: industrial.v3_38
+  - first:
+      213: -3093835806930557396
+    second: industrial.v3_39
+  - first:
+      213: 3711643902654709721
+    second: industrial.v3_40
+  - first:
+      213: 1844465325231962166
+    second: industrial.v3_41
+  - first:
+      213: -2953104317819555185
+    second: industrial.v3_42
+  - first:
+      213: -6807063342931371461
+    second: industrial.v3_43
+  - first:
+      213: -4380557671953520416
+    second: industrial.v3_44
+  - first:
+      213: -2458676844796550610
+    second: industrial.v3_45
+  - first:
+      213: 4288706031362442562
+    second: industrial.v3_46
+  - first:
+      213: -760257524457512745
+    second: industrial.v3_47
+  - first:
+      213: -8691131273338770367
+    second: industrial.v3_48
+  - first:
+      213: 1367832758195993919
+    second: industrial.v3_49
+  - first:
+      213: 852822149708972532
+    second: industrial.v3_50
+  - first:
+      213: -276441492488635799
+    second: industrial.v3_51
+  - first:
+      213: 3814381400397005414
+    second: industrial.v3_52
+  - first:
+      213: -3299186282749604992
+    second: industrial.v3_53
+  - first:
+      213: 5419151209960250327
+    second: industrial.v3_54
+  - first:
+      213: -5656495295638564808
+    second: industrial.v3_55
+  - first:
+      213: 6670195668860801421
+    second: industrial.v3_56
+  - first:
+      213: 3193312137355756394
+    second: industrial.v3_57
+  - first:
+      213: -5121570257933113862
+    second: industrial.v3_58
+  - first:
+      213: 6169192877328870290
+    second: industrial.v3_59
+  - first:
+      213: -1923575840096280623
+    second: industrial.v3_60
+  - first:
+      213: 6605471534552550119
+    second: industrial.v3_61
+  - first:
+      213: 5085754836341904631
+    second: industrial.v3_62
+  - first:
+      213: 9169345336636431982
+    second: industrial.v3_63
+  - first:
+      213: 589848636017831077
+    second: industrial.v3_64
+  - first:
+      213: 7263935879960962438
+    second: industrial.v3_65
+  - first:
+      213: 8250045143557505039
+    second: industrial.v3_66
+  - first:
+      213: -8401211073226276181
+    second: industrial.v3_67
+  - first:
+      213: 2549333029205470185
+    second: industrial.v3_68
+  - first:
+      213: -5006646888538425801
+    second: industrial.v3_69
+  - first:
+      213: 7752740999678140715
+    second: industrial.v3_70
+  - first:
+      213: -1400730411222478644
+    second: industrial.v3_71
+  - first:
+      213: 6559633474723653069
+    second: industrial.v3_72
+  - first:
+      213: 3970889605869839642
+    second: industrial.v3_73
+  - first:
+      213: -5756380919744034548
+    second: industrial.v3_74
+  - first:
+      213: -7903716652319045900
+    second: industrial.v3_75
+  - first:
+      213: 814666180499884697
+    second: industrial.v3_76
+  - first:
+      213: 2479788469629235962
+    second: industrial.v3_77
+  - first:
+      213: -492952243997985094
+    second: industrial.v3_78
+  - first:
+      213: 8965475397554676677
+    second: industrial.v3_79
+  - first:
+      213: -253367631370915585
+    second: industrial.v3_80
+  - first:
+      213: -7378715677437443092
+    second: industrial.v3_81
+  - first:
+      213: -4325806524668460647
+    second: industrial.v3_82
+  - first:
+      213: 405974278671013282
+    second: industrial.v3_83
+  - first:
+      213: -4783962282026513230
+    second: industrial.v3_84
+  - first:
+      213: 1511071891804383456
+    second: industrial.v3_85
+  - first:
+      213: -4265146797020687650
+    second: industrial.v3_86
+  - first:
+      213: -2053843735712820782
+    second: industrial.v3_87
+  - first:
+      213: -7120401227971235388
+    second: industrial.v3_88
+  - first:
+      213: -157393715139376021
+    second: industrial.v3_89
+  - first:
+      213: 1707204299782282737
+    second: industrial.v3_90
+  - first:
+      213: -1616700359056394508
+    second: industrial.v3_91
+  - first:
+      213: 4569800699582127709
+    second: industrial.v3_92
+  - first:
+      213: -2463163061657655894
+    second: industrial.v3_93
+  - first:
+      213: 6012201596451514519
+    second: industrial.v3_94
+  - first:
+      213: -6002462799320760295
+    second: industrial.v3_95
+  - first:
+      213: 787548600619999362
+    second: industrial.v3_96
+  - first:
+      213: 2337318116040435915
+    second: industrial.v3_97
+  - first:
+      213: -1781350787762888242
+    second: industrial.v3_98
+  - first:
+      213: -1574292445156065569
+    second: industrial.v3_99
+  - first:
+      213: 212618552980727527
+    second: industrial.v3_100
+  - first:
+      213: 3952425540751065084
+    second: industrial.v3_101
+  - first:
+      213: 7307983865694487798
+    second: industrial.v3_102
+  - first:
+      213: -359009939845742497
+    second: industrial.v3_103
+  - first:
+      213: -4204298959055861561
+    second: industrial.v3_104
+  - first:
+      213: 5005637861452426785
+    second: industrial.v3_105
+  - first:
+      213: -5523846617812321153
+    second: industrial.v3_106
+  - first:
+      213: 7764850463530783305
+    second: industrial.v3_107
+  - first:
+      213: -506864394915885460
+    second: industrial.v3_108
+  - first:
+      213: 2889558287837426509
+    second: industrial.v3_109
+  - first:
+      213: -6723751472350676911
+    second: industrial.v3_110
+  - first:
+      213: -5637744228132687045
+    second: industrial.v3_111
+  - first:
+      213: -4770266970774694789
+    second: industrial.v3_112
+  - first:
+      213: -3895954200819729375
+    second: industrial.v3_113
+  - first:
+      213: 9167696966684526723
+    second: industrial.v3_114
+  - first:
+      213: -8503170080064525892
+    second: industrial.v3_115
+  - first:
+      213: -1499323692834563976
+    second: industrial.v3_116
+  - first:
+      213: -6537932486944477603
+    second: industrial.v3_117
+  - first:
+      213: -5025748567343102647
+    second: industrial.v3_118
+  - first:
+      213: -4576138455092905600
+    second: industrial.v3_119
+  - first:
+      213: -2400256843434116489
+    second: industrial.v3_120
+  - first:
+      213: 8652120370532235433
+    second: industrial.v3_121
+  - first:
+      213: -6756117764542517172
+    second: industrial.v3_122
+  - first:
+      213: -1422417655031112556
+    second: industrial.v3_123
+  - first:
+      213: 590256795636509575
+    second: industrial.v3_124
+  - first:
+      213: 2632653250579640339
+    second: industrial.v3_125
+  - first:
+      213: 5346550717735562856
+    second: industrial.v3_126
+  - first:
+      213: 8786732644770475381
+    second: industrial.v3_127
+  - first:
+      213: -1012533832584384783
+    second: industrial.v3_128
+  - first:
+      213: -6006687400997938333
+    second: industrial.v3_129
+  - first:
+      213: 6386166508240444636
+    second: industrial.v3_130
+  - first:
+      213: 2368406731860163935
+    second: industrial.v3_131
+  - first:
+      213: -376216214349037194
+    second: industrial.v3_132
+  - first:
+      213: -8310985186075752561
+    second: industrial.v3_133
+  - first:
+      213: -5964282160649497880
+    second: industrial.v3_134
+  - first:
+      213: 5318291196266797741
+    second: industrial.v3_135
+  - first:
+      213: 4433483074342249082
+    second: industrial.v3_136
+  - first:
+      213: 7063937034375813994
+    second: industrial.v3_137
+  - first:
+      213: 2213381390188066356
+    second: industrial.v3_138
+  - first:
+      213: 8794763611500527962
+    second: industrial.v3_139
+  - first:
+      213: -7883964212811567230
+    second: industrial.v3_140
+  - first:
+      213: -4186565820050484689
+    second: industrial.v3_141
+  - first:
+      213: 3330643915138568801
+    second: industrial.v3_142
+  - first:
+      213: 933710148857691782
+    second: industrial.v3_143
+  - first:
+      213: -6187922318557635449
+    second: industrial.v3_144
+  - first:
+      213: -1374091330637553729
+    second: industrial.v3_145
+  - first:
+      213: -8533287844020907911
+    second: industrial.v3_146
+  - first:
+      213: 8413397443124827997
+    second: industrial.v3_147
+  - first:
+      213: -5926827637159094442
+    second: industrial.v3_148
+  - first:
+      213: -154501755120001518
+    second: industrial.v3_149
+  - first:
+      213: -2817310459209452483
+    second: industrial.v3_150
+  - first:
+      213: -2181520778770206532
+    second: industrial.v3_151
+  - first:
+      213: 5409499917338336028
+    second: industrial.v3_152
+  - first:
+      213: 2297578020928223535
+    second: industrial.v3_153
+  - first:
+      213: -5441995247033732864
+    second: industrial.v3_154
+  - first:
+      213: -5830467247565729655
+    second: industrial.v3_155
+  - first:
+      213: 6975703788106378474
+    second: industrial.v3_156
+  - first:
+      213: 6352073714670966802
+    second: industrial.v3_157
+  - first:
+      213: 8543487742900277326
+    second: industrial.v3_158
+  - first:
+      213: 2385881555786373359
+    second: industrial.v3_159
+  - first:
+      213: -6538310226001596386
+    second: industrial.v3_160
+  - first:
+      213: -8943258496769845749
+    second: industrial.v3_161
+  - first:
+      213: -2663275714767260987
+    second: industrial.v3_162
+  - first:
+      213: -2648417445131204859
+    second: industrial.v3_163
+  - first:
+      213: 330631445229298415
+    second: industrial.v3_164
+  - first:
+      213: -4996082840754877607
+    second: industrial.v3_165
+  - first:
+      213: 9118236704265135451
+    second: industrial.v3_166
+  - first:
+      213: -509330782822573029
+    second: industrial.v3_167
+  - first:
+      213: -3423574167838908531
+    second: industrial.v3_168
+  - first:
+      213: 1712186822446133879
+    second: industrial.v3_169
+  - first:
+      213: -5463821131162053658
+    second: industrial.v3_170
+  - first:
+      213: 146631827038950570
+    second: industrial.v3_171
+  - first:
+      213: 2118487829139849815
+    second: industrial.v3_172
+  - first:
+      213: 8685372148805061350
+    second: industrial.v3_173
+  - first:
+      213: -5153251896543236695
+    second: industrial.v3_174
+  - first:
+      213: -2656634418315304938
+    second: industrial.v3_175
+  - first:
+      213: -5961628185878239194
+    second: industrial.v3_176
+  - first:
+      213: 7140264845040707415
+    second: industrial.v3_177
+  - first:
+      213: 6827725237693437796
+    second: industrial.v3_178
+  - first:
+      213: -6547979864871145706
+    second: industrial.v3_179
+  - first:
+      213: 1921103433150332651
+    second: industrial.v3_180
+  - first:
+      213: 3877785710270504141
+    second: industrial.v3_181
+  - first:
+      213: 5525008607519936727
+    second: industrial.v3_182
+  - first:
+      213: 7728211516198646306
+    second: industrial.v3_183
+  - first:
+      213: 2397333266365739128
+    second: industrial.v3_184
+  - first:
+      213: 6323106831898272111
+    second: industrial.v3_185
+  - first:
+      213: -2770896903488070410
+    second: industrial.v3_186
+  - first:
+      213: 4207319165334674113
+    second: industrial.v3_187
+  - first:
+      213: 4413450876345388905
+    second: industrial.v3_188
+  - first:
+      213: 3221242507466147464
+    second: industrial.v3_189
+  - first:
+      213: 6791151858310035507
+    second: industrial.v3_190
+  - first:
+      213: 2355782442646687662
+    second: industrial.v3_191
+  - first:
+      213: -7579617121192079788
+    second: industrial.v3_192
+  - first:
+      213: 2302129622119286821
+    second: industrial.v3_193
+  - first:
+      213: 1010070240086455535
+    second: industrial.v3_194
+  - first:
+      213: 1688827678959655167
+    second: industrial.v3_195
+  - first:
+      213: 138336995157640180
+    second: industrial.v3_196
+  - first:
+      213: -6060893163759062292
+    second: industrial.v3_197
+  - first:
+      213: 561834617906498287
+    second: industrial.v3_198
+  - first:
+      213: -1088536972217025703
+    second: industrial.v3_199
+  - first:
+      213: -8592039611468151116
+    second: industrial.v3_200
+  - first:
+      213: 1120464119676390466
+    second: industrial.v3_201
+  - first:
+      213: 1438058647872780667
+    second: industrial.v3_202
+  - first:
+      213: -5836168425858640395
+    second: industrial.v3_203
+  - first:
+      213: 1636978448290280818
+    second: industrial.v3_204
+  - first:
+      213: -5347200930223200671
+    second: industrial.v3_205
+  - first:
+      213: 7536403689755170190
+    second: industrial.v3_206
+  - first:
+      213: -5538771206763995974
+    second: industrial.v3_207
+  - first:
+      213: -2612964127878776188
+    second: industrial.v3_208
+  - first:
+      213: 4774604826229728936
+    second: industrial.v3_209
+  - first:
+      213: 2881677491909060575
+    second: industrial.v3_210
+  - first:
+      213: -4280623400379074697
+    second: industrial.v3_211
+  - first:
+      213: 8386386370712073163
+    second: industrial.v3_212
+  - first:
+      213: -3208433452005169404
+    second: industrial.v3_213
+  - first:
+      213: 7019101467897163389
+    second: industrial.v3_214
+  - first:
+      213: 5027818335284970275
+    second: industrial.v3_215
+  - first:
+      213: -1621746608169332603
+    second: industrial.v3_216
+  - first:
+      213: -2158849381177901208
+    second: industrial.v3_217
+  - first:
+      213: 2252042056114444365
+    second: industrial.v3_218
+  - first:
+      213: 5328608467815181197
+    second: industrial.v3_219
+  - first:
+      213: 487951330150789437
+    second: industrial.v3_220
+  - first:
+      213: -7131699953416474833
+    second: industrial.v3_221
+  - first:
+      213: -3185572396942282338
+    second: industrial.v3_222
+  - first:
+      213: 3480048777932942594
+    second: industrial.v3_223
+  - first:
+      213: 5070189503731253352
+    second: industrial.v3_224
+  - first:
+      213: -1291256672866418205
+    second: industrial.v3_225
+  - first:
+      213: -6497180869829895429
+    second: industrial.v3_226
+  - first:
+      213: 7475300278793392393
+    second: industrial.v3_227
+  - first:
+      213: -8062823379423668277
+    second: industrial.v3_228
+  - first:
+      213: -8475772268338471859
+    second: industrial.v3_229
+  - first:
+      213: -8383988713047323652
+    second: industrial.v3_230
+  - first:
+      213: 7618762616894022991
+    second: industrial.v3_231
+  - first:
+      213: -8135103743674226653
+    second: industrial.v3_232
+  - first:
+      213: -2316772208303995800
+    second: industrial.v3_233
+  - first:
+      213: -7431464887720733779
+    second: industrial.v3_234
+  - first:
+      213: -2699320885137620918
+    second: industrial.v3_235
+  - first:
+      213: 5458295937050896170
+    second: industrial.v3_236
+  - first:
+      213: 3356418958321118706
+    second: industrial.v3_237
+  - first:
+      213: -8006626091038012396
+    second: industrial.v3_238
+  - first:
+      213: 2662124397776641733
+    second: industrial.v3_239
+  - first:
+      213: 6089081920655022868
+    second: industrial.v3_240
+  - first:
+      213: 4414285870855951677
+    second: industrial.v3_241
+  - first:
+      213: 1027798718296395395
+    second: industrial.v3_242
+  - first:
+      213: -721097284999608469
+    second: industrial.v3_243
+  - first:
+      213: 2090584901146167704
+    second: industrial.v3_244
+  - first:
+      213: 4585541625973110471
+    second: industrial.v3_245
+  - first:
+      213: -3947055219939005514
+    second: industrial.v3_246
+  - first:
+      213: -2496813205652773448
+    second: industrial.v3_247
+  - first:
+      213: -1232782723516127418
+    second: industrial.v3_248
+  - first:
+      213: 8442114241414023983
+    second: industrial.v3_249
+  - first:
+      213: 4330763192558190563
+    second: industrial.v3_250
+  - first:
+      213: -4345007430159424062
+    second: industrial.v3_251
+  - first:
+      213: -1739999523821280763
+    second: industrial.v3_252
+  - first:
+      213: -5675694349516251377
+    second: industrial.v3_253
+  - first:
+      213: -3824755764892429582
+    second: industrial.v3_254
+  - first:
+      213: 6943678507142098204
+    second: industrial.v3_255
+  - first:
+      213: -7026358305836623660
+    second: industrial.v3_256
+  - first:
+      213: 6718139239603676846
+    second: industrial.v3_257
+  - first:
+      213: 7552784786542059883
+    second: industrial.v3_258
+  - first:
+      213: 1929863838629387383
+    second: industrial.v3_259
+  - first:
+      213: -7250309129360393175
+    second: industrial.v3_260
+  - first:
+      213: 3465421245575145303
+    second: industrial.v3_261
+  - first:
+      213: -5928553358289535936
+    second: industrial.v3_262
+  - first:
+      213: 5461449117510291869
+    second: industrial.v3_263
+  - first:
+      213: 6743958327548926795
+    second: industrial.v3_264
+  - first:
+      213: -803549670961619624
+    second: industrial.v3_265
+  - first:
+      213: -3042365778513387180
+    second: industrial.v3_266
+  - first:
+      213: 7416465667461673511
+    second: industrial.v3_267
+  - first:
+      213: -2558753152747391711
+    second: industrial.v3_268
+  - first:
+      213: -1625489923935297402
+    second: industrial.v3_269
+  - first:
+      213: 832757980926480819
+    second: industrial.v3_270
+  - first:
+      213: -7520795689082848217
+    second: industrial.v3_271
+  - first:
+      213: 2388837243426865392
+    second: industrial.v3_272
+  - first:
+      213: 7123667158844152777
+    second: industrial.v3_273
+  - first:
+      213: -158373698209939916
+    second: industrial.v3_274
+  - first:
+      213: 3961632851106924220
+    second: industrial.v3_275
+  - first:
+      213: 6979916009729824164
+    second: industrial.v3_276
+  - first:
+      213: 3400194629388579790
+    second: industrial.v3_277
+  - first:
+      213: -802222144692191608
+    second: industrial.v3_278
+  - first:
+      213: -7576675347727669090
+    second: industrial.v3_279
+  - first:
+      213: -5786428082083663057
+    second: industrial.v3_280
+  - first:
+      213: -8888104326552533304
+    second: industrial.v3_281
+  - first:
+      213: 124192468237135369
+    second: industrial.v3_282
+  - first:
+      213: -372337397886167956
+    second: industrial.v3_283
+  - first:
+      213: 4759094647517970418
+    second: industrial.v3_284
+  - first:
+      213: 6483490428815695453
+    second: industrial.v3_285
+  - first:
+      213: -780223921003033961
+    second: industrial.v3_286
+  - first:
+      213: -4193794584922959696
+    second: industrial.v3_287
+  - first:
+      213: -779631534307015548
+    second: industrial.v3_288
+  - first:
+      213: -6972794208717878749
+    second: industrial.v3_289
+  - first:
+      213: -2909724123141459372
+    second: industrial.v3_290
+  - first:
+      213: 9103479139882638915
+    second: industrial.v3_291
+  - first:
+      213: 1412014764930852813
+    second: industrial.v3_292
+  - first:
+      213: -1889580592006427556
+    second: industrial.v3_293
+  - first:
+      213: 9155333401592786204
+    second: industrial.v3_294
+  - first:
+      213: 3831729939299755327
+    second: industrial.v3_295
+  - first:
+      213: -7653027276813184215
+    second: industrial.v3_296
+  - first:
+      213: -9198057007985390332
+    second: industrial.v3_297
+  - first:
+      213: 3566828780018574466
+    second: industrial.v3_298
+  - first:
+      213: -3858665429077900095
+    second: industrial.v3_299
+  - first:
+      213: -3912434717997730219
+    second: industrial.v3_300
+  - first:
+      213: -3902266966034036028
+    second: industrial.v3_301
+  - first:
+      213: -1057316280659948309
+    second: industrial.v3_302
+  - first:
+      213: -1848723957291886512
+    second: industrial.v3_303
+  - first:
+      213: -2632211656299407232
+    second: industrial.v3_304
+  - first:
+      213: 842799403049547659
+    second: industrial.v3_305
+  - first:
+      213: -2635678345359228413
+    second: industrial.v3_306
+  - first:
+      213: 3447428133515355314
+    second: industrial.v3_307
+  - first:
+      213: 5673396075426621977
+    second: industrial.v3_308
+  - first:
+      213: -7816482598053963670
+    second: industrial.v3_309
+  - first:
+      213: 6005742377457037256
+    second: industrial.v3_310
+  - first:
+      213: -1073575111685304767
+    second: industrial.v3_311
+  - first:
+      213: -5199099699092670818
+    second: industrial.v3_312
+  - first:
+      213: 3519596694879075650
+    second: industrial.v3_313
+  - first:
+      213: -5661201359728866405
+    second: industrial.v3_314
+  - first:
+      213: 6734469478149204060
+    second: industrial.v3_315
+  - first:
+      213: -4139253747708516753
+    second: industrial.v3_316
+  - first:
+      213: -1961237737179044478
+    second: industrial.v3_317
+  - first:
+      213: -7768559537156232354
+    second: industrial.v3_318
+  - first:
+      213: 2513732185521908049
+    second: industrial.v3_319
+  - first:
+      213: 3964646878791043265
+    second: industrial.v3_320
+  - first:
+      213: -6735551598469018085
+    second: industrial.v3_321
+  - first:
+      213: 3270195476331120882
+    second: industrial.v3_322
+  - first:
+      213: 5753924769414412616
+    second: industrial.v3_323
+  - first:
+      213: -3880648768565719973
+    second: industrial.v3_324
+  - first:
+      213: -8368286892618933484
+    second: industrial.v3_325
+  - first:
+      213: 7932919327508527542
+    second: industrial.v3_326
+  - first:
+      213: -8785293824336728046
+    second: industrial.v3_327
+  - first:
+      213: 5992110056679670742
+    second: industrial.v3_328
+  - first:
+      213: -3154163976392023191
+    second: industrial.v3_329
+  - first:
+      213: -8078504762202303052
+    second: industrial.v3_330
+  - first:
+      213: -987040168711087289
+    second: industrial.v3_331
+  - first:
+      213: -2694390424123568468
+    second: industrial.v3_332
+  - first:
+      213: -769783573501146605
+    second: industrial.v3_333
+  - first:
+      213: 2415978740913979975
+    second: industrial.v3_334
+  - first:
+      213: -638134729391974074
+    second: industrial.v3_335
+  - first:
+      213: -4966147525931886355
+    second: industrial.v3_336
+  - first:
+      213: -847551222628632660
+    second: industrial.v3_337
+  - first:
+      213: 6880017395780524331
+    second: industrial.v3_338
+  - first:
+      213: 4681765724910690542
+    second: industrial.v3_339
+  - first:
+      213: -3335417215447768081
+    second: industrial.v3_340
+  - first:
+      213: -925522707330615325
+    second: industrial.v3_341
+  - first:
+      213: -537119568139674390
+    second: industrial.v3_342
+  - first:
+      213: 7266788365332010231
+    second: industrial.v3_343
+  - first:
+      213: -1372871621592422875
+    second: industrial.v3_344
+  - first:
+      213: 5919144995288992252
+    second: industrial.v3_345
+  - first:
+      213: -1370795919828594246
+    second: industrial.v3_346
+  - first:
+      213: 9139513182332248389
+    second: industrial.v3_347
+  - first:
+      213: 8256842593764555514
+    second: industrial.v3_348
+  - first:
+      213: 6307787400525579137
+    second: industrial.v3_349
+  - first:
+      213: -1449348600741948643
+    second: industrial.v3_350
+  - first:
+      213: -88013923935916102
+    second: industrial.v3_351
+  - first:
+      213: -6945210705169735641
+    second: industrial.v3_352
+  - first:
+      213: -5919710531087254660
+    second: industrial.v3_353
+  - first:
+      213: 6143195860988012302
+    second: industrial.v3_354
+  - first:
+      213: 2117450629740832265
+    second: industrial.v3_355
+  - first:
+      213: -2284137488222914340
+    second: industrial.v3_356
+  - first:
+      213: -9106553059166464077
+    second: industrial.v3_357
+  - first:
+      213: 2402350716047493056
+    second: industrial.v3_358
+  - first:
+      213: -5179604414195613665
+    second: industrial.v3_359
+  - first:
+      213: -7348701898353565109
+    second: industrial.v3_360
+  - first:
+      213: -8825930054662641409
+    second: industrial.v3_361
+  - first:
+      213: 1224275202943612853
+    second: industrial.v3_362
+  - first:
+      213: -2836382694931050365
+    second: industrial.v3_363
+  - first:
+      213: 5196409118053670194
+    second: industrial.v3_364
+  - first:
+      213: 3098683358548921388
+    second: industrial.v3_365
+  - first:
+      213: 1959711268152294442
+    second: industrial.v3_366
+  - first:
+      213: 7090735028585697773
+    second: industrial.v3_367
+  - first:
+      213: -5187034197920117472
+    second: industrial.v3_368
+  - first:
+      213: 7949041415983209762
+    second: industrial.v3_369
+  - first:
+      213: 596787470041610419
+    second: industrial.v3_370
+  - first:
+      213: 1456025438322568160
+    second: industrial.v3_371
+  - first:
+      213: -986610575580072870
+    second: industrial.v3_372
+  - first:
+      213: 1051545506876095523
+    second: industrial.v3_373
+  - first:
+      213: 3757644579179924486
+    second: industrial.v3_374
+  - first:
+      213: -6936155003946436693
+    second: industrial.v3_375
+  - first:
+      213: 3755789118835277788
+    second: industrial.v3_376
+  - first:
+      213: 72166162822426228
+    second: industrial.v3_377
+  - first:
+      213: -450045627299005483
+    second: industrial.v3_378
+  - first:
+      213: -7484792244372036346
+    second: industrial.v3_379
+  - first:
+      213: -4921232092800616587
+    second: industrial.v3_380
+  - first:
+      213: 7780000149019900953
+    second: industrial.v3_381
+  - first:
+      213: -2552407622801855043
+    second: industrial.v3_382
+  - first:
+      213: 1903172826940801968
+    second: industrial.v3_383
+  - first:
+      213: -5996373079576891121
+    second: industrial.v3_384
+  - first:
+      213: -3988843693208511545
+    second: industrial.v3_385
+  - first:
+      213: -864297581216917946
+    second: industrial.v3_386
+  - first:
+      213: -7901987481710021590
+    second: industrial.v3_387
+  - first:
+      213: 8411388305977915694
+    second: industrial.v3_388
+  - first:
+      213: 1659774214644844624
+    second: industrial.v3_389
+  - first:
+      213: 7815602449983586797
+    second: industrial.v3_390
+  - first:
+      213: -3416893709984615351
+    second: industrial.v3_391
+  - first:
+      213: 2817302161271959324
+    second: industrial.v3_392
+  - first:
+      213: 4152867568002955981
+    second: industrial.v3_393
+  - first:
+      213: -7546306272296489408
+    second: industrial.v3_394
+  - first:
+      213: -5647977363838999544
+    second: industrial.v3_395
+  - first:
+      213: 5982876259193947255
+    second: industrial.v3_396
+  - first:
+      213: -8777306357614950496
+    second: industrial.v3_397
+  - first:
+      213: 8983996854520738871
+    second: industrial.v3_398
+  - first:
+      213: 8946842726317700083
+    second: industrial.v3_399
+  - first:
+      213: -966064672091048345
+    second: industrial.v3_400
+  - first:
+      213: 8774916346498830428
+    second: industrial.v3_401
+  - first:
+      213: -2484500130397912167
+    second: industrial.v3_402
+  - first:
+      213: -5265908516842631342
+    second: industrial.v3_403
+  - first:
+      213: -3864878926410605289
+    second: industrial.v3_404
+  - first:
+      213: -5997587572402148621
+    second: industrial.v3_405
+  - first:
+      213: -2438124674123381454
+    second: industrial.v3_406
+  - first:
+      213: 1042295998382994821
+    second: industrial.v3_407
+  - first:
+      213: -2333162619099540647
+    second: industrial.v3_408
+  - first:
+      213: 5209276945542104658
+    second: industrial.v3_409
+  - first:
+      213: 4475593691519665874
+    second: industrial.v3_410
+  - first:
+      213: 5151124226278600112
+    second: industrial.v3_411
+  - first:
+      213: 1462304243697389617
+    second: industrial.v3_412
+  - first:
+      213: -2346877539290329800
+    second: industrial.v3_413
+  - first:
+      213: 2293364241210512984
+    second: industrial.v3_414
+  - first:
+      213: 6837767992831326680
+    second: industrial.v3_415
+  - first:
+      213: 5494000385800562880
+    second: industrial.v3_416
+  - first:
+      213: -1837389525101709734
+    second: industrial.v3_417
+  - first:
+      213: -4470770913356600809
+    second: industrial.v3_418
+  - first:
+      213: -2178069633423429228
+    second: industrial.v3_419
+  - first:
+      213: -5056994227380605372
+    second: industrial.v3_420
+  - first:
+      213: 9209905752220804356
+    second: industrial.v3_421
+  - first:
+      213: 6465970206334524537
+    second: industrial.v3_422
+  - first:
+      213: -9201945000339039017
+    second: industrial.v3_423
+  - first:
+      213: 6351593407516990489
+    second: industrial.v3_424
+  - first:
+      213: 8813539571885267151
+    second: industrial.v3_425
+  - first:
+      213: 5509034820700153780
+    second: industrial.v3_426
+  - first:
+      213: 7892314063279358563
+    second: industrial.v3_427
+  - first:
+      213: -70472374391707386
+    second: industrial.v3_428
+  - first:
+      213: -4098411967112918022
+    second: industrial.v3_429
+  - first:
+      213: -5583969037786300817
+    second: industrial.v3_430
+  - first:
+      213: -441089999168933462
+    second: industrial.v3_431
+  - first:
+      213: 2479207247572732939
+    second: industrial.v3_432
+  - first:
+      213: -8457359142839204836
+    second: industrial.v3_433
+  - first:
+      213: -6554174738844718813
+    second: industrial.v3_434
+  - first:
+      213: 5457330524182302808
+    second: industrial.v3_435
+  - first:
+      213: -1399308737908861347
+    second: industrial.v3_436
+  - first:
+      213: 153461555445312277
+    second: industrial.v3_437
+  - first:
+      213: -5300424415422781791
+    second: industrial.v3_438
+  - first:
+      213: -4373580818109216949
+    second: industrial.v3_439
+  - first:
+      213: -3755005096663036432
+    second: industrial.v3_440
+  - first:
+      213: 4963692934851604303
+    second: industrial.v3_441
+  - first:
+      213: -6633155346619419360
+    second: industrial.v3_442
+  - first:
+      213: -4595634407487883715
+    second: industrial.v3_443
+  - first:
+      213: -4247613156884767258
+    second: industrial.v3_444
+  - first:
+      213: 943209019641673588
+    second: industrial.v3_445
+  - first:
+      213: -2875577337468634442
+    second: industrial.v3_446
+  - first:
+      213: 7511630660105735447
+    second: industrial.v3_447
+  - first:
+      213: -5254630934818546271
+    second: industrial.v3_448
+  - first:
+      213: -4241049872777155112
+    second: industrial.v3_449
+  - first:
+      213: -9096328565978774297
+    second: industrial.v3_450
+  - first:
+      213: -7417606615572276406
+    second: industrial.v3_451
+  - first:
+      213: -358908599367077245
+    second: industrial.v3_452
+  - first:
+      213: -4302059242688292052
+    second: industrial_resliced_0
+  - first:
+      213: -250664055780240558
+    second: industrial_resliced_1
+  - first:
+      213: 5967180952615501611
+    second: industrial_resliced_2
+  - first:
+      213: 2788545599434235350
+    second: industrial_resliced_3
+  - first:
+      213: 8432629022966629153
+    second: industrial_resliced_4
+  - first:
+      213: -5069132283821023681
+    second: industrial_resliced_5
+  - first:
+      213: -4117319162473001213
+    second: industrial_resliced_6
+  - first:
+      213: -8900918274867808558
+    second: industrial_resliced_7
+  - first:
+      213: 521048948142601750
+    second: industrial_resliced_8
+  - first:
+      213: -3018082895967088935
+    second: industrial_resliced_9
+  - first:
+      213: 5338669046050460967
+    second: industrial_resliced_10
+  - first:
+      213: 1452709869514949893
+    second: industrial_resliced_11
+  - first:
+      213: -3505929883902608335
+    second: industrial_resliced_12
+  - first:
+      213: 353251505517835658
+    second: industrial_resliced_13
+  - first:
+      213: 1314483175219221232
+    second: industrial_resliced_14
+  - first:
+      213: 2032008465579991804
+    second: industrial_resliced_15
+  - first:
+      213: 7831510719577722160
+    second: industrial_resliced_16
+  - first:
+      213: 7778986608556912132
+    second: industrial_resliced_17
+  - first:
+      213: 2877806364605915400
+    second: industrial_resliced_18
+  - first:
+      213: -6537406469660805654
+    second: industrial_resliced_19
+  - first:
+      213: 4561667762561763317
+    second: industrial_resliced_20
+  - first:
+      213: -6918945287404855018
+    second: industrial_resliced_21
+  - first:
+      213: 1279839860184393558
+    second: industrial_resliced_22
+  - first:
+      213: 2232757088798624557
+    second: industrial_resliced_23
+  - first:
+      213: -2147773378219878313
+    second: industrial_resliced_24
+  - first:
+      213: -4972620153138256794
+    second: industrial_resliced_25
+  - first:
+      213: 7327475729993769347
+    second: industrial_resliced_26
+  - first:
+      213: 711859441528335824
+    second: industrial_resliced_27
+  - first:
+      213: 5272815538110046756
+    second: industrial_resliced_28
+  - first:
+      213: 2145402312466996198
+    second: industrial_resliced_29
+  - first:
+      213: -8729921561417911968
+    second: industrial_resliced_30
+  - first:
+      213: 8359209443888644128
+    second: industrial_resliced_31
+  - first:
+      213: -6581916632418219111
+    second: industrial_resliced_32
+  - first:
+      213: 2636766195829077261
+    second: industrial_resliced_33
+  - first:
+      213: 8122142024994401655
+    second: industrial_resliced_34
+  - first:
+      213: 2818106075301046200
+    second: industrial_resliced_35
+  - first:
+      213: 4164883486328175087
+    second: industrial_resliced_36
+  - first:
+      213: -2266065076751742748
+    second: industrial_resliced_37
+  - first:
+      213: -347565440421748252
+    second: industrial_resliced_38
+  - first:
+      213: 3551094749117564673
+    second: industrial_resliced_39
+  - first:
+      213: 4507456241283870784
+    second: industrial_resliced_40
+  - first:
+      213: 7178764200757051900
+    second: industrial_resliced_41
+  - first:
+      213: 4324662846102349775
+    second: industrial_resliced_42
+  - first:
+      213: 8577954738077961844
+    second: industrial_resliced_43
+  - first:
+      213: 1648659081518392705
+    second: industrial_resliced_44
+  - first:
+      213: -3995684211538415141
+    second: industrial_resliced_45
+  - first:
+      213: -1064590418356960033
+    second: industrial_resliced_46
+  - first:
+      213: -2497064661786845644
+    second: industrial_resliced_47
+  - first:
+      213: -5239920618034559556
+    second: industrial_resliced_48
+  - first:
+      213: -1424235112341017089
+    second: industrial_resliced_49
+  - first:
+      213: -1203841918216678452
+    second: industrial_resliced_50
+  - first:
+      213: 5127635448100967291
+    second: industrial_resliced_51
+  - first:
+      213: 5631963287432617300
+    second: industrial_resliced_52
+  - first:
+      213: -5279167622570898082
+    second: industrial_resliced_53
+  - first:
+      213: -7485117634704208713
+    second: industrial_resliced_54
+  - first:
+      213: -1267965368571714985
+    second: industrial_resliced_55
+  - first:
+      213: -3724295795694129567
+    second: industrial_resliced_56
+  - first:
+      213: -5863919285823027370
+    second: industrial_resliced_57
+  - first:
+      213: 3342545765640316276
+    second: industrial_resliced_58
+  - first:
+      213: 4560031193809335004
+    second: industrial_resliced_59
+  - first:
+      213: -279710938228998651
+    second: industrial_resliced_60
+  - first:
+      213: 1895822049618387253
+    second: industrial_resliced_61
+  - first:
+      213: -2222093494965337366
+    second: industrial_resliced_62
+  - first:
+      213: 3837197546765859921
+    second: industrial_resliced_63
+  - first:
+      213: 7632212436575542840
+    second: industrial_resliced_64
+  - first:
+      213: -5841529847702858375
+    second: industrial_resliced_65
+  - first:
+      213: -5524317241381686512
+    second: industrial_resliced_66
+  - first:
+      213: -6968816591628234881
+    second: industrial_resliced_67
+  - first:
+      213: -6849199792896847624
+    second: industrial_resliced_68
+  - first:
+      213: 7741887453127195020
+    second: industrial_resliced_69
+  - first:
+      213: -5859558231120324446
+    second: industrial_resliced_70
+  - first:
+      213: -715208946735184548
+    second: industrial_resliced_71
+  - first:
+      213: 4912076382315676572
+    second: industrial_resliced_72
+  - first:
+      213: -6406699434713185202
+    second: industrial_resliced_73
+  - first:
+      213: 3436357583318513386
+    second: industrial_resliced_74
+  - first:
+      213: -5933243534149675422
+    second: industrial_resliced_75
+  - first:
+      213: 8817411113591602478
+    second: industrial_resliced_76
+  - first:
+      213: -3654751810102169590
+    second: industrial_resliced_77
+  - first:
+      213: 4535622967310231133
+    second: industrial_resliced_78
+  - first:
+      213: -2673472702969063966
+    second: industrial_resliced_79
+  - first:
+      213: 1300134037534574399
+    second: industrial_resliced_80
+  - first:
+      213: 1847582088243748693
+    second: industrial_resliced_81
+  - first:
+      213: -6849954256422373811
+    second: industrial_resliced_82
+  - first:
+      213: -5853753433358161286
+    second: industrial_resliced_83
+  - first:
+      213: -4314108223511060329
+    second: industrial_resliced_84
+  - first:
+      213: 8760189753550730433
+    second: industrial_resliced_85
+  - first:
+      213: 8154235824902025836
+    second: industrial_resliced_86
+  - first:
+      213: -5763285235705552097
+    second: industrial_resliced_87
+  - first:
+      213: -341786812293706324
+    second: industrial_resliced_88
+  - first:
+      213: -5641928203059842018
+    second: industrial_resliced_89
+  - first:
+      213: 5004479414732924783
+    second: industrial_resliced_90
+  - first:
+      213: 2222326212844054149
+    second: industrial_resliced_91
+  - first:
+      213: -1764171027593701979
+    second: industrial_resliced_92
+  - first:
+      213: -2945321002109849597
+    second: industrial_resliced_93
+  - first:
+      213: 2296249151371653756
+    second: industrial_resliced_94
+  - first:
+      213: 3620799588522748335
+    second: industrial_resliced_95
+  - first:
+      213: -2443278298986377036
+    second: industrial_resliced_96
+  - first:
+      213: -4931945925175399423
+    second: industrial_resliced_97
+  - first:
+      213: -3917419495382849453
+    second: industrial_resliced_98
+  - first:
+      213: -7445673367935568983
+    second: industrial_resliced_99
+  - first:
+      213: 4159078259710227305
+    second: industrial_resliced_100
+  - first:
+      213: 3200421767993659344
+    second: industrial_resliced_101
+  - first:
+      213: -463901444252876230
+    second: industrial_resliced_102
+  - first:
+      213: -3835882216100693489
+    second: industrial_resliced_103
+  - first:
+      213: 4291290455787790794
+    second: industrial_resliced_104
+  - first:
+      213: -4411780581785097226
+    second: industrial_resliced_105
+  - first:
+      213: -9151682095061497520
+    second: industrial_resliced_106
+  - first:
+      213: 7625095374120250475
+    second: industrial_resliced_107
+  - first:
+      213: -8977994583364524726
+    second: industrial_resliced_108
+  - first:
+      213: -3283600598824306445
+    second: industrial_resliced_109
+  - first:
+      213: -87237376765656400
+    second: industrial_resliced_110
+  - first:
+      213: -1690996999170787943
+    second: industrial_resliced_111
+  - first:
+      213: 2555810880754411554
+    second: industrial_resliced_112
+  - first:
+      213: -2453204163310736268
+    second: industrial_resliced_113
+  - first:
+      213: -4033729790674699231
+    second: industrial_resliced_114
+  - first:
+      213: 9070884638970726490
+    second: industrial_resliced_115
+  - first:
+      213: 1146230470081813756
+    second: industrial_resliced_116
+  - first:
+      213: 90177239848371147
+    second: industrial_resliced_117
+  - first:
+      213: -8435430800925485552
+    second: industrial_resliced_118
+  - first:
+      213: -1310503225111001
+    second: industrial_resliced_119
+  - first:
+      213: -956629157386376599
+    second: industrial_resliced_120
+  - first:
+      213: -2216143037861019061
+    second: industrial_resliced_121
+  - first:
+      213: 2709346876046787445
+    second: industrial_resliced_122
+  - first:
+      213: -5904570309784578532
+    second: industrial_resliced_123
+  - first:
+      213: -5984594450961159863
+    second: industrial_resliced_124
+  - first:
+      213: 4336504108332156092
+    second: industrial_resliced_125
+  - first:
+      213: 7377520678534563235
+    second: industrial_resliced_126
+  - first:
+      213: 1586085635062656268
+    second: industrial_resliced_127
+  - first:
+      213: 4774202331422262939
+    second: industrial_resliced_128
+  - first:
+      213: -10182808233812123
+    second: industrial_resliced_129
+  - first:
+      213: -4947327705036402310
+    second: industrial_resliced_130
+  - first:
+      213: -1391240198350148041
+    second: industrial_resliced_131
+  - first:
+      213: -7982855224423102620
+    second: industrial_resliced_132
+  - first:
+      213: -902523210417960719
+    second: industrial_resliced_133
+  - first:
+      213: -955065170826251369
+    second: industrial_resliced_134
+  - first:
+      213: 5586259733919177356
+    second: industrial_resliced_135
+  - first:
+      213: 73027892835580665
+    second: industrial_resliced_136
+  - first:
+      213: -26253329936132139
+    second: industrial_resliced_137
+  - first:
+      213: 1270082387353600030
+    second: industrial_resliced_138
+  - first:
+      213: 7803559617302380058
+    second: industrial_resliced_139
+  - first:
+      213: -4377174738629910597
+    second: industrial_resliced_140
+  - first:
+      213: 3161491052382207004
+    second: industrial_resliced_141
+  - first:
+      213: -2574047337268777441
+    second: industrial_resliced_142
+  - first:
+      213: -5091729838557922806
+    second: industrial_resliced_143
+  - first:
+      213: 5540461489812294359
+    second: industrial_resliced_144
+  - first:
+      213: 96357514025457584
+    second: industrial_resliced_145
+  - first:
+      213: 9178666059322604188
+    second: industrial_resliced_146
+  - first:
+      213: 6157067842648999167
+    second: industrial_resliced_147
+  - first:
+      213: 3885621877722490126
+    second: industrial_resliced_148
+  - first:
+      213: -6933133886339247175
+    second: industrial_resliced_149
+  - first:
+      213: 3862171311100645624
+    second: industrial_resliced_150
+  - first:
+      213: 4459457516037225843
+    second: industrial_resliced_151
+  - first:
+      213: -7914000832527370832
+    second: industrial_resliced_152
+  - first:
+      213: -5151519458421207587
+    second: industrial_resliced_153
+  - first:
+      213: -3792837587825362492
+    second: industrial_resliced_154
+  - first:
+      213: -8534195764939763084
+    second: industrial_resliced_155
+  - first:
+      213: 137158165071703267
+    second: industrial_resliced_156
+  - first:
+      213: 3119644530008477621
+    second: industrial_resliced_157
+  - first:
+      213: 4364275043564322774
+    second: industrial_resliced_158
+  - first:
+      213: 5069928411319596704
+    second: industrial_resliced_159
+  - first:
+      213: -6271004723551095490
+    second: industrial_resliced_160
+  - first:
+      213: -425703555910695836
+    second: industrial_resliced_161
+  - first:
+      213: -6449045505458709063
+    second: industrial_resliced_162
+  - first:
+      213: -7491954087800532059
+    second: industrial_resliced_163
+  - first:
+      213: 8792407577463846784
+    second: industrial_resliced_164
+  - first:
+      213: 2238804160670828059
+    second: industrial_resliced_165
+  - first:
+      213: 3261124670956162625
+    second: industrial_resliced_166
+  - first:
+      213: 2572434581927547972
+    second: industrial_resliced_167
+  - first:
+      213: -6603856263399289709
+    second: industrial_resliced_168
+  - first:
+      213: 5004786585765338765
+    second: industrial_resliced_169
+  - first:
+      213: 9067522003480523030
+    second: industrial_resliced_170
+  - first:
+      213: -7368149368776739010
+    second: industrial_resliced_171
+  - first:
+      213: 8549913510885982985
+    second: industrial_resliced_172
+  - first:
+      213: -3671540277985562726
+    second: industrial_resliced_173
+  - first:
+      213: 2536583543156324219
+    second: industrial_resliced_174
+  - first:
+      213: -4076862230014058327
+    second: industrial_resliced_175
+  - first:
+      213: 9209599067579517306
+    second: industrial_resliced_176
+  - first:
+      213: 6509047968134919618
+    second: industrial_resliced_177
+  - first:
+      213: -121684591503669882
+    second: industrial_resliced_178
+  - first:
+      213: -294855711548935025
+    second: industrial_resliced_179
+  - first:
+      213: -4500379323693546174
+    second: industrial_resliced_180
+  - first:
+      213: 2506250754890170497
+    second: industrial_resliced_181
+  - first:
+      213: 3750654405989795949
+    second: industrial_resliced_182
+  - first:
+      213: 7803066492568992411
+    second: industrial_resliced_183
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: industrial_resliced_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426
+        width: 256
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bd0ec79e30c44c0800000000000000
+      internalID: -4302059242688292052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 432
+        width: 155
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253924d8e56758cf0800000000000000
+      internalID: -250664055780240558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 496
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fbf1ff57fafc250800000000000000
+      internalID: 5967180952615501611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 458
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd9146c277e2b620800000000000000
+      internalID: 2788545599434235350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 464
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123439c1b67b60570800000000000000
+      internalID: 8432629022966629153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 451
+        width: 48
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e12679b03d6a9b0800000000000000
+      internalID: -5069132283821023681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 403
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f43e549085cd6c0800000000000000
+      internalID: -4117319162473001213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 432
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6b8b3fcf5997480800000000000000
+      internalID: -8900918274867808558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 406
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61671a8f1432b3700800000000000000
+      internalID: 521048948142601750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 432
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de033bb89d9d16d0800000000000000
+      internalID: -3018082895967088935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 416
+        width: 11
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725163f3633c61a40800000000000000
+      internalID: 5338669046050460967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_11
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 368
+        width: 28
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5058426fdef092410800000000000000
+      internalID: 1452709869514949893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 424
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cfe86885f685fc0800000000000000
+      internalID: -3505929883902608335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 416
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8533c66f5007e400800000000000000
+      internalID: 353251505517835658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 416
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f25b22cb7bfd3210800000000000000
+      internalID: 1314483175219221232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_15
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 416
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf26b73fee4233c10800000000000000
+      internalID: 2032008465579991804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 176
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d081f918d1fac60800000000000000
+      internalID: 7831510719577722160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_17
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 400
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e2e8b0b1384fb60800000000000000
+      internalID: 7778986608556912132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_18
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801a1be24a500f720800000000000000
+      internalID: 2877806364605915400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_19
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 400
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5f687d3777645a0800000000000000
+      internalID: -6537406469660805654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_20
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 384
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f748da49ac4e4f30800000000000000
+      internalID: 4561667762561763317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 304
+        width: 60
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611eed35be7faff90800000000000000
+      internalID: -6918945287404855018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_22
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 382
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6572dab6297e2c110800000000000000
+      internalID: 1279839860184393558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_23
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 384
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bc39b1eb85cfe10800000000000000
+      internalID: 2232757088798624557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_24
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 370
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758d92ded739132e0800000000000000
+      internalID: -2147773378219878313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 368
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664ee391154bdfab0800000000000000
+      internalID: -4972620153138256794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 368
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38123929a5c60b560800000000000000
+      internalID: 7327475729993769347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_27
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 368
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dded46f36801e900800000000000000
+      internalID: 711859441528335824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_28
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 368
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422a53b9bcdcc2940800000000000000
+      internalID: 5272815538110046756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 368
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb95ee490006cd10800000000000000
+      internalID: 2145402312466996198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_30
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 368
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06179aec79619d680800000000000000
+      internalID: -8729921561417911968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_31
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 368
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020c21243b0e10470800000000000000
+      internalID: 8359209443888644128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 358
+        width: 64
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b0a7ff1b558a4a0800000000000000
+      internalID: -6581916632418219111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_33
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 355
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05762a82eca79420800000000000000
+      internalID: 2636766195829077261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_34
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 357
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d20178325a7b070800000000000000
+      internalID: 8122142024994401655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 357
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b760b56b8ceb1720800000000000000
+      internalID: 2818106075301046200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_36
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 357
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe93b7dd673acc930800000000000000
+      internalID: 4164883486328175087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_37
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 357
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e84b4e91d15d80e0800000000000000
+      internalID: -2266065076751742748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_38
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 357
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1a57bc2133d2bf0800000000000000
+      internalID: -347565440421748252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_39
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 357
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10748ec1cd5084130800000000000000
+      internalID: 3551094749117564673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_40
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040b756e193bd8e30800000000000000
+      internalID: 4507456241283870784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_41
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 352
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf14a60810810a360800000000000000
+      internalID: 7178764200757051900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_42
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 352
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7a24b02f9440c30800000000000000
+      internalID: 4324662846102349775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_43
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 352
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e0486e2640b0770800000000000000
+      internalID: 8577954738077961844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_44
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 352
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18520ad13b631e610800000000000000
+      internalID: 1648659081518392705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_45
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 352
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1bd90316a7c88c0800000000000000
+      internalID: -3995684211538415141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_46
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 352
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd48c8aa7a0d931f0800000000000000
+      internalID: -1064590418356960033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 64
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e930d8be4a85dd0800000000000000
+      internalID: -2497064661786845644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_48
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 339
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb50ecec5ff0847b0800000000000000
+      internalID: -5239920618034559556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 339
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd664416b91c3ce0800000000000000
+      internalID: -1424235112341017089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_50
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 339
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc358f257281b4fe0800000000000000
+      internalID: -1203841918216678452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_51
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 339
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7352cdc545092740800000000000000
+      internalID: 5127635448100967291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_52
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 341
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d567f35c0c82e40800000000000000
+      internalID: 5631963287432617300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_53
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 341
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d0bea7401acb6b0800000000000000
+      internalID: -5279167622570898082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_54
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 304
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc81794b258f1890800000000000000
+      internalID: -7485117634704208713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75229ca1738476ee0800000000000000
+      internalID: -1267965368571714985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_56
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 325
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16eab2bb4b4a05cc0800000000000000
+      internalID: -3724295795694129567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_57
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 325
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657c4f85a7c2f9ea0800000000000000
+      internalID: -5863919285823027370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_58
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 307
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4752a7e0aab136e20800000000000000
+      internalID: 3342545765640316276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 304
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2b4bfe53c784f30800000000000000
+      internalID: 4560031193809335004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_60
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 312
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50eb11732644e1cf0800000000000000
+      internalID: -279710938228998651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_61
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 306
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5316bd01c105f4a10800000000000000
+      internalID: 1895822049618387253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_62
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 316
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae282ee4db98921e0800000000000000
+      internalID: -2222093494965337366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_63
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 316
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cbaf3a6d6704530800000000000000
+      internalID: 3837197546765859921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_64
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 306
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e576c16c01be960800000000000000
+      internalID: 7632212436575542840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_65
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 289
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97554d2ad87beeea0800000000000000
+      internalID: -5841529847702858375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_66
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 270
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013f0e0fcbea553b0800000000000000
+      internalID: -5524317241381686512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_67
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 275
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f86277b3ac94f90800000000000000
+      internalID: -6968816591628234881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_68
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 289
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f054b4b311c2f0a0800000000000000
+      internalID: -6849199792896847624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_69
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 289
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8933bece95b07b60800000000000000
+      internalID: 7741887453127195020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_70
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 262
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a85b5585daaeaea0800000000000000
+      internalID: -5859558231120324446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_71
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 273
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c550ba590411316f0800000000000000
+      internalID: -715208946735184548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_72
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 273
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c930385c1733b2440800000000000000
+      internalID: 4912076382315676572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_73
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44893beec4d617a0800000000000000
+      internalID: -6406699434713185202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_74
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 226
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae67be2f30560bf20800000000000000
+      internalID: 3436357583318513386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_75
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 240
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266102df072e8ada0800000000000000
+      internalID: -5933243534149675422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_76
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 240
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d7530f0bcbd5a70800000000000000
+      internalID: 8817411113591602478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_77
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 240
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00f4a8a796b74dc0800000000000000
+      internalID: -3654751810102169590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_78
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 247
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5621a9de05c1fe30800000000000000
+      internalID: 4535622967310231133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 247
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e553d6cdbae5ead0800000000000000
+      internalID: -2673472702969063966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_80
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 251
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3784abc4010b0210800000000000000
+      internalID: 1300134037534574399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_81
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 251
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f942fce1ee3a910800000000000000
+      internalID: 1847582088243748693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_82
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 241
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46f44a75e210f0a0800000000000000
+      internalID: -6849954256422373811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_83
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7aa6f1544a43cea0800000000000000
+      internalID: -5853753433358161286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_84
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 240
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79028078d653124c0800000000000000
+      internalID: -4314108223511060329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_85
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 240
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c47869da22729970800000000000000
+      internalID: 8760189753550730433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_86
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 240
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62bc0e974aa92170800000000000000
+      internalID: 8154235824902025836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_87
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 240
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1364820d92b400b0800000000000000
+      internalID: -5763285235705552097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_88
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad025084bab14bf0800000000000000
+      internalID: -341786812293706324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_89
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e143c580138d3b1b0800000000000000
+      internalID: -5641928203059842018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_90
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6729e8438b737540800000000000000
+      internalID: 5004479414732924783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_91
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 240
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586eb9b8ae947de10800000000000000
+      internalID: 2222326212844054149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5dd312cc76487e0800000000000000
+      internalID: -1764171027593701979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_93
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 226
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300bebf472e1027d0800000000000000
+      internalID: -2945321002109849597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_94
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72bc47ef6aeddf10800000000000000
+      internalID: 2296249151371653756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_95
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 240
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa967ccba0aaf3230800000000000000
+      internalID: 3620799588522748335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_96
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 225
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b01f75055bb71ed0800000000000000
+      internalID: -2443278298986377036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_97
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 224
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c2c76cf453e8bb0800000000000000
+      internalID: -4931945925175399423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_98
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 224
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358e38d69b782a9c0800000000000000
+      internalID: -3917419495382849453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_99
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 225
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a33d9e4587aba890800000000000000
+      internalID: -7445673367935568983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_100
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 224
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963f31734a308b930800000000000000
+      internalID: 4159078259710227305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_101
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 224
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df80b434ae2a6c20800000000000000
+      internalID: 3200421767993659344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_102
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 224
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3244842814ef89f0800000000000000
+      internalID: -463901444252876230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_103
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 224
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a7415a27534cac0800000000000000
+      internalID: -3835882216100693489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_104
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 224
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1614deee9bd8b30800000000000000
+      internalID: 4291290455787790794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_105
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 224
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbabbb7fe436c2c0800000000000000
+      internalID: -4411780581785097226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_106
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 208
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0598e8a4f91bef080800000000000000
+      internalID: -9151682095061497520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_107
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 208
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c69e0e7d7c1d960800000000000000
+      internalID: 7625095374120250475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_108
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 208
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a452d2f6e71c76380800000000000000
+      internalID: -8977994583364524726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_109
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 208
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f831d217ae4e62d0800000000000000
+      internalID: -3283600598824306445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_110
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 212
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b20fba61121acef0800000000000000
+      internalID: -87237376765656400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_111
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 211
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9957c24403f5888e0800000000000000
+      internalID: -1690996999170787943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_112
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 212
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228e17c6470187320800000000000000
+      internalID: 2555810880754411554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_113
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 176
+        width: 10
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47caa54afc774fdd0800000000000000
+      internalID: -2453204163310736268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_114
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 180
+        width: 62
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c7ce280205508c0800000000000000
+      internalID: -4033729790674699231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_115
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 208
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58c560058142ed70800000000000000
+      internalID: 9070884638970726490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_116
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 160
+        width: 15
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc94ff1a8a38ef00800000000000000
+      internalID: 1146230470081813756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_117
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 192
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3ccfbc8bf504100800000000000000
+      internalID: 90177239848371147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_118
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 192
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016927f11645fea80800000000000000
+      internalID: -8435430800925485552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_119
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 192
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e4ac0ba185bfff0800000000000000
+      internalID: -1310503225111001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_120
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 176
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a243c89de59b2f0800000000000000
+      internalID: -956629157386376599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_121
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 176
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42c6d016adae31e0800000000000000
+      internalID: -2216143037861019061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_122
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 160
+        width: 13
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573451801a8899520800000000000000
+      internalID: 2709346876046787445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_123
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 176
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16d8f54690ce0ea0800000000000000
+      internalID: -5904570309784578532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_124
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 177
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949afa9fd0372fca0800000000000000
+      internalID: -5984594450961159863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_125
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 176
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb40920c28b5e2c30800000000000000
+      internalID: 4336504108332156092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_126
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 176
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5c62728f7326660800000000000000
+      internalID: 7377520678534563235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_127
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 176
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d624d4b78e20610800000000000000
+      internalID: 1586085635062656268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_128
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 176
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b960442c9bf514240800000000000000
+      internalID: 4774202331422262939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_129
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 180
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f58643ac2dbdff0800000000000000
+      internalID: -10182808233812123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_130
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 160
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a715bd11aaf875bb0800000000000000
+      internalID: -4947327705036402310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_131
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e6814296251bce0800000000000000
+      internalID: -1391240198350148041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_132
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 166
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467c3e6e773373190800000000000000
+      internalID: -7982855224423102620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_133
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 166
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f80e710ce79973f0800000000000000
+      internalID: -902523210417960719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_134
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793bd8b894deeb2f0800000000000000
+      internalID: -955065170826251369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_135
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 166
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a125771a1668d40800000000000000
+      internalID: 5586259733919177356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_136
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9faf82b4b72730100800000000000000
+      internalID: 73027892835580665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_137
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d75cfa4cbab2aff0800000000000000
+      internalID: -26253329936132139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_138
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 144
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1001bdb33d30a110800000000000000
+      internalID: 1270082387353600030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_139
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e34ec7020db4c60800000000000000
+      internalID: 7803559617302380058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_140
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf962834c62143c0800000000000000
+      internalID: -4377174738629910597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_141
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 144
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c31d1ac5fdfdb20800000000000000
+      internalID: 3161491052382207004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_142
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 144
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eed0ba595274cd0800000000000000
+      internalID: -2574047337268777441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_143
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 144
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a7f7060ba8659b0800000000000000
+      internalID: -5091729838557922806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_144
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 144
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da4effce5ca3ec40800000000000000
+      internalID: 5540461489812294359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_145
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b75de206a4565100800000000000000
+      internalID: 96357514025457584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_146
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 128
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9abbd9762c216f70800000000000000
+      internalID: 9178666059322604188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_147
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 149
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff40313d49c427550800000000000000
+      internalID: 6157067842648999167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_148
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 130
+        width: 57
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05a229c2808ce530800000000000000
+      internalID: 3885621877722490126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_149
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 128
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b39684b67f88cf90800000000000000
+      internalID: -6933133886339247175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_150
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 128
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0dbd34850399530800000000000000
+      internalID: 3862171311100645624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_151
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 128
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d385ecbfc23ed30800000000000000
+      internalID: 4459457516037225843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_152
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 128
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b57f094c22db2290800000000000000
+      internalID: -7914000832527370832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_153
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 128
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd8a43b8502288b0800000000000000
+      internalID: -5151519458421207587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_154
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 128
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c97be62f422d5bc0800000000000000
+      internalID: -3792837587825362492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_155
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 133
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4725f1bfa22709980800000000000000
+      internalID: -8534195764939763084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_156
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 131
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eca42bdf9847e100800000000000000
+      internalID: 137158165071703267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_157
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 113
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf45a4eb243b4b20800000000000000
+      internalID: 3119644530008477621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_158
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 113
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dff0c97705019c30800000000000000
+      internalID: 4364275043564322774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_159
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 113
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a67d5947010c5640800000000000000
+      internalID: 5069928411319596704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_160
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 113
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35b0fbdd6ae8f8a0800000000000000
+      internalID: -6271004723551095490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_161
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 113
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46482521fd8971af0800000000000000
+      internalID: -425703555910695836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_162
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 113
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdddc208436086a0800000000000000
+      internalID: -6449045505458709063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_163
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 113
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a31d13837b370890800000000000000
+      internalID: -7491954087800532059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_164
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0877f278b18e40a70800000000000000
+      internalID: 8792407577463846784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_165
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 96
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16837eb584d11f10800000000000000
+      internalID: 2238804160670828059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_166
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14eca9c2c97d14d20800000000000000
+      internalID: 3261124670956162625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_167
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 97
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444d8b77f9f13b320800000000000000
+      internalID: 2572434581927547972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_168
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 99
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cc85897b36a54a0800000000000000
+      internalID: -6603856263399289709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_169
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 99
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ede2d12e2947540800000000000000
+      internalID: 5004786585765338765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_170
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 80
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611be7a683f46dd70800000000000000
+      internalID: 9067522003480523030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_171
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 64
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e373b0eef231fb990800000000000000
+      internalID: -7368149368776739010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_172
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 80
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9030cace90567a670800000000000000
+      internalID: 8549913510885982985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_173
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 80
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fa120e1911c0dc0800000000000000
+      internalID: -3671540277985562726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_174
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 83
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b773fe80b41c33320800000000000000
+      internalID: 2536583543156324219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_175
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 83
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a02ec5e6631c67c0800000000000000
+      internalID: -4076862230014058327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_176
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 66
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7988d2be811fcf70800000000000000
+      internalID: 9209599067579517306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_177
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 68
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5f8aef3a8c45a50800000000000000
+      internalID: 6509047968134919618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_178
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 67
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68509cc3280bf4ef0800000000000000
+      internalID: -121684591503669882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_179
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 69
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f847125ea4678ebf0800000000000000
+      internalID: -294855711548935025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_180
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 52
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245cbb069d07b81c0800000000000000
+      internalID: -4500379323693546174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_181
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 52
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180884b68cdf7c220800000000000000
+      internalID: 2506250754890170497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_182
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 52
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6886487f400d0430800000000000000
+      internalID: 3750654405989795949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial_resliced_183
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 51
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9af350f1af0a4c60800000000000000
+      internalID: 7803066492568992411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: a4a499a649f584b68a3031ec5e4e1e0a, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
