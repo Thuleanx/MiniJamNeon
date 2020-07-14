@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Artifact : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Renderer myRenderer;
+
+    private void Awake()
     {
+        myRenderer = GetComponent<Renderer>();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Activate()
     {
-        
+        Debug.Log("here");
+        myRenderer.enabled = true;
     }
 }
