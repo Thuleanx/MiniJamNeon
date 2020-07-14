@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -53851,6 +53851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c613c02f5b2524eea812fa1d621d32d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objective: {fileID: 3088747137997783676}
+  wallJumpPickup: {fileID: 3088747137997783676}
   maxJumpHeight: 4
   minJumpHeight: 1
   timeToJumpApexSeconds: 0.4
@@ -53861,6 +53863,7 @@ MonoBehaviour:
   inputBufferTimeSeconds: 0.1
   coyoteTimeSeconds: 0.1
   dashCooldownSeconds: 0
+  wallJumpCooldownSeconds: 0
 --- !u!114 &1943556854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54330,6 +54333,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed42556badfa94120928440a68c2b9af, type: 3}
+--- !u!1 &3088747137997783676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3088747138976412565, guid: ed42556badfa94120928440a68c2b9af,
+    type: 3}
+  m_PrefabInstance: {fileID: 3088747137997783675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8080966443469491044
 PrefabInstance:
   m_ObjectHideFlags: 0
