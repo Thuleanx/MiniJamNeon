@@ -23,7 +23,6 @@ public class PlayerController2D : MonoBehaviour
 	#endregion
 
 	[SerializeField] GameObject objective;
-	[SerializeField] GameObject wallJumpPickup;
 
 	#region Physics Constants
 
@@ -57,11 +56,9 @@ public class PlayerController2D : MonoBehaviour
 	// face direction to animate the sprite
 	int faceDir;
 	float lastTimeTouchWall;
-	bool wallJumpAbility;
 
 	void Awake() {
 		lastTimeTouchWall = -1;
-		wallJumpAbility = false;
 
 		CalculatePhysicsConstants();
     	currMoney = 0;
@@ -96,11 +93,6 @@ public class PlayerController2D : MonoBehaviour
 		if (Win()) {
 			Debug.Log("win!");
 			SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
-		}
-
-		if (!wallJumpAbility && CloseToObject(wallJumpPickup)) {
-			wallJumpAbility = true;
-			Destroy(wallJumpPickup);
 		}
 
 		if (TouchingWall())
@@ -157,7 +149,7 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 		// wall jump
-		if (wallJumpAbility && Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
+		if (Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
 			velocity.y = jumpVelocityMax;
 		}
 
