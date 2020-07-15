@@ -22,7 +22,7 @@ public class PlayerController2D : MonoBehaviour
 	Vector2 velocity;
 	#endregion
 
-	[SerializeField] GameObject objective;
+	[SerializeField] GameObject teleporter;
 
 	#region Physics Constants
 
@@ -57,6 +57,9 @@ public class PlayerController2D : MonoBehaviour
 	int faceDir;
 	float lastTimeTouchWall;
 
+	public int totalNumberArtifacts = 4;
+	private int artifactsActivated = 0;
+
 	void Awake() {
 		lastTimeTouchWall = -1;
 
@@ -77,6 +80,9 @@ public class PlayerController2D : MonoBehaviour
 		timers.RegisterTimer("coyoteBuffer", coyoteTimeSeconds);
 		timers.RegisterTimer("platformFallThrough", platformFallThroughSeconds);
 		timers.RegisterTimer("dashBuffer", dashCooldownSeconds);
+
+		// make teleporter sprite deactivated
+		teleporter.GetComponent<Renderer>().enabled = false;
 	}
 
 	void CalculatePhysicsConstants() {
@@ -243,7 +249,18 @@ public class PlayerController2D : MonoBehaviour
 		return Math.Abs(x1 - x2) <= 1 && Math.Abs(y1 - y2) <= 1;
 	}
 
+	public void activatedArtifact()
+    {
+		artifactsActivated++;
+		Debug.Log("Activated " + artifactsActivated + " artifacts");
+		if (artifactsActivated == totalNumberArtifacts)
+        {
+			// light up teleporter
+			teleporter.GetComponent<Renderer>().enabled = true;
+		}
+    }
+
 	bool Win() {
-		return CloseToObject(objective);
+		return artifactsActivated == totalNumberArtifacts && CloseToObject(teleporter);
 	}
 }
