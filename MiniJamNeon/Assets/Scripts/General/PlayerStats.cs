@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -18,10 +19,15 @@ public class PlayerStats : MonoBehaviour
 	private const int DEFENSE_INCREMENT = 1;
 	private const int PLAYER_DAMAGE = 10;
 	private const int DAMAGE_INCREMENT = 5;
+
+	[SerializeField] Text debug;
+
+	System.Random random;
 	
 	void Awake() {
 		 statCount = new int[3];
 		 currHealth = PLAYER_HEALTH;
+		 random = new System.Random();
 	}
 
 	private int getStatUpgradeCost(int index) {
@@ -33,7 +39,7 @@ public class PlayerStats : MonoBehaviour
 	}
 
 	public void hit(int damage) {
-		 currHealth -= getScaledDamage(damage);        
+		currHealth -= getScaledDamage(damage);        
 	}
 
 	public void incrementHealth() {
@@ -90,6 +96,7 @@ public class PlayerStats : MonoBehaviour
 	}
 
 	void Update() {
+		// HealthBar.Instance?.SetHealth((float) random.Next() / int.MaxValue);
 		HealthBar.Instance?.SetHealth(((float) getHealth()) / getMaxHealth());	 
 	}
 }

@@ -246,7 +246,6 @@ GameObject:
   - component: {fileID: 559416931631030878}
   - component: {fileID: 559416931631030879}
   - component: {fileID: 559416931631030876}
-  - component: {fileID: 559416931631030869}
   - component: {fileID: 559416931631030868}
   - component: {fileID: 559416931631030871}
   - component: {fileID: 559416931631030870}
@@ -424,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: {fileID: 0}
+  wallJumpPickup: {fileID: 0}
   maxJumpHeight: 4
   minJumpHeight: 1
   timeToJumpApexSeconds: 0.4
@@ -434,18 +434,7 @@ MonoBehaviour:
   inputBufferTimeSeconds: 0.1
   coyoteTimeSeconds: 0.1
   dashCooldownSeconds: 2
---- !u!114 &559416931631030869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559416931631030877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abacbd2f408363777a09766c1bbe08c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  wallJumpCooldownSeconds: 0.5
 --- !u!95 &559416931631030868
 Animator:
   serializedVersion: 3
@@ -524,6 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abacbd2f408363777a09766c1bbe08c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: {fileID: 0}
 --- !u!1 &559416932048389803
 GameObject:
   m_ObjectHideFlags: 0
