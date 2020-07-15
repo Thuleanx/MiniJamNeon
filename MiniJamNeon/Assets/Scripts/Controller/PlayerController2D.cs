@@ -22,8 +22,7 @@ public class PlayerController2D : MonoBehaviour
 	Vector2 velocity;
 	#endregion
 
-	[SerializeField] GameObject objective;
-	[SerializeField] GameObject wallJumpPickup;
+	[SerializeField] GameObject teleporter;
 
 	#region Physics Constants
 
@@ -57,11 +56,12 @@ public class PlayerController2D : MonoBehaviour
 	// face direction to animate the sprite
 	int faceDir;
 	float lastTimeTouchWall;
-	bool wallJumpAbility;
+
+	public int totalNumberArtifacts = 4;
+	private int artifactsActivated = 0;
 
 	void Awake() {
 		lastTimeTouchWall = -1;
-		wallJumpAbility = false;
 
 		CalculatePhysicsConstants();
     	currMoney = 0;
@@ -80,6 +80,9 @@ public class PlayerController2D : MonoBehaviour
 		timers.RegisterTimer("coyoteBuffer", coyoteTimeSeconds);
 		timers.RegisterTimer("platformFallThrough", platformFallThroughSeconds);
 		timers.RegisterTimer("dashBuffer", dashCooldownSeconds);
+
+		// make teleporter sprite deactivated
+		teleporter.GetComponent<Renderer>().enabled = false;
 	}
 
 	void CalculatePhysicsConstants() {
@@ -96,11 +99,6 @@ public class PlayerController2D : MonoBehaviour
 		if (Win()) {
 			Debug.Log("win!");
 			SceneManager.LoadScene("VictoryScene", LoadSceneMode.Single);
-		}
-
-		if (!wallJumpAbility && CloseToObject(wallJumpPickup)) {
-			wallJumpAbility = true;
-			Destroy(wallJumpPickup);
 		}
 
 		if (TouchingWall())
@@ -157,7 +155,7 @@ public class PlayerController2D : MonoBehaviour
 		}
 
 		// wall jump
-		if (wallJumpAbility && Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
+		if (Time.time - lastTimeTouchWall <= wallJumpCooldownSeconds && input.jumpDown) {
 			velocity.y = jumpVelocityMax;
 		}
 
@@ -251,7 +249,18 @@ public class PlayerController2D : MonoBehaviour
 		return Math.Abs(x1 - x2) <= 1 && Math.Abs(y1 - y2) <= 1;
 	}
 
+	public void activatedArtifact()
+    {
+		artifactsActivated++;
+		Debug.Log("Activated " + artifactsActivated + " artifacts");
+		if (artifactsActivated == totalNumberArtifacts)
+        {
+			// light up teleporter
+			teleporter.GetComponent<Renderer>().enabled = true;
+		}
+    }
+
 	bool Win() {
-		return CloseToObject(objective);
+		return artifactsActivated == totalNumberArtifacts && CloseToObject(teleporter);
 	}
 }
